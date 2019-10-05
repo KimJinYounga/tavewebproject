@@ -5,18 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "chrome",
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
             "request": "launch",
-            "name": "Launch Chrome",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
+            "mainClass": "${file}"
         },
         {
-            "type": "node",
+            "type": "java",
+            "name": "Debug (Launch)-DemoApplication<demo>",
             "request": "launch",
-            "name": "Launch Program",
-            "program": "${file}"
-            
+            "mainClass": "com.example.demo.DemoApplication",
+            "projectName": "demo"
         }
     ]
 }
