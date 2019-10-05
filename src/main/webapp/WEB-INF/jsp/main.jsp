@@ -14,7 +14,7 @@
     <a href="album.jsp">활동내역</a>
     <a href="lightning.jsp">번개</a>
     <a href="tipoff.jsp">익명 신문고</a>
-    
+    asdfdasffasdf
     <button>
     <a href="http://www.facebook.com"> <text>FACE BOOK</text></a>
     </button>
