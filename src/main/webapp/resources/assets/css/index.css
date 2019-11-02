@@ -1,0 +1,20 @@
+.main {
+    width: 80%;
+    padding-right: 60px;
+    padding-left: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    vertical-align: middle;
+}
+
+.lg-title {
+    font-size: 8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: -0.3rem;
+}
+
+.lg-subtitle {
+    font-size: 1rem;
+    text-align: center;
+}
