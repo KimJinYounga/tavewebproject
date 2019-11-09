@@ -1,0 +1,51 @@
+div.gallery {
+    margin: auto;
+    border: 1% solid #ccc;
+    
+    width: 18%;
+    display:inline-block; *display:inline; zoom:1;
+
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+    display : inline-block;
+}
+
+div.gallery img {
+    width: 90%;
+    height: 50%;
+    display : flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+div.desc {
+    padding: 1rem;
+    text-align: center;
+    display : flex;
+    
+}
+
+div.gallerymain{
+    width : 80%;
+    height: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #ffffff;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    padding-left: 9rem;
+    padding-right: 9rem;
+    border-radius: 2%;
+    text-align:center;
+}
+
