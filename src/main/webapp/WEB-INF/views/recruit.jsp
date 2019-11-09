@@ -42,7 +42,7 @@
             <div class="container">
                 <!-- logo -->
                 <div class="ml-6">
-                    <a href="index.html">
+                    <a href="index.jsp">
                         <img class="navbar-brand-img" src="${pageContext.request.contextPath}/assets/img/white.png">
                     </a>
                 </div>
@@ -50,16 +50,16 @@
                 <div class="nav-menu">
                     <ul class="nav-text">
                         <li>
-                            <a href="about.html" class="btn w-text mr-5 ">ABOUT</a>
+                            <a href="about.jsp" class="btn w-text mr-5 ">ABOUT</a>
                         </li>
                         <li>
-                            <a href="recruit.html" class="btn w-text mr-5 ml-5">RECRUIT</a>
+                            <a href="recruit.jsp" class="btn w-text mr-5 ml-5">RECRUIT</a>
                         </li>
                         <li>
-                            <a href="activity.html" class="btn w-text mr-5 ml-5">ACTIVITY</a>
+                            <a href="activity.jsp" class="btn w-text mr-5 ml-5">ACTIVITY</a>
                         </li>
                         <li>
-                            <a href="qna.html" class="btn w-text ml-5">Q&A</a>
+                            <a href="qna.jsp" class="btn w-text ml-5">Q&A</a>
                         </li>
                     </ul>
                 </div>
@@ -131,7 +131,7 @@
             </div>
 
             <div style="text-align: center;">
-                <a href="YBform.jsp" class="btn btn-fill w-text mt-6">지원하기</a>
+                <a href="${pageContext.request.contextPath}/WEB-INF/views/YBform.jsp" class="btn btn-fill w-text mt-6">지원하기</a>
             </div>
 
         </div>
