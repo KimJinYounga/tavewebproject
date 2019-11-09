@@ -10,101 +10,67 @@
     <!-- CSS FILE -->
     <!-- 전체 공통: base.css  /  해당 페이지: 페이지이름.css -->
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/base.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/assets/css/index.css">
-    <link rel="stylesheet" type = text/css href="${pageContext.request.contextPath}/assets/css/sidebar.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/index.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/sidebar.css">
 </head>
-        <body>
-                <div class="container">
-                        <!-- navbar -->
-                        <nav class="navbar">
-                            <div class="container">r
-                                <!-- logo -->
-                                <a class="navbar-brand col-1 mr-auto ml-auto" href="index.html">
-                                    <img class="navbar-brand-img mt-2 ml-1" src="${pageContext.request.contextPath}/assets/img/2.jpg">
-                                </a>
-                                <!-- menu -->
-                                <div class="container nav-menu col-7">
-                                    <a href="about.html" class="btn mr-5 ">ABOUT</a>
-                                    <a href="recruit.html" class="btn mr-5 ml-5">RECRUIT</a>
-                                    <a href="activity.html" class="btn mr-5 ml-5">ACTIVITY</a>
-                                    <a href="qna.html" class="btn ml-5">Q&A</a>
-                                </div>
-                                <!-- 페북, 블로그 아이콘 -->
-                                <div>
-                                </div>
-                            </div>
-                        </nav>
-                    </div>
-            <header>
-              <div class="header_inner">
-                <div class="header_wrap">
-                  <nav>
-                     <ul class="gnb">
-                     <li>
-                        <h3><a href="#">메인메뉴1</a></h3>
-                        <ul>
-                           <li><a href="#">서브메뉴1</a></li>
-                           <li><a href="#">서브메뉴2</a></li>
-                           <li><a href="#">서브메뉴3</a></li>
-                        </ul>
-                     </li>
-                     <li>
-                        <h3><a href="#">메인메뉴2</a></h3>
-                        <ul>
-                           <li><a href="#">서브메뉴1</a></li>
-                           <li><a href="#">서브메뉴2</a></li>
-                           <li><a href="#">서브메뉴3</a></li>
-                        </ul>
-                     </li>  
-                     <li>
-                        <h3><a href="#">메인메뉴3</a></h3>
-                        <ul>
-                           <li><a href="#">서브메뉴1</a></li>
-                           <li><a href="#">서브메뉴2</a></li>
-                           <li><a href="#">서브메뉴3</a></li>
-                        </ul>
-                     </li>
-                     <li>
-                        <h3><a href="#">메인메뉴4</a></h3>
-                        <ul>
-                           <li><a href="#">서브메뉴1</a></li>
-                           <li><a href="#">서브메뉴2</a></li>
-                           <li><a href="#">서브메뉴3</a></li>
-                        </ul>
-                     </li>  
-                  </ul>
-                  </nav>
-               </div>
-             </div>
-        </header>
 
-        <script src="${pageContext.request.contextPath}/assets/js/jquery-3.3.1.js"></script>
-    <script src="${pageContext.request.contextPath}/assets/js/motion.js"></script>
-    </body>
-</html>
-<!--
 <body>
     <div class="container">
-        !-- navbar --
+        <!-- navbar -->
         <nav class="navbar">
             <div class="container">
-                !-- logo --
+                <!-- logo -->
                 <a class="navbar-brand col-1 mr-auto ml-auto" href="index.jsp">
-                    <img class="navbar-brand-img mt-2 ml-1" src="../../resources/assets/img/2.jpg">
+                    <img class="navbar-brand-img mt-2 ml-1" src="${pageContext.request.contextPath}/assets/img/2.jpg">
                 </a>
-                !-- menu --
+                <!-- menu -->
                 <div class="container nav-menu col-7">
-                    <a href="about.html" class="btn mr-5 ">ABOUT</a>
-                    <a href="recruit.html" class="btn mr-5 ml-5">RECRUIT</a>
-                    <a href="activity.html" class="btn mr-5 ml-5">ACTIVITY</a>
-                    <a href="qna.html" class="btn ml-5">Q&A</a>
+                    <a href="about.jsp" class="btn mr-5 ">ABOUT</a>
+                    <a href="recruit.jsp" class="btn mr-5 ml-5">RECRUIT</a>
+                    <a href="activity.jsp" class="btn mr-5 ml-5">ACTIVITY</a>
+                    <a href="qna.jsp" class="btn ml-5">Q&A</a>
                 </div>
-                !-- 페북, 블로그 아이콘 --
+                <!-- 페북, 블로그 아이콘 -->
                 <div>
                 </div>
             </div>
         </nav>
-        !-- content --
+
+        <!-- sidebar-->
+        <div class="aside">
+            <nav>
+                <ul class="gnb">
+                    <li>
+                        <h3><a>ABOUT</a></h3>
+                        <ul>
+                            <li><a>TAVE 소개</a></li>
+                            <li><a>운영진 소개</a></li>
+                            <li><a>TAVE 연혁</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3><a>RECRUIT</a></h3>
+                        <ul>
+                            <li><a>지원하기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3><a>ACTIVITY</a></h3>
+                        <ul>
+                            <li><a>활동사진</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3><a>Q&A</a></h3>
+                        <ul>
+                            <li><a>자주 묻는 질문</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- content -->
         <div class="container">
             <div class="main">
                 <p class="lg-title">ABOUT</p>
@@ -112,4 +78,10 @@
             </div>
         </div>
     </div>
--->
+
+    <script src="${pageContext.request.contextPath}/assets/js/jquery-3.3.1.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/js/motion.js"></script>
+
+</body>
+
+</html>

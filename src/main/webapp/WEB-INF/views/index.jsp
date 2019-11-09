@@ -9,9 +9,9 @@
 
     <!-- CSS FILE -->
     <!-- 전체 공통: base.css  /  해당 페이지: 페이지이름.css -->
-    <link rel="stylesheet" href="../../resources/assets/css/base.css">
-    <link rel="stylesheet" href="../../resources/assets/css/index.css">
-
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/base.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/index.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/sidebar.css">
 </head>
 
 <body>
@@ -21,7 +21,7 @@
             <div class="container">
                 <!-- logo -->
                 <a class="navbar-brand col-1 mr-auto ml-auto" href="index.jsp">
-                    <img class="navbar-brand-img mt-2 ml-1" src="../../resources/assets/img/2.jpg">
+                    <img class="navbar-brand-img mt-2 ml-1" src="${pageContext.request.contextPath}/assets/img/2.jpg">
                 </a>
                 <!-- menu -->
                 <div class="container nav-menu col-7">
