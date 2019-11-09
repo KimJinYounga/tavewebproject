@@ -9,8 +9,8 @@
     
         <!-- CSS FILE -->
         <!-- 전체 공통: base.css  /  해당 페이지: 페이지이름.css -->
-        <link rel="stylesheet" href="../../resources/assets/css/base.css">
-        <link rel="stylesheet" href="../../resources/assets/css/index.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/base.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/index.css">
     
     </head>
     
