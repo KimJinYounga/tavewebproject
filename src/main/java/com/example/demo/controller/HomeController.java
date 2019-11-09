@@ -43,4 +43,9 @@ public class HomeController {
     public String viewRecruitPage() {
         return "recruit";
     }
+
+    @RequestMapping("/YBform")
+    public String viewYBformPage() {
+        return "YBform";
+    }
 }
