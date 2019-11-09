@@ -26,10 +26,10 @@
                 </a>
                 <!-- menu -->
                 <div class="container nav-menu col-7">
-                    <a href="about.jsp" class="btn mr-5 ">ABOUT</a>
-                    <a href="recruit.jsp" class="btn mr-5 ml-5">RECRUIT</a>
-                    <a href="activity.jsp" class="btn mr-5 ml-5">ACTIVITY</a>
-                    <a href="qna.jsp" class="btn ml-5">Q&A</a>
+                    <a href="${pageContext.request.contextPath}/WEB-INF/views/about.jsp" class="btn mr-5 ">ABOUT</a>
+                    <a href="${pageContext.request.contextPath}/WEB-INF/views/recruit.jsp" class="btn mr-5 ml-5">RECRUIT</a>
+                    <a href="${pageContext.request.contextPath}/WEB-INF/views/activity.jsp" class="btn mr-5 ml-5">ACTIVITY</a>
+                    <a href="${pageContext.request.contextPath}/WEB-INF/views/qna.jsp" class="btn ml-5">Q&A</a>
                 </div>
                 <!-- 페북, 블로그 아이콘 -->
                 <div>
@@ -122,6 +122,9 @@
 
     </div>
 
+
+    <script src="${pageContext.request.contextPath}/assets/js/jquery-3.3.1.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/js/motion.js"></script>
 </body>
 
 </html>

@@ -46,6 +46,8 @@
         </div>
     </div>
 
+    <script src="${pageContext.request.contextPath}/assets/js/jquery-3.3.1.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/js/motion.js"></script>
 </body>
 
 </html>
