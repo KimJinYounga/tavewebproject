@@ -20,7 +20,7 @@
         <nav class="navbar">
             <div class="container">
                 <!-- logo -->
-                <a class="navbar-brand col-1 mr-auto ml-auto" href="index.jsp">
+                <a class="navbar-brand col-1 mr-auto ml-auto" href="index">
                     <img class="navbar-brand-img mt-2 ml-1" src="${pageContext.request.contextPath}/assets/img/2.jpg">
                 </a>
                 <!-- menu -->
