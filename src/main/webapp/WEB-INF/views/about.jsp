@@ -25,10 +25,10 @@
                 </a>
                 <!-- menu -->
                 <div class="container nav-menu col-7">
-                    <a href="about.jsp" class="btn mr-5 ">ABOUT</a>
-                    <a href="recruit.jsp" class="btn mr-5 ml-5">RECRUIT</a>
-                    <a href="activity.jsp" class="btn mr-5 ml-5">ACTIVITY</a>
-                    <a href="qna.jsp" class="btn ml-5">Q&A</a>
+                    <a href="about" class="btn mr-5 ">ABOUT</a>
+                    <a href="recruit" class="btn mr-5 ml-5">RECRUIT</a>
+                    <a href="activity" class="btn mr-5 ml-5">ACTIVITY</a>
+                    <a href="qna" class="btn ml-5">Q&A</a>
                 </div>
                 <!-- 페북, 블로그 아이콘 -->
                 <div>
