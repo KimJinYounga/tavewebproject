@@ -10,12 +10,12 @@
 
     <!-- CSS FILE -->
     <!-- 전체 공통: base.css  /  해당 페이지: 페이지이름.css -->
-    <link rel="stylesheet" href="../../resources/assets/css/base.css">
-    <link rel="stylesheet" href="../../resources/assets/css/index.css">
-    <link rel="stylesheet" href="../../resources/assets/css/recruit.css">
-    <link rel="stylesheet" type=text/css href="../../resources/assets/css/sidebar.css">
-    <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
-    <script src="../../resources/assets/js/motion.js"></script>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/base.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/index.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/recruit.css">
+    <link rel="stylesheet" type=text/css href="${pageContext.request.contextPath}/assets/css/sidebar.css">
+   
+    <script src="${pageContext.request.contextPath}/assets/js/motion.js"></script>
 
     <!-- Icon -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -42,7 +42,7 @@
             <div class="container">
                 <!-- logo -->
                 <div class="ml-6">
-                    <a href="index.html">
+                    <a href="index.jsp">
                         <img class="navbar-brand-img" src="${pageContext.request.contextPath}/img/white.png">
                     </a>
                 </div>
@@ -50,16 +50,16 @@
                 <div class="nav-menu">
                     <ul class="nav-text">
                         <li>
-                            <a href="about.html" class="btn w-text mr-5 ">ABOUT</a>
+                            <a href="about.jsp" class="btn w-text mr-5 ">ABOUT</a>
                         </li>
                         <li>
-                            <a href="recruit.html" class="btn w-text mr-5 ml-5">RECRUIT</a>
+                            <a href="recruit.jsp" class="btn w-text mr-5 ml-5">RECRUIT</a>
                         </li>
                         <li>
-                            <a href="activity.html" class="btn w-text mr-5 ml-5">ACTIVITY</a>
+                            <a href="activity.jsp" class="btn w-text mr-5 ml-5">ACTIVITY</a>
                         </li>
                         <li>
-                            <a href="qna.html" class="btn w-text ml-5">Q&A</a>
+                            <a href="qna.jsp" class="btn w-text ml-5">Q&A</a>
                         </li>
                     </ul>
                 </div>

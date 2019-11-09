@@ -20,15 +20,15 @@
             <nav class="navbar">
                 <div class="container">
                     <!-- logo -->
-                    <a class="navbar-brand col-1 mr-auto ml-auto" href="index.html">
+                    <a class="navbar-brand col-1 mr-auto ml-auto" href="index.jsp">
                         <img class="navbar-brand-img mt-2 ml-1" src="../../resources/assets/img/2.jpg">
                     </a>
                     <!-- menu -->
                     <div class="container nav-menu col-7">
-                        <a href="about.html" class="btn mr-5 ">ABOUT</a>
-                        <a href="recruit.html" class="btn mr-5 ml-5">RECRUIT</a>
-                        <a href="activity.html" class="btn mr-5 ml-5">ACTIVITY</a>
-                        <a href="qna.html" class="btn ml-5">Q&A</a>
+                        <a href="about.jsp" class="btn mr-5 ">ABOUT</a>
+                        <a href="recruit.jsp" class="btn mr-5 ml-5">RECRUIT</a>
+                        <a href="activity.jsp" class="btn mr-5 ml-5">ACTIVITY</a>
+                        <a href="qna.jsp" class="btn ml-5">Q&A</a>
                     </div>
                     <!-- 페북, 블로그 아이콘 -->
                     <div>                 
