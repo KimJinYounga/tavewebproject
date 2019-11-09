@@ -49,16 +49,16 @@
                 <div class="nav-menu">
                     <ul class="nav-text">
                         <li>
-                            <a href="about.jsp" class="btn w-text mr-5 ">ABOUT</a>
+                            <a href="about" class="btn w-text mr-5 ">ABOUT</a>
                         </li>
                         <li>
-                            <a href="recruit.jsp" class="btn w-text mr-5 ml-5">RECRUIT</a>
+                            <a href="recruit" class="btn w-text mr-5 ml-5">RECRUIT</a>
                         </li>
                         <li>
-                            <a href="activity.jsp" class="btn w-text mr-5 ml-5">ACTIVITY</a>
+                            <a href="activity" class="btn w-text mr-5 ml-5">ACTIVITY</a>
                         </li>
                         <li>
-                            <a href="qna.jsp" class="btn w-text ml-5">Q&A</a>
+                            <a href="qna" class="btn w-text ml-5">Q&A</a>
                         </li>
                     </ul>
                 </div>
