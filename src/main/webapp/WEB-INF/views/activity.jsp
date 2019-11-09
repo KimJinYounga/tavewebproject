@@ -26,10 +26,10 @@
                 </a>
                 <!-- menu -->
                 <div class="container nav-menu col-7">
-                    <a href="${pageContext.request.contextPath}/WEB-INF/views/about.jsp" class="btn mr-5 ">ABOUT</a>
-                    <a href="${pageContext.request.contextPath}/WEB-INF/views/recruit.jsp" class="btn mr-5 ml-5">RECRUIT</a>
-                    <a href="${pageContext.request.contextPath}/WEB-INF/views/activity.jsp" class="btn mr-5 ml-5">ACTIVITY</a>
-                    <a href="${pageContext.request.contextPath}/WEB-INF/views/qna.jsp" class="btn ml-5">Q&A</a>
+                    <a href="${pageContext.request.contextPath}/about" class="btn mr-5 ">ABOUT</a>
+                    <a href="${pageContext.request.contextPath}/recruit" class="btn mr-5 ml-5">RECRUIT</a>
+                    <a href="${pageContext.request.contextPath}/activity" class="btn mr-5 ml-5">ACTIVITY</a>
+                    <a href="${pageContext.request.contextPath}/qna" class="btn ml-5">Q&A</a>
                 </div>
                 <!-- 페북, 블로그 아이콘 -->
                 <div>
