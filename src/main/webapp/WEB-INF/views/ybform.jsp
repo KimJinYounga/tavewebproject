@@ -49,16 +49,16 @@
                 <div class="nav-menu">
                     <ul class="nav-text">
                         <li>
-                            <a href="about" class="btn w-text mr-5 ">ABOUT</a>
+                            <a href="../about" class="btn w-text mr-5 ">ABOUT</a>
                         </li>
                         <li>
-                            <a href="recruit" class="btn w-text mr-5 ml-5">RECRUIT</a>
+                            <a href="../recruit" class="btn w-text mr-5 ml-5">RECRUIT</a>
                         </li>
                         <li>
-                            <a href="activity" class="btn w-text mr-5 ml-5">ACTIVITY</a>
+                            <a href="../activity" class="btn w-text mr-5 ml-5">ACTIVITY</a>
                         </li>
                         <li>
-                            <a href="qna" class="btn w-text ml-5">Q&A</a>
+                            <a href="../qna" class="btn w-text ml-5">Q&A</a>
                         </li>
                     </ul>
                 </div>
@@ -96,7 +96,7 @@
             </div>
 
             <div class="mt-6">
-                <form role="form" name="formYB" method="POST" action="/applyYB">
+                <form role="form" name="applyForm" method="POST" action="/apply">
 
                     <!-- 이름 -->
                     <h4 class="ml-2 rec-sub">이름</h4>

@@ -5,6 +5,7 @@ import com.example.demo.service.userService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
@@ -16,7 +17,7 @@ public class HomeController {
     @Autowired
     userService userService;
 
-    @RequestMapping("/index")
+    @GetMapping("/index")
     public String viewIndexPage() {
         List<user> li=userService.findAll();
         log.info("===========");
@@ -24,28 +25,23 @@ public class HomeController {
         return "index";
     }
 
-    @RequestMapping("/about")
+    @GetMapping("/about")
     public String viewAboutPage() {
         return "about";
     }
 
-    @RequestMapping("/activity")
+    @GetMapping("/activity")
     public String viewActivityPage() {
         return "activity";
     }
 
-    @RequestMapping("/qna")
+    @GetMapping("/qna")
     public String viewQnaPage() {
         return "qna";
     }
 
-    @RequestMapping("/recruit")
+    @GetMapping("/recruit")
     public String viewRecruitPage() {
         return "recruit";
-    }
-
-    @RequestMapping("/YBform")
-    public String viewYBformPage() {
-        return "YBform";
     }
 }
