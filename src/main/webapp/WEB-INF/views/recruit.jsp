@@ -127,7 +127,7 @@
 
             <div style="text-align: center;">
                 <form method="GET" action="recruit/ybform" accept-charset="UTF-8">
-                    <input type="submit" class="btn btn-fill w-text mt-6" value="apply">
+                    <input type="submit" class="btn btn-fill w-text mt-6" value="지원하기">
                 </form>
             </div>
 

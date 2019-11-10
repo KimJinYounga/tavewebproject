@@ -11,7 +11,7 @@ import java.io.Serializable;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class user implements Serializable {
+public class User implements Serializable {
 //    private static final long serialVersionUID=1L;
 
     @Id
@@ -35,7 +35,7 @@ public class user implements Serializable {
     private String gender;
 
 
-    public user(int phone_number, int id) {
+    public User(int phone_number, int id) {
         this.phone_number=phone_number;
         this.id=id;
     }

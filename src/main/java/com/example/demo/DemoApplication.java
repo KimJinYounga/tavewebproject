@@ -1,6 +1,5 @@
 package com.example.demo;
 
-import com.example.demo.model.user;
 import com.example.demo.repository.userRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;

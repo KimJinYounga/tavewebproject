@@ -1,6 +1,6 @@
 package com.example.demo.service;
 
-import com.example.demo.model.user;
+import com.example.demo.model.User;
 import com.example.demo.repository.userRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,21 +13,21 @@ public class userServicelmpl implements userService {
     private userRepository userRepository;
 
     @Override
-    public List<user> findAll() {
-        List<user> users=userRepository.findAll();
-        return users;
+    public List<User> findAll() {
+        List<User> Users =userRepository.findAll();
+        return Users;
     }
 
 
     @Override
-    public user save(user emp) {
+    public User save(User emp) {
         userRepository.save(emp);
         return emp;
     }
 
     @Override
-    public user findByName(String name) {
-        user usr=userRepository.findByName(name);
+    public User findByName(String name) {
+        User usr=userRepository.findByName(name);
         return usr;
     }
 

@@ -1,14 +1,17 @@
 package com.example.demo.controller;
 
-import com.example.demo.model.user;
+import com.example.demo.model.ApplyForm;
+import com.example.demo.model.User;
 import com.example.demo.service.userService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
+import java.util.Locale;
 
 @Slf4j
 @Controller
@@ -17,9 +20,12 @@ public class HomeController {
     @Autowired
     userService userService;
 
+    @Autowired
+    MessageSource messageSource;
+
     @GetMapping("/index")
     public String viewIndexPage() {
-        List<user> li=userService.findAll();
+        List<User> li=userService.findAll();
         log.info("===========");
         log.info(li.toString());
         return "index";
@@ -41,7 +47,20 @@ public class HomeController {
     }
 
     @GetMapping("/recruit")
-    public String viewRecruitPage() {
+    public String getRecruitPage() {
         return "recruit";
+    }
+
+    @PostMapping("/apply")
+    public String applyNewMember(ApplyForm applyForm) {
+        // JPA로 데이터 입력
+
+        // model 객체를 통해 form 데이터 가져오기
+        String name = applyForm.getName();
+        String phone = applyForm.getPhone();
+        String introduceMyself = applyForm.getIntroduceMyself();
+        String motive = applyForm.getMotive();
+        Boolean isAgreePersonalInformationCollection = applyForm.getIsAgreePersonalInformationCollection();
+        return "index";
     }
 }

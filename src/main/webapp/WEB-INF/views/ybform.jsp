@@ -14,8 +14,6 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/recruit.css">
     <link rel="stylesheet" type=text/css href="${pageContext.request.contextPath}/assets/css/sidebar.css">
 
-
-
     <!-- Icon -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -120,20 +118,20 @@
                     <h4 class="ml-2 rec-sub">자기소개</h4>
                     <div class="form-group">
                         <textarea rows="4" class="form-control form-control-alternative"
-                            placeholder="A few words about you ..."></textarea>
+                            placeholder="A few words about you ..." name="introduceMyself" id="introduceMyself"></textarea>
                     </div>
 
                     <!-- 지원동기 -->
                     <h4 class="ml-2 rec-sub">지원동기</h4>
                     <div class="form-group">
                         <textarea rows="4" class="form-control form-control-alternative"
-                            placeholder="A few words about you ..."></textarea>
+                            placeholder="A few words about you ..." name="motive" id="motive"></textarea>
                     </div>
 
 
                     <!-- 정책동의 -->
                     <div>
-                        <input type="checkbox" required>
+                        <input type="checkbox" name="isAgreePersonalInformationCollection" id="isAgreePersonalInformationCollection" required>
                         <span><a href="#!">개인정보수집</a>에 동의합니다.</span>
                     </div>
 

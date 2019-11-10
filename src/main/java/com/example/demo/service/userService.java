@@ -1,11 +1,11 @@
 package com.example.demo.service;
 
-import com.example.demo.model.user;
+import com.example.demo.model.User;
 
 import java.util.List;
 
 public interface userService {
-    List<user> findAll();
-    user save(user emp);
-    user findByName(String name);
+    List<User> findAll();
+    User save(User emp);
+    User findByName(String name);
 }
