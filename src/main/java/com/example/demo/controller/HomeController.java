@@ -7,8 +7,10 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 import java.util.Locale;
@@ -52,9 +54,16 @@ public class HomeController {
     }
 
     @PostMapping("/apply")
-    public String applyNewMember(ApplyForm applyForm) {
-        // JPA로 데이터 입력
+    public String applyNewMember(Model model,
+                                 @RequestParam(value="name", required=false)String name,
+                                 @RequestParam(value="phone", required=false)String phone,
+                                 @RequestParam(value="introduceMyself", required=false)String introduceMyself,
+                                 @RequestParam(value="motive", required=false)String motive) {
 
+        log.info("name="+name);
+        log.info("phone=" + phone);
+        log.info("introduceMyself=" + introduceMyself);
+        log.info("motive=" + motive);
         // model 객체를 통해 form 데이터 가져오기
 //        String name = applyForm.getName();
 //        String phone = applyForm.getPhone();

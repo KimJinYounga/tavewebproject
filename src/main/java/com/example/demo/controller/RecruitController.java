@@ -14,7 +14,7 @@ public class RecruitController {
 
     @GetMapping("/ybform")
     public String viewYB_Form() {
-        System.out.println("가입 요청이 들어왔습니다.");
+        System.out.println("ybform page.");
         return "ybform";
     }
 }

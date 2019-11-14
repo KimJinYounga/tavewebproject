@@ -34,7 +34,6 @@ public class User implements Serializable {
     @Column
     private String gender;
 
-
     public User(int phone_number, int id) {
         this.phone_number=phone_number;
         this.id=id;
