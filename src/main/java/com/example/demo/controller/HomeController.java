@@ -56,11 +56,11 @@ public class HomeController {
         // JPA로 데이터 입력
 
         // model 객체를 통해 form 데이터 가져오기
-        String name = applyForm.getName();
-        String phone = applyForm.getPhone();
-        String introduceMyself = applyForm.getIntroduceMyself();
-        String motive = applyForm.getMotive();
-        Boolean isAgreePersonalInformationCollection = applyForm.getIsAgreePersonalInformationCollection();
+//        String name = applyForm.getName();
+//        String phone = applyForm.getPhone();
+//        String introduceMyself = applyForm.getIntroduceMyself();
+//        String motive = applyForm.getMotive();
+//        Boolean isAgreePersonalInformationCollection = applyForm.getIsAgreePersonalInformationCollection();
         return "index";
     }
 }
