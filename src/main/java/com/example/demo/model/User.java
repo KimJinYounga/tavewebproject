@@ -12,27 +12,26 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 public class User implements Serializable {
-//    private static final long serialVersionUID=1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="phone_number")
-    private Integer phone_number;
-
     @Column(name="id")
     private Integer id;
 
-    @Column
+    @Column(name="phone_number")
+    private Integer phone_number;
+
+    @Column(name="name")
     private String name;
 
-    @Column
+    @Column(name="age")
     private Integer age;
 
-//    @Column
-//    private Integer cardinalNumber;
-
-    @Column
+    @Column(name="gender")
     private String gender;
+
+    @Column(name="isAuth")
+    private Boolean isAuth;
 
     public User(int phone_number, int id) {
         this.phone_number=phone_number;
