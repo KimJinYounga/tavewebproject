@@ -30,8 +30,8 @@ public class User implements Serializable {
     @Column(name="gender")
     private String gender;
 
-    @Column(name="isAuth")
-    private Boolean isAuth;
+    @Column(name="isauth")
+    private Integer isauth;
 
     public User(int phone_number, int id) {
         this.phone_number=phone_number;

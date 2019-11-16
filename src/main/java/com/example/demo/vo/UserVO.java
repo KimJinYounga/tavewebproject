@@ -10,6 +10,6 @@ public class UserVO {
     private int id;
     private String name;
     private int age;
-//    private int cardinalNumber;
+    private int isauth;
     private String gender;
 }

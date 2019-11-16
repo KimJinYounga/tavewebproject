@@ -8,11 +8,10 @@ import lombok.Setter;
 public class ApplyFormVO {
     private String name;
 
-    private String phone;
+    private Integer phone;
 
     private String introduceMyself;
 
     private String motive;
 
-    private Boolean isAgreePersonalInformationCollection;
 }

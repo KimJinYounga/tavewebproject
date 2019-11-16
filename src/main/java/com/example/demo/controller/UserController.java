@@ -20,10 +20,9 @@ public class UserController {
 
     @GetMapping("/index")
     public String viewIndexPage() {
-//        List<User> li= userService.findAll();
-////        log.info("===========");
-////        log.info(li.toString());
-//        System.out.println(li);
+        List<User> li= userService.findAll();
+        log.info("===========");
+        log.info(li.toString());
         return "index";
     }
 

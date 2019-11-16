@@ -1,29 +1,29 @@
 package com.example.demo.model;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
-import javax.persistence.Column;
+import javax.persistence.*;
 
+@Entity
+@Table(name="\"apply\"")
 @Getter
 @Setter
+@Data
 @AllArgsConstructor
+@NoArgsConstructor
 public class ApplyForm {
     @Column
     private String name;
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
-    private String phone;
+    private Integer phone;
 
     @Column
     private String introduceMyself;
 
     @Column
     private String motive;
-
-    @Column
-    private Boolean isAgreePersonalInformationCollection;
 
 }
