@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
-        /* nav section style */
         .divgroup {
             text-align: center;
         }
@@ -25,12 +24,10 @@
         .divmiddle {
             display: inline-block;
             vertical-align: middle;
-            widows: 100%;
+            windows: 100%;
         }
     </style>
-
 </head>
-
 <body>
     <div class="container">
         <!-- navbar -->
@@ -80,13 +77,10 @@
                 </div>
             </div>
         </nav>
-
         <!-- content -->
-
         <div class="container">
             <div class="tablebox">
                 <table class="table">
-
                     <thead>
                         <tr>
                             <th>no.</th>
@@ -95,7 +89,7 @@
                             <th>작성일</th>
                         </tr>
                     </thead>
-                    
+
                     <tbody>
                         <tr>
                             <td>1</td>
@@ -110,7 +104,6 @@
                             <td>2019-11-15</td>
                         </tr>
                     </tbody>
-
                 </table>
 
                 <div style="text-align: center;">

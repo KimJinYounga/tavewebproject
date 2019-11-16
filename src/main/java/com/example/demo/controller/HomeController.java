@@ -27,9 +27,9 @@ public class HomeController {
 
     @GetMapping("/index")
     public String viewIndexPage() {
-        List<User> li=userService.findAll();
-        log.info("===========");
-        log.info(li.toString());
+//        List<User> li=userService.findAll();
+//        log.info("===========");
+//        log.info(li.toString());
         return "index";
     }
 
