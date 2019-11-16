@@ -16,7 +16,6 @@ public class ApplyForm {
     private String name;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
     private Integer phone;
 
