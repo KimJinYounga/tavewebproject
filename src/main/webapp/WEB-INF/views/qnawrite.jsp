@@ -174,7 +174,7 @@
 
                         </form>
 
-                        <form role="form" method="POST" action="qna.jsp">
+                        <form role="form" method="GET" action="/qna">
                             <button class="btn btn-fill mt-6" type="submit">취소</button>
                         </form>
                     </table>
