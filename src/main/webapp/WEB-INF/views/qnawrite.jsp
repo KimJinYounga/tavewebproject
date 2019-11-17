@@ -31,14 +31,11 @@
             vertical-align: middle;
             widows: 100%;
         }
-    </style>
 
-    <!-- <script>
-        function goSubmit() {
-            var formQNA = document.formQNA;
-            formQNA.submit();
+        .firstcol {
+            padding: 0;
         }
-    </script> -->
+    </style>
 
 </head>
 
@@ -100,31 +97,31 @@
                 </div>
 
                 <div class="mt-6">
-                    <table class="questionform ml-auto mr-auto">
+                    <table class="ml-auto mr-auto" width="90%">
                         <form role="form" name="formQNA" method="POST" action="/write">
 
                             <tr>
-                                <td>
+                                <td class="firstcol">
                                     <h4 class="rec-sub">제목</h4>
                                 </td>
-                                <td>
+                                <td class="secondcol">
                                     <div class="form-group">
                                         <div class="input-group input-group-alternative">
-                                            <input class="form-control" type="text" placeholder="title" name="title"
-                                                id="questiontitle" required>
+                                            <input class="form-control secondcol" type="text" placeholder="title"
+                                                name="questiontitle" id="questiontitle" required>
                                         </div>
                                     </div>
                                 </td>
                             </tr>
 
                             <tr>
-                                <td>
+                                <td class="firstcol">
                                     <h4 class="rec-sub">작성자</h4>
                                 </td>
-                                <td>
+                                <td class="secondcol">
                                     <div class="form-group">
                                         <div class="input-group input-group-alternative">
-                                            <input class="form-control" type="text" placeholder="nickname" name="name"
+                                            <input class="form-control" type="text" placeholder="nickname" name="nick"
                                                 id="nick" required>
                                         </div>
                                     </div>
@@ -133,26 +130,26 @@
 
 
                             <tr>
-                                <td>
+                                <td class="firstcol">
                                     <h4 class="rec-sub">내용</h4>
                                 </td>
-                                <td>
-                                    <div class="form-group">
-                                        <textarea rows="3" class="form-control form-control-alternative" name="content"
+                                <td class="secondcol">
+                                    <div class="form-group" style="padding-right: 2rem;">
+                                        <textarea rows="4" class="form-control form-control-alternative"
                                             placeholder="A few words about you ..."></textarea>
                                     </div>
                                 </td>
                             </tr>
 
                             <tr>
-                                <td>
+                                <td class="firstcol">
                                     <h4 class="rec-sub">비밀번호</h4>
                                 </td>
-                                <td>
+                                <td class="secondcol">
                                     <div class="form-group">
                                         <div class="input-group input-group-alternative">
-                                            <input class="form-control" type="password" placeholder="password"
-                                                name="password" id="questionPW" required>
+                                            <input class="form-control" type="text" placeholder="password"
+                                                name="questionPW" id="questionPW" required>
                                         </div>
                                     </div>
                                 </td>
@@ -162,26 +159,17 @@
                                 <td colspan="2">
                                     <div style="text-align: center;">
                                         <button class="btn btn-fill mt-6" type="submit">저장</button>
-                                    </div>
-                                    <!-- <div>
-                                        <input type="button" onclick="javascript:history.back(-1)" value="취소"
-                                            class="btn btn-fill mt-6">
-                                        <input type="button" onclick="javascript:goSubmit();" value="확인"
-                                            class="btn btn-fill mt-6">
-                                    </div> -->
-                                </td>
-                            </tr>
 
                         </form>
 
-                        <form role="form" method="GET" action="/qna">
+                        <form role="form" method="GET" action="/qna" style="display: inline;">
                             <button class="btn btn-fill mt-6" type="submit">취소</button>
                         </form>
-                    </table>
                 </div>
+
+                </table>
             </div>
         </div>
-
     </div>
 
 </body>
