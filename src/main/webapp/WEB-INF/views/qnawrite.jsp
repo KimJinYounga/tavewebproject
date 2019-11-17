@@ -33,6 +33,13 @@
         }
     </style>
 
+    <!-- <script>
+        function goSubmit() {
+            var formQNA = document.formQNA;
+            formQNA.submit();
+        }
+    </script> -->
+
 </head>
 
 <body>
@@ -103,8 +110,8 @@
                                 <td>
                                     <div class="form-group">
                                         <div class="input-group input-group-alternative">
-                                            <input class="form-control" type="text" placeholder="title"
-                                                name="title" id="questiontitle" required>
+                                            <input class="form-control" type="text" placeholder="title" name="title"
+                                                id="questiontitle" required>
                                         </div>
                                     </div>
                                 </td>
@@ -131,8 +138,7 @@
                                 </td>
                                 <td>
                                     <div class="form-group">
-                                        <textarea rows="3" class="form-control form-control-alternative"
-                                                  name="content"
+                                        <textarea rows="3" class="form-control form-control-alternative" name="content"
                                             placeholder="A few words about you ..."></textarea>
                                     </div>
                                 </td>
@@ -156,11 +162,20 @@
                                 <td colspan="2">
                                     <div style="text-align: center;">
                                         <button class="btn btn-fill mt-6" type="submit">저장</button>
-                                        <button class="btn btn-fill mt-6" type="submit">취소</button>
                                     </div>
+                                    <!-- <div>
+                                        <input type="button" onclick="javascript:history.back(-1)" value="취소"
+                                            class="btn btn-fill mt-6">
+                                        <input type="button" onclick="javascript:goSubmit();" value="확인"
+                                            class="btn btn-fill mt-6">
+                                    </div> -->
                                 </td>
                             </tr>
 
+                        </form>
+
+                        <form role="form" method="POST" action="qna.jsp">
+                            <button class="btn btn-fill mt-6" type="submit">취소</button>
                         </form>
                     </table>
                 </div>
