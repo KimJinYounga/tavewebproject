@@ -3,15 +3,15 @@ package com.example.demo.model;
 import lombok.*;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "Notice")
 @Setter
 @Getter
 @Data
-public class Notice {
+public class Notice implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")

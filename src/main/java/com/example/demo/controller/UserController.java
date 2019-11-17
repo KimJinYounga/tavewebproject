@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
@@ -43,6 +44,26 @@ public class UserController {
 
     @GetMapping("/qna")
     public String viewQnaPage() {
+        return "qna";
+    }
+
+    @GetMapping("qna/qnawrite")
+    public String viewQnaWritePage() {
+        return "qnawrite";
+    }
+
+    @PostMapping("/qnawrite")
+    public String writeQna(Model model,
+                           @RequestParam(value = "title", required = true) String title,
+                           @RequestParam(value = "name", required = true) String name,
+                           @RequestParam(value = "content", required = true) String content,
+                           @RequestParam(value = "password", required = false) String password) {
+
+        log.info("title = " + title);
+        log.info("name = " + name);
+        log.info("content = " + content);
+        log.info("password = " + password);
+
         return "qna";
     }
 

@@ -3,15 +3,15 @@ package com.example.demo.model;
 import lombok.*;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
-@Table(name="\"apply\"")
 @Getter
 @Setter
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ApplyForm {
+public class ApplyForm implements Serializable {
     @Column
     private String name;
 
@@ -24,5 +24,4 @@ public class ApplyForm {
 
     @Column
     private String motive;
-
 }

@@ -94,7 +94,7 @@
 
                 <div class="mt-6">
                     <table class="questionform ml-auto mr-auto">
-                        <form role="form" name="formQNA" method="POST" action="/writeQ">
+                        <form role="form" name="formQNA" method="POST" action="/qnawrite">
 
                             <tr>
                                 <td>
@@ -104,7 +104,7 @@
                                     <div class="form-group">
                                         <div class="input-group input-group-alternative">
                                             <input class="form-control" type="text" placeholder="title"
-                                                name="questiontitle" id="questiontitle" required>
+                                                name="title" id="questiontitle" required>
                                         </div>
                                     </div>
                                 </td>
@@ -117,7 +117,7 @@
                                 <td>
                                     <div class="form-group">
                                         <div class="input-group input-group-alternative">
-                                            <input class="form-control" type="text" placeholder="nickname" name="nick"
+                                            <input class="form-control" type="text" placeholder="nickname" name="name"
                                                 id="nick" required>
                                         </div>
                                     </div>
@@ -132,6 +132,7 @@
                                 <td>
                                     <div class="form-group">
                                         <textarea rows="3" class="form-control form-control-alternative"
+                                                  name="content"
                                             placeholder="A few words about you ..."></textarea>
                                     </div>
                                 </td>
@@ -144,8 +145,8 @@
                                 <td>
                                     <div class="form-group">
                                         <div class="input-group input-group-alternative">
-                                            <input class="form-control" type="text" placeholder="password"
-                                                name="questionPW" id="questionPW" required>
+                                            <input class="form-control" type="password" placeholder="password"
+                                                name="password" id="questionPW" required>
                                         </div>
                                     </div>
                                 </td>
@@ -154,9 +155,8 @@
                             <tr>
                                 <td colspan="2">
                                     <div style="text-align: center;">
-                                        <button class="btn btn-fill mt-6" type="submit"
-                                            onclick="location='qna'">저장</button>
-                                        <button class="btn btn-fill mt-6" onclick="location='qna'">취소</button>
+                                        <button class="btn btn-fill mt-6" type="submit">저장</button>
+                                        <button class="btn btn-fill mt-6" type="submit">취소</button>
                                     </div>
                                 </td>
                             </tr>
