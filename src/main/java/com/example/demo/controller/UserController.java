@@ -47,12 +47,12 @@ public class UserController {
         return "qna";
     }
 
-    @GetMapping("qna/qnawrite")
+    @GetMapping("/qna/qnawrite")
     public String viewQnaWritePage() {
         return "qnawrite";
     }
 
-    @PostMapping("/qnawrite")
+    @PostMapping("/write")
     public String writeQna(Model model,
                            @RequestParam(value = "title", required = true) String title,
                            @RequestParam(value = "name", required = true) String name,

@@ -108,7 +108,7 @@
                 </table>
 
                 <div style="text-align: center;">
-                    <form method="GET" action="qna/qnawrite" accept-charset="UTF-8">
+                    <form method="GET" action="/qna/qnawrite" accept-charset="UTF-8">
                         <input type="submit" class="btn btn-fill mt-6" value="글쓰기">
                     </form>
             </div>

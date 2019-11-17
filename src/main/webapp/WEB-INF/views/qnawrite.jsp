@@ -94,7 +94,7 @@
 
                 <div class="mt-6">
                     <table class="questionform ml-auto mr-auto">
-                        <form role="form" name="formQNA" method="POST" action="/qnawrite">
+                        <form role="form" name="formQNA" method="POST" action="/write">
 
                             <tr>
                                 <td>
