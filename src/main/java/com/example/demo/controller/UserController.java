@@ -6,16 +6,17 @@ import com.example.demo.model.User;
 import com.example.demo.repository.ApplyFormRepository;
 import com.example.demo.repository.NoticeRepository;
 import com.example.demo.service.userService;
+import com.example.demo.vo.NoticeVO;
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import lombok.extern.slf4j.Slf4j;
+import org.aspectj.weaver.ast.Not;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.Collections;
 import java.util.List;
 
 @Controller
@@ -50,12 +51,29 @@ public class UserController {
 
     @GetMapping("/qna")
     public ModelAndView viewQnaPage() {
+        // ModelAndView에 /views에 생성된 qna.jsp 파일 path를 저장
         ModelAndView modelAndView = new ModelAndView("/qna");
-        List getAllNotice = this.notices.findAll();
-        System.out.println("notice : " + getAllNotice);
-        modelAndView.addObject(getAllNotice);
+
+        // DB Notice 테이블에 저장된 rows를  List(getAllNotice)에 저장
+        List notice = this.notices.findAll();
+
+        Notice allNotice = new Notice(1, "title", "kkkk", "kimdoyoung", "rrrrrr");
+        notice.add(allNotice);
+
+        // notice를 modelAndView에 저장하고 해당 객체를 response
+        modelAndView.addObject(notice);
+
         return modelAndView;
     }
+
+//    @GetMapping("/qna/qnaview/{id}")
+//    public String getQnaPage(@PathVariable("id") int noticeId, Model model) {
+//
+//        Notice notice = this.notices.findById(noticeId);
+//        model.put();
+//        modelAndView.addObject(notice);
+//        return modelAndView;
+//    }
 
     @GetMapping("/qna/qnawrite")
     public String viewQnaWritePage() {
@@ -64,10 +82,10 @@ public class UserController {
 
     @PostMapping("/write")
     public String writeQna(Model model,
-                           @RequestParam(value = "title", required = true) String title,
-                           @RequestParam(value = "name", required = true) String name,
+                           @RequestParam(value = "questiontitle", required = true) String title,
+                           @RequestParam(value = "nick", required = true) String name,
                            @RequestParam(value = "content", required = true) String content,
-                           @RequestParam(value = "password", required = false) String password) {
+                           @RequestParam(value = "questionPW", required = false) String password) {
 
         log.info("title = " + title);
         log.info("name = " + name);

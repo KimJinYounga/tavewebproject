@@ -15,7 +15,7 @@ public class Notice implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
-    private Integer uid;
+    private Integer id;
 
     @Column(name="title")
     private String title;

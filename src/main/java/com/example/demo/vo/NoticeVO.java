@@ -6,14 +6,13 @@ import lombok.Setter;
 @Getter
 @Setter
 public class NoticeVO {
-    private int uid;
-
+    private int id;
     private String title;
-
-    private String content;
-
     private String writer;
 
-    private String imageURL;
-
+    public NoticeVO(int id, String title, String writer) {
+        this.id = id;
+        this.title = title;
+        this.writer = writer;
+    }
 }
