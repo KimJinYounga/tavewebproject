@@ -1,8 +1,10 @@
 package com.example.demo.controller;
 
 import com.example.demo.model.ApplyForm;
+import com.example.demo.model.Notice;
 import com.example.demo.model.User;
 import com.example.demo.repository.ApplyFormRepository;
+import com.example.demo.repository.NoticeRepository;
 import com.example.demo.service.userService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +14,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 
@@ -23,6 +26,9 @@ public class UserController {
 
     @Autowired
     ApplyFormRepository applyFormRepository;
+
+    @Autowired
+    NoticeRepository notices;
 
     @GetMapping("/index")
     public String viewIndexPage() {
@@ -43,8 +49,12 @@ public class UserController {
     }
 
     @GetMapping("/qna")
-    public String viewQnaPage() {
-        return "qna";
+    public ModelAndView viewQnaPage() {
+        ModelAndView modelAndView = new ModelAndView("/qna");
+        List getAllNotice = this.notices.findAll();
+        System.out.println("notice : " + getAllNotice);
+        modelAndView.addObject(getAllNotice);
+        return modelAndView;
     }
 
     @GetMapping("/qna/qnawrite")
