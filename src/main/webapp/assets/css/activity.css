@@ -94,27 +94,16 @@
 }
 
 span.title {
+    font-size: 16px;
     display: block;
     position: absolute;
     bottom: 0;
-    width: 50%;
+    width: 100%;
     color: white;
     white-space: nowrap;
     padding: 20px;
-    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
-    /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0.65)), color-stop(100%, rgba(0, 0, 0, 0)));
-    /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
-    /* Opera 11.10+ */
-    background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
-    /* IE10+ */
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
-    /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000', GradientType=1);
-    /* IE6-9 */
+    background:  rgba(6, 9, 14, 0.6);
+    
 
 }
 
@@ -133,7 +122,7 @@ span.title {
     text-align: center;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.83);
     z-index: 999;
     opacity: 0;
     pointer-events: none;
