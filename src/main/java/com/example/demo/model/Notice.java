@@ -4,6 +4,8 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Entity
 @NoArgsConstructor
@@ -26,7 +28,9 @@ public class Notice implements Serializable {
     @Column(name="writer")
     private String writer;
 
-    @Column(name="imageURL")
-    private String imageURL;
+    @Column(name="password")
+    private String password;
 
+    @Column(name = "createdDate")
+    private LocalDate createdDate;
 }

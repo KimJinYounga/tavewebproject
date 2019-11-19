@@ -12,7 +12,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.view.RedirectView;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Controller
@@ -25,7 +28,7 @@ public class UserController {
     ApplyFormRepository applyFormRepository;
 
     @Autowired
-    NoticeRepository notices;
+    NoticeRepository noticeRepository;
 
     @GetMapping("/index")
     public String viewIndexPage() {
@@ -51,10 +54,7 @@ public class UserController {
         ModelAndView modelAndView = new ModelAndView("/qna");
 
         // DB Notice 테이블에 저장된 rows를  List(getAllNotice)에 저장
-        List notice = this.notices.findAll();
-
-        Notice allNotice = new Notice(1, "title", "kkkk", "kimdoyoung", "rrrrrr");
-        notice.add(allNotice);
+        List notice = this.noticeRepository.findAll();
 
         // notice를 modelAndView에 저장하고 해당 객체를 response
         modelAndView.addObject(notice);
@@ -68,17 +68,18 @@ public class UserController {
     }
 
     @PostMapping("/write")
-    public String writeQna(Model model,
-                           @RequestParam(value = "questiontitle", required = true) String title,
-                           @RequestParam(value = "nick", required = true) String name,
-//                           @RequestParam(value = "content", required = true) String content,
-                           @RequestParam(value = "questionPW", required = false) String password) {
-        ModelAndView modelAndView = new ModelAndView("/qna");
-        log.info("title = " + title);
-        log.info("name = " + name);
-        log.info("password = " + password);
+    public RedirectView writeQna(Model model,
+                                 @RequestParam(value = "questiontitle", required = true) String title,
+                                 @RequestParam(value = "nick", required = true) String writer,
+                                 @RequestParam(value = "content", required = true) String content,
+                                 @RequestParam(value = "questionPW", required = false) String password) {
 
-        return "qna";
+        ModelAndView modelAndView = new ModelAndView("/qna");
+        int countNotice = (int) this.noticeRepository.count();
+        LocalDate localDate = LocalDate.now();
+        noticeRepository.save(new Notice(countNotice + 1, title, content, writer, password, localDate));
+
+        return new RedirectView("/qna");
     }
 
     @GetMapping("/recruit")
@@ -91,7 +92,8 @@ public class UserController {
                                  @RequestParam(value="name", required=false)String name,
                                  @RequestParam(value="phone", required=false)Integer phone,
                                  @RequestParam(value="introduceMyself", required=false)String introduceMyself,
-                                 @RequestParam(value="motive", required=false)String motive) {
+                                 @RequestParam(value="motive", required=false)String motive
+                                 ){
 
         log.info("name="+name);
         log.info("phone=" + phone);
