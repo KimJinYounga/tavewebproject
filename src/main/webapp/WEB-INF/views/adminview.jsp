@@ -155,14 +155,21 @@
                     </thead>
 
                     <tbody>
-                        <!-- <c:forEach var="board" items=""> -->
+                        <c:forEach var="notice" items="${noticeList}">
                         <tr>
-                            <td>1</td>
-                            <td>title</td>
-                            <td>name</td>
-                            <td>2019-11-18 14:54</td>
+                            <a href="${path}/qnaview.jsp?notice_id=${notice_id}">
+                                <td>
+                                    <c:out value="${notice.notice_id}" />
+                                </td>
+                                <td>
+                                    <c:out value="${notice.title}" />
+                                </td>
+                                <td>
+                                    <c:out value="${notice.writer}" />
+                                </td>
+                            </a>
                         </tr>
-                        <!-- </c:forEach> -->
+                    </c:forEach>
                     </tbody>
 
                 </table>

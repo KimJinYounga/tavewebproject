@@ -115,7 +115,7 @@
                                 <div class="form-group" style="padding-right: 2rem;">
                                     <textarea rows="4" class="form-control form-control-alternative"
                                         placeholder="A few words about you ...">
-                                        <input id="question" name="question" value="${notice.question}" placeholder="question section">
+                                        <input id="question" name="question" value="${notice.content}" placeholder="question section">
                                     </textarea>
                                 </div>
                             </td>
