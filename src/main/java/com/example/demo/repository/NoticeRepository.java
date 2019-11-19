@@ -19,6 +19,5 @@ public interface NoticeRepository extends JpaRepository<Notice, Integer> {
 //    @Query("SELECT id, title, writer FROM Notice notice")
 //    List<NoticeVO> findAllVO();
 
-    Notice findById(int id);
     Notice save(Notice notice);
 }

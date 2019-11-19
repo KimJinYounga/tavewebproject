@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <!DOCTYPE html>
@@ -106,6 +107,14 @@
                             <td>운영진</td>
                             <td>2019-11-15</td>
                         </tr>
+                        <c:forEach var="notice" items="${noticeList}">
+                            <tr>
+                                <td><c:out value="${notice.notice_id}" /></td>
+                                <td><c:out value="${notice.title}" /></td>
+                                <td><c:out value="${notice.writer}" /></td>
+                                <td><c:out value="11"/></td>
+                            </tr>
+                        </c:forEach>
                     </tbody>
 
                 </table>
