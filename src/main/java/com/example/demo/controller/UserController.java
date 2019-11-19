@@ -16,6 +16,7 @@ import org.springframework.web.servlet.view.RedirectView;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.List;
 
 @Controller
@@ -75,8 +76,12 @@ public class UserController {
                                  @RequestParam(value = "questionPW", required = false) String password) {
 
         ModelAndView modelAndView = new ModelAndView("/qna");
+
+        // 총 게시글의 수 변수에 저장
         int countNotice = (int) this.noticeRepository.count();
         LocalDate localDate = LocalDate.now();
+
+        // 작성한 게시글 DB에 저장
         noticeRepository.save(new Notice(countNotice + 1, title, content, writer, password, localDate));
 
         return new RedirectView("/qna");
