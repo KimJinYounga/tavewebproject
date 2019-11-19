@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <!DOCTYPE html>
@@ -56,6 +57,54 @@
                 </div>
 
             </div>
+<<<<<<< HEAD
+=======
+        </nav>
+        <!-- content -->
+        <div class="container">
+            <div class="tablebox" width="80%">
+                <table class="table">
+
+                    <thead>
+                        <tr>
+                            <th>no.</th>
+                            <th>제목</th>
+                            <th>작성자</th>
+                            <th>작성일</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr onclick="location='qnaview'">
+                            <td>1</td>
+                            <td>공지사항!</td>
+                            <td>운영진</td>
+                            <td>2019-11-15</td>
+                        </tr>
+                        <tr onclick="location='qnaview'">
+                            <td>2</td>
+                            <td>자주 묻는 사항</td>
+                            <td>운영진</td>
+                            <td>2019-11-15</td>
+                        </tr>
+                        <c:forEach var="notice" items="${noticeList}">
+                            <tr>
+                                <td><c:out value="${notice.notice_id}" /></td>
+                                <td><c:out value="${notice.title}" /></td>
+                                <td><c:out value="${notice.writer}" /></td>
+                                <td><c:out value="11"/></td>
+                            </tr>
+                        </c:forEach>
+                    </tbody>
+
+                </table>
+
+                <div style="text-align: center;">
+                    <form method="GET" action="/qna/qnawrite" accept-charset="UTF-8">
+                        <input type="submit" class="btn btn-fill mt-6" value="글쓰기">
+                    </form>
+                </div>
+>>>>>>> 2bc7f10f96c534404f8f0f50719b3715faba34fc
 
         </div>
     </nav>

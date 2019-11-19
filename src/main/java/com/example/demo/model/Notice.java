@@ -14,8 +14,8 @@ import java.io.Serializable;
 public class Notice implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="id")
-    private Integer id;
+    @Column(name="notice_id")
+    private Integer notice_id;
 
     @Column(name="title")
     private String title;
@@ -28,4 +28,5 @@ public class Notice implements Serializable {
 
     @Column(name="imageURL")
     private String imageURL;
+
 }
