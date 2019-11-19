@@ -114,7 +114,7 @@
 
                 <!--전송-->
                 <div style="text-align: center;">
-                    <button type="submit" class="btn btn-fill mt-6" id="reg_submit" onclick="location='recruit.html'">지원하기</button>
+                    <button type="submit" class="btn btn-fill mt-6" id="reg_submit" onclick="location='recruit.jsp'">지원하기</button>
                 </div>
             </form>
         </div>
