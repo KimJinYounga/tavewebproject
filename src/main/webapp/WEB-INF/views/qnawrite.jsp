@@ -114,7 +114,7 @@
                             <td class="secondcol">
                                 <div class="form-group" style="padding-right: 2rem;">
                                     <textarea rows="4" class="form-control form-control-alternative"
-                                        placeholder="A few words about you ..."></textarea>
+                                        placeholder="A few words about you ..." name="content"></textarea>
                                 </div>
                             </td>
                         </tr>
