@@ -88,18 +88,20 @@
                     </tr>
                     <c:forEach var="notice" items="${noticeList}">
                         <tr>
-                            <td>
-                                <c:out value="${notice.notice_id}" />
-                            </td>
-                            <td>
-                                <c:out value="${notice.title}" />
-                            </td>
-                            <td>
-                                <c:out value="${notice.writer}" />
-                            </td>
-                            <td>
-                                <c:out value="11" />
-                            </td>
+                            <a href="${path}/qnaview.jsp?notice_id=${notice_id}">
+                                <td>
+                                    <c:out value="${notice.notice_id}" />
+                                </td>
+                                <td>
+                                    <c:out value="${notice.title}" />
+                                </td>
+                                <td>
+                                    <c:out value="${notice.writer}" />
+                                </td>
+                                <td>
+                                    <c:out value="11" />
+                                </td>
+                            </a>
                         </tr>
                     </c:forEach>
                 </tbody>

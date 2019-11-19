@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
@@ -87,50 +88,65 @@
                 <h2 style="text-align: center;"><b>Q&A</b></h2>
             </div>
 
-            <table class="table">
+            <form name="qnaview" method="POST">
+                <table class="table">
 
-                <thead>
-                    <tr>
-                        <td style="text-align: left;">
-                            <h3 style="margin-bottom: 0.5rem;">공지사항</h3>
-                            <h5>운영진 | 2019-11-17 15:30</h5>
-                        </td>
-                    </tr>
-                </thead>
+                    <thead>
+                        <tr>
+                            <td style="text-align: left;">
+                                <h3 style="margin-bottom: 0.5rem;">
+                                    <input id="notice-title" name="notice-title" value="${notice.title}"
+                                        placeholder="title section">
+                                </h3>
+                                <h5>
+                                    <input id="notice-writer" name="notice-writer" value="${notice.writer}"
+                                        placeholder="writer section"> |
+                                    <input id="notice-date" name="notice-date" value="11" placeholder="date section">
+                                </h5>
+                            </td>
+                        </tr>
+                    </thead>
 
-                <tbody>
-                    <tr>
-                        <td>
-                            <p class="q-content" style="color: rgb(24, 24, 27); padding: 1.6rem 1.9rem;" align="left">
-                                테-하<br>
-                                이번주 세션 공지입니다~<br>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p class="q-content" style="color: rgb(24, 24, 27); padding: 1.6rem 1.9rem;"
+                                    align="left">
+                                    <input id="question" name="question" value="${notice.question}" placeholder="question section">
+                                </p>
+                            </td>
+                        </tr>
 
-                                장소 : 중앙대학교 310관 730호<br>
-                                시간 : 2시 - 5시<br>
-                                준비물 : 멀티탭<br>
-                                뒤풀이 장소 : 미정 (인원보고 정할게요)<br>
+                        <tr>
+                            <td colspan="2">
+                                <button class="btn btn-fill mt-6" onclick="javascript:history.back(-1)"
+                                    style="float: left;">목록으로</button>
+                                <!-- qnaedit, qnadelete page 미완 -->
+                                <button class="btn btn-fill mt-6" style="float: right;">수정</button>
+                                <button class="btn btn-fill mt-6" id="btnDelete"
+                                    style="float: right; margin-right: 0.3rem;">삭제</button>
+                            </td>
+                        </tr>
+                    </tbody>
 
-                                투표는 목요일 18시 해주세요<br>
-                                https://docs.google.com/forms/d/e/1FAIpQLSffl1HNOFgX2OJ3cUO9ebJpllfOkM0DyQZi0dP85Lr4x-vEjw/viewform
-                            </p>
-                        </td>
-                    </tr>
+                </table>
+            </form>
 
-                    <tr>
-                        <td colspan="2">
-                            <button class="btn btn-fill mt-6" onclick="javascript:history.back(-1)"
-                                style="float: left;">목록으로</button>
-                            <!-- qnaedit, qnadelete page 미완 -->
-                            <button class="btn btn-fill mt-6" style="float: right;">수정</button>
-                            <button class="btn btn-fill mt-6" style="float: right; margin-right: 0.3rem;">삭제</button>
-                        </td>
-                    </tr>
-                </tbody>
-
-            </table>
         </div>
 
     </div>
+
+    <!-- delete button -->
+    <script>
+    $(document).ready(function() {
+        $("#btnDelete").click(function() {
+            if (confirm("삭제하시겠습니까?")) {
+                document.qnaview.action = "${path}/qnadelete";
+                document.qnaview.submit;
+            }
+        })
+    });
+    </script>
 
 </body>
 
