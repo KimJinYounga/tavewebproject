@@ -66,7 +66,7 @@ public class UserController {
 
     // 특정 글을 본다.
     @GetMapping("/qna/{notice_id}")
-    public ModelAndView getQnaViewPage(@PathVariable("notice_id") int notice_id, ModelAndView modelAndView) {
+    public ModelAndView getQnaViewPage(@PathVariable("notice_id") Integer notice_id, ModelAndView modelAndView) {
 
             modelAndView.setViewName("/qnaview");
             Notice notice = this.noticeRepository.getOne(notice_id);
