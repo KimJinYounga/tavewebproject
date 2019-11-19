@@ -1,15 +1,10 @@
 .contentbox {
     width: 45%;
-    margin-right: auto;
-    margin-left: auto;
     background-color: #ffffff;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-    padding-top: 3rem;
-    padding-bottom: 4rem;
-    padding-left: 11rem;
-    padding-right: 11rem;
-    border-radius: 2%;
+    box-shadow: 0 0 2rem 0 rgba(116, 133, 153, 0.15);
+    margin: 2rem auto 4rem;
+    padding: 3rem 11rem 4rem;
+    border-radius: 1.7rem;
 }
 
 .rec-sub {

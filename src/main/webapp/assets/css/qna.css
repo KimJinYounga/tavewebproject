@@ -1,17 +1,6 @@
-@font-face {
-  font-family: 'NanumSquareRound';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-/* font -> base.css */
-body {
-  font-family: NanumSquareRound;
-}
-
 /* table box */
 .tablebox {
-  width: 70%;
+  width: 60%;
   margin: 2rem auto 3rem;
   background-color: #ffffff;
   box-shadow: 0 0 2rem 0 rgba(116, 133, 153, 0.15);
