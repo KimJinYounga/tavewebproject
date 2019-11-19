@@ -99,7 +99,7 @@
                                     <c:out value="${notice.writer}" />
                                 </td>
                                 <td>
-                                    <c:out value="11" />
+                                    <c:out value="${notice.content}" />
                                 </td>
                             </a>
                         </tr>

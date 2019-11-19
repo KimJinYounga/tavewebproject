@@ -101,7 +101,7 @@
                                 <h5>
                                     <input id="notice-writer" name="notice-writer" value="${notice.writer}"
                                         placeholder="writer section"> |
-                                    <input id="notice-date" name="notice-date" value="11" placeholder="date section">
+                                    <input id="notice-date" name="notice-date" value="${notice.createdDateTime}" placeholder="date section">
                                 </h5>
                             </td>
                         </tr>
@@ -112,7 +112,7 @@
                             <td>
                                 <p class="q-content" style="color: rgb(24, 24, 27); padding: 1.6rem 1.9rem;"
                                     align="left">
-                                    <input id="question" name="question" value="${notice.question}" placeholder="question section">
+                                    <input id="question" name="question" value="${notice.content}" placeholder="question section">
                                 </p>
                             </td>
                         </tr>
