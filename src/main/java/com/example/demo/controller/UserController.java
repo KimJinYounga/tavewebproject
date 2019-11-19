@@ -6,6 +6,7 @@ import com.example.demo.model.User;
 import com.example.demo.repository.ApplyFormRepository;
 import com.example.demo.repository.NoticeRepository;
 import com.example.demo.service.userService;
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -14,9 +15,9 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.RedirectView;
 
+import javax.jws.WebParam;
+import javax.persistence.EntityNotFoundException;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
 import java.util.List;
 
 @Controller
@@ -61,6 +62,28 @@ public class UserController {
         modelAndView.addObject(notice);
 
         return modelAndView;
+    }
+
+    // 특정 글을 본다.
+    @GetMapping("/qna/{notice_id}")
+    public ModelAndView getQnaViewPage(@PathVariable("notice_id") int notice_id, ModelAndView modelAndView) {
+
+            modelAndView.setViewName("/qnaview");
+            Notice notice = this.noticeRepository.getOne(notice_id);
+            modelAndView.addObject(notice);
+            return modelAndView;
+    }
+
+    // 특정 글을 수정한다.
+    @GetMapping("/qna/qnaview")
+    public String getQnaViewPage() {
+        return "qnaview";
+    }
+
+    // 특정 글을 수정한다.
+    @GetMapping("/qna/qnamodify")
+    public String getQnaModifyPage() {
+        return "qnamodify";
     }
 
     @GetMapping("/qna/qnawrite")
