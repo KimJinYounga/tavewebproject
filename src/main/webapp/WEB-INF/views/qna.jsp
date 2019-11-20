@@ -99,7 +99,7 @@
                                     <c:out value="${notice.writer}" />
                                 </td>
                                 <td>
-                                    <c:out value="${notice.content}" />
+                                    <c:out value="${notice.createdDateTime}" />
                                 </td>
                             </a>
                         </tr>

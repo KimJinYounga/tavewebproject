@@ -128,8 +128,8 @@
                             <td class="secondcol">
                                 <div class="form-group">
                                     <div class="input-group input-group-alternative">
-                                        <input class="form-control" type="password" placeholder="password" name="questionPW"
-                                            id="questionPW" required>
+                                        <input class="form-control" type="password" placeholder="password"
+                                            name="questionPW" id="questionPW" required>
                                     </div>
                                 </div>
                             </td>
@@ -140,7 +140,7 @@
                                 <div style="text-align: center;">
                                     <button class="btn btn-fill mt-6" type="submit">저장</button>
 
-                        <%-- 제출할때 비밀번호 확인하도록 기능 추가 --%>
+                                    <%-- 제출할때 비밀번호 확인하도록 기능 추가 --%>
 
                     </form>
 
@@ -151,7 +151,6 @@
 
             </table>
         </div>
-    </div>
     </div>
 
 </body>
