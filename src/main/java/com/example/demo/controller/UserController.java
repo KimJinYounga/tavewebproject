@@ -65,7 +65,6 @@ public class UserController {
     }
 
     // 특정 글을 본다.
-//    @PostMapping("/qna/{notice_id}")
     @RequestMapping("/qna/{notice_id}")
     public ModelAndView getQnaViewPage(@PathVariable("notice_id") Integer notice_id, ModelAndView modelAndView) {
 
@@ -81,10 +80,12 @@ public class UserController {
         return "qnaview";
     }
 
-    // 특정 글을 수정한다.
-    @GetMapping("/qna/qnamodify")
-    public String getQnaModifyPage() {
-        return "qnamodify";
+    // 특정 글을 삭제한다.
+    @PostMapping("/qnadelete/{notice_id}")
+    public RedirectView updateQnaPage(@PathVariable("notice_id") Integer notice_id) {
+        this.noticeRepository.deleteById(notice_id);
+        System.out.println("삭제 완료!");
+        return new RedirectView("/qna");
     }
 
     @GetMapping("/qna/qnawrite")
@@ -95,9 +96,9 @@ public class UserController {
     @PostMapping("/write")
     public RedirectView writeQna(Model model,
                                  @RequestParam(value = "questiontitle", required = true) String title,
-                                 @RequestParam(value = "nick", required = true) String writer,
+                                 @RequestParam(value = "writer", required = true) String writer,
                                  @RequestParam(value = "content", required = true) String content,
-                                 @RequestParam(value = "questionPW", required = false) String password) {
+                                 @RequestParam(value = "password", required = false) String password) {
 
         ModelAndView modelAndView = new ModelAndView("/qna");
 

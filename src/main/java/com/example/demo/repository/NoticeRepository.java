@@ -14,5 +14,6 @@ public interface NoticeRepository extends JpaRepository<Notice, Integer> {
     List<Notice> findAll();
     Notice getOne(Integer notice_id);
     Notice save(Notice notice);
+    void deleteById(Integer notice_id);
     long count();
 }
