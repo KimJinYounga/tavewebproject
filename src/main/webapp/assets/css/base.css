@@ -1088,10 +1088,10 @@
 .btn:hover,
 .btn:focus,
 .btn.focus {
-  color: rgb(248, 58, 0); /*버튼 바뀌는 색상*/
+  color: rgb(42, 195, 203); /*버튼 바뀌는 색상*/
   text-decoration: none;
-  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
-  transform: translateY(-1px);
+  box-shadow: 0 7px 14px rgba(43, 43, 83, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  transform: translateY(-0.78px);
 }
 
 .btn:active,
@@ -1117,7 +1117,7 @@
 a.btn {
   color: rgb(255, 255, 255);  /*기존 btn 색깔*/
   text-decoration: none;
-  transition-duration: 0.5s;  /*색상 천천히 바뀌는 이유 */
+  transition-duration: 0.3s;  /*색상 천천히 바뀌는 이유 */
 }
 
 /* icon */
@@ -1144,11 +1144,6 @@ a.btn {
   justify-content: space-between;
   padding: 0rem 0rem;
   width: 100%;
-}
-
-.navbar_etc a {
-  color: #010535;
-  font-weight: 570;
 }
 
 .navbar>.container,
@@ -1180,10 +1175,17 @@ a.btn {
   vertical-align: middle;
 }
 
+.navbar_etc .btn {
+  color: #232e52;
+  font-weight: 600;
+}
+
 .nav-menu .btn:hover {
-  color: rgb(248, 58, 0);
+  color: rgb(42, 152, 203);
   text-decoration: none;
   box-shadow: 0 0 0 0;
+  font-weight: 800;
+  transform: translateY(-0.2px);
 }
 
 .nav-text {
@@ -1193,6 +1195,42 @@ a.btn {
 
 
 /*seil 사용*/
+/*새로운 navbar기능들(btn2)*/
+.nav-menu .btn2:hover {
+  color: rgb(0, 0, 0); /*버튼 바뀌는 색상*/
+  text-decoration: none;
+  box-shadow: 0 0 0 0;
+  font-weight: bold;
+}
+
+
+a.btn2 {
+  color: rgb(128, 128, 128);  /*기존 btn 색깔*/
+  text-decoration: none;
+  transition-duration: 0.5s;  /*색상 천천히 바뀌는 이유 */
+}
+
+.btn2 {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
 
 a.logobtn:visited
 {
