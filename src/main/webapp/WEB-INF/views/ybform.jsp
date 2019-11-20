@@ -28,98 +28,104 @@
 
 </head>
 
-<!-- navbar -->
-<nav class="navbar_etc">
-    <div class="container col-11">
+<body style="overflow: auto;">
 
-        <div style="align-items: center; line-height: 1px;">
-            <a href="index.html" class="logobtn ml-5"
-                style="align-content: left; font-size:40px; text-decoration: none; vertical-align: middle;">
-                <img class="navbar-brand-img" src="../../resources/assets/img/Libre.png"></a>
-        </div>
+    <!-- navbar -->
+    <nav class="navbar_etc">
+        <div class="container col-11">
 
-        <div class="nav-menu col-9" style="text-align:right; align-items: center;">
+            <div style="align-items: center; line-height: 1px;">
+                <a href="index.html" class="logobtn ml-5"
+                    style="align-content: left; font-size:40px; text-decoration: none; vertical-align: middle;">
+                    <img class="navbar-brand-img" src="../../resources/assets/img/Libre.png"></a>
+            </div>
 
-            <a href="about.html" class="btn ml-8">ABOUT</a>
-            <a href="recruit.html" class="btn ml-6">RECRUIT</a>
-            <a href="activity.html" class="btn ml-6">ACTIVITY</a>
-            <a href="qna.html" class="btn ml-6">Q&A</a>
+            <div class="nav-menu col-9" style="text-align:right; align-items: center;">
 
-            <div class="container" style="align-items: center; line-height: 15px;">
-                <a href=" http://fb.com/TechnologywaAVE" class="btn" style="font-size: 20px;">
-                    <i class="fa fa-facebook-square"></i>
-                </a>
-                <a href="http://blog.naver.com/t--ave" class="btn" style="font-size: 20px;">
-                    <i class="fa fa-globe"></i>
-                </a>
-                <a href="http://fb.com/TechnologywaAVE" class="btn" style="font-size: 20px;">
-                    <i class="fa fa-comment"></i>
-                </a>
+                <a href="about.html" class="btn ml-8">ABOUT</a>
+                <a href="recruit.html" class="btn ml-6">RECRUIT</a>
+                <a href="activity.html" class="btn ml-6">ACTIVITY</a>
+                <a href="qna.html" class="btn ml-6">Q&A</a>
+
+                <div class="container" style="align-items: center; line-height: 15px;">
+                    <a href=" http://fb.com/TechnologywaAVE" class="btn" style="font-size: 20px;">
+                        <i class="fa fa-facebook-square"></i>
+                    </a>
+                    <a href="http://blog.naver.com/t--ave" class="btn" style="font-size: 20px;">
+                        <i class="fa fa-globe"></i>
+                    </a>
+                    <a href="http://fb.com/TechnologywaAVE" class="btn" style="font-size: 20px;">
+                        <i class="fa fa-comment"></i>
+                    </a>
+                </div>
+
             </div>
 
         </div>
+    </nav>
 
-    </div>
-</nav>
-
-<!-- content -->
-<div class="container">
-    <div class="contentbox">
-        <div>
-            <h2 style="text-align: center;"><b>5기 지원서</b></h2>
-        </div>
-
-        <div class="mt-6">
-            <form role="form" name="applyForm" method="POST" action="/apply">
-
-                <!-- 이름 -->
-                <h4 class="ml-2 rec-sub">이름</h4>
-                <div class="form-group">
-                    <div class="input-group input-group-alternative">
-                        <input class="form-control" type="text" placeholder="name" name="name" id="name" required>
-                    </div>
-                </div>
-
-                <!-- 전화번호 -->
-                <h4 class="ml-2 rec-sub">전화번호</h4>
-                <div class="form-group">
-
-                    <div class="input-group input-group-alternative">
-                        <input class="form-control" type="text" placeholder="phone number" name="phone" id="phone"
-                            required>
-                    </div>
-                </div>
-
-                <!-- 자기소개 -->
-                <h4 class="ml-2 rec-sub">자기소개</h4>
-                <div class="form-group">
-                    <textarea rows="4" class="form-control form-control-alternative"
-                        placeholder="A few words about you ..." name="introduceMyself" id="introduceMyself"></textarea>
-                </div>
-
-                <!-- 지원동기 -->
-                <h4 class="ml-2 rec-sub">지원동기</h4>
-                <div class="form-group">
-                    <textarea rows="4" class="form-control form-control-alternative"
-                        placeholder="A few words about you ..." name="motive" id="motive"></textarea>
-                </div>
-
-
-                <!-- 정책동의 -->
+    <!-- content -->
+    <div class="container">
+        <div class="contentbox">
+            <div class="border">
                 <div>
-                    <input type="checkbox" name="isAgreePersonalInformationCollection"
-                        id="isAgreePersonalInformationCollection" required>
-                    <span><a href="#!">개인정보수집</a>에 동의합니다.</span>
+                    <h2 style="text-align: center;"><b>5기 지원서</b></h2>
                 </div>
 
-                <!--전송-->
-                <div style="text-align: center;">
-                    <button type="submit" class="btn btn-fill mt-6" id="reg_submit" onclick="location='recruit.jsp'">지원하기</button>
+                <div class="mt-6">
+                    <form role="form" name="formYB" method="POST" action="/apply">
+
+                        <!-- 이름 -->
+                        <h4 class="ml-2 rec-sub">이름</h4>
+                        <div class="form-group">
+                            <div class="input-group input-group-alternative">
+                                <input class="form-control" type="text" placeholder="name" name="name" id="name"
+                                    required>
+                            </div>
+                        </div>
+
+                        <!-- 전화번호 -->
+                        <h4 class="ml-2 rec-sub">전화번호</h4>
+                        <div class="form-group">
+
+                            <div class="input-group input-group-alternative">
+                                <input class="form-control" type="text" placeholder="phone number" name="phone"
+                                    id="phone" required>
+                            </div>
+                        </div>
+
+                        <!-- 자기소개 -->
+                        <h4 class="ml-2 rec-sub">자기소개</h4>
+                        <div class="form-group">
+                            <textarea rows="4" class="form-control form-control-alternative"
+                                placeholder="A few words about you ..." name="introduceMyself"
+                                id="introduceMyself"></textarea>
+                        </div>
+
+                        <!-- 지원동기 -->
+                        <h4 class="ml-2 rec-sub">지원동기</h4>
+                        <div class="form-group">
+                            <textarea rows="4" class="form-control form-control-alternative"
+                                placeholder="A few words about you ..." name="motive" id="motive"></textarea>
+                        </div>
+
+
+                        <!-- 정책동의 -->
+                        <div>
+                            <input type="checkbox">
+                            <span style="font-size: medium;"><a href="#!">개인정보수집</a>에 동의합니다.</span>
+                            </label>
+                        </div>
+
+                        <!--전송-->
+                        <div style="text-align: center;">
+                            <button type="submit" class="btn btn-fill mt-6" id="reg_submit"
+                                onclick="location='recruit.html'">지원하기</button>
+                        </div>
+                    </form>
                 </div>
-            </form>
+            </div>
         </div>
-    </div>
-</div>
 
 </body>
 
