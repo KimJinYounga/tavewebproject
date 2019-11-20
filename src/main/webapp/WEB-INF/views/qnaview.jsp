@@ -144,7 +144,7 @@
         $(document).ready(function () {
             $("#btnDelete").click(function () {
                 if (confirm("삭제하시겠습니까?")) {
-                    document.qnaview.action = "${path}/qnadelete";
+                    document.qnaview.action = "${path}/qnadelete/${notice_id}";
                     document.qnaview.submit;
                 }
             })
