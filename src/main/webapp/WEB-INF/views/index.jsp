@@ -8,43 +8,94 @@
     <meta charset="UTF-8">
 
     <!-- CSS FILE -->
-    <!-- 전체 공통: base.css  /  해당 페이지: 페이지이름.css -->
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/base.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/index.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/sidebar.css">
+
+    <!-- ICON -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JS -->
+    <script src="${pageContext.request.contextPath}/assets/js/dropdown.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/js/pageScroll.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/js/materialize.min.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <!-- navbar -->
-        <nav class="navbar">
-            <div class="container">
-                <!-- logo -->
-                <a class="navbar-brand col-1 mr-auto ml-auto" href="index">
-                    <img class="navbar-brand-img mt-2 ml-1" src="${pageContext.request.contextPath}/assets/img/2.jpg">
-                </a>
-                <!-- menu -->
-                <div class="container nav-menu col-7">
-                    <a href="about" class="btn mr-5 ">ABOUT</a>
-                    <a href="recruit" class="btn mr-5 ml-5">RECRUIT</a>
-                    <a href="activity" class="btn mr-5 ml-5">ACTIVITY</a>
-                    <a href="qna" class="btn ml-5">Q&A</a>
-                </div>
-                <!-- 페북, 블로그 아이콘 -->
-                <div>
-                </div>
+
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="container col-11">
+
+            <div style="align-items: center; line-height: 1px;">
+                <a href="index" class="logobtn ml-5"
+                    style="align-content: left; font-size:40px; text-decoration: none; vertical-align: middle;">
+                    <img class="navbar-brand-img" src="${pageContext.request.contextPath}/assets/img/Libre.png"></a>
             </div>
-        </nav>
-        <!-- content -->
-        <div class="container">
-            <div class="main">
-                <p class="lg-title">TAVE</p>
-                <P class="lg-subtitle">토요일인 2일은 전국이 맑다가 오후부터 구름이 많아지겠고, 일부 중부 내륙과 남서부지역에서 미세먼지 농도가 짙겠다. 국립환경과학원
-                    대기질통합예보센터는 이날 대기 정체로 국내외 미세먼지가 축적되면서 대전·세종·충북·광주·전북·제주권의 미세먼지 농도가 '나쁨' 수준을 나타낼 것으로 내다봤다. </P>
+
+            <div class="nav-menu col-9" style="text-align:right; align-items: center;">
+
+                <a href="about" class="btn ml-8">ABOUT</a>
+                <a href="recruit" class="btn ml-6">RECRUIT</a>
+                <a href="activity" class="btn ml-6">ACTIVITY</a>
+                <a href="qna" class="btn ml-6">Q&A</a>
+
+                <div class="container" style="align-items: center; line-height: 15px;">
+                    <a href=" http://fb.com/TechnologywaAVE" class="btn" style="font-size: 20px;">
+                        <i class="fa fa-facebook-square"></i>
+                    </a>
+                    <a href="http://blog.naver.com/t--ave" class="btn" style="font-size: 20px;">
+                        <i class="fa fa-globe"></i>
+                    </a>
+                    <a href="http://fb.com/TechnologywaAVE" class="btn" style="font-size: 20px;">
+                        <i class="fa fa-comment"></i>
+                    </a>
+                </div>
+
             </div>
+
         </div>
+    </nav>
+
+    <!-- content -->
+    <div id="main" class="scroll-container">
+        <section class="section1">
+            <div>
+                <div class="container">
+                    <span>We are</span>
+                    <span>TAVE</span>
+                </div>
+        </section>
+        <section class="section2">
+            <div>
+                <span>Technological</span>
+            </div>
+        </section>
+        <section class="section3">
+            <div>
+                <span>Achievements</span>
+            </div>
+        </section>
+        <section class="section4">
+            <div>
+                <span>Valuable</span>
+            </div>
+        </section>
+        <section class="section5">
+            <div>
+                <span>Experiences</span>
+            </div>
+        </section>
     </div>
 
+    <script type="text/javascript">
+        new fullScroll({
+            displayDots: true,
+            dotsPosition: 'left',
+            animateTime: 0.7,
+            animateFunction: 'ease'
+        });
+    </script>
 </body>
 
 </html>
