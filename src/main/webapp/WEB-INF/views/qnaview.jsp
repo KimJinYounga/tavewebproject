@@ -33,12 +33,12 @@
             display: block;
             font-size: 1rem;
             line-height: 1.5;
-            color: #8898aa;
+            color: #6b7e94;
             background-color: #fff;
             background-clip: padding-box;
             border: 0;
             border-radius: .375rem;
-            box-shadow: 0 1px 3px rgba(50, 50, 93, .15), 0 1px 0 rgba(0, 0, 0, .02);
+            box-shadow: 0 1px 3px rgba(48, 57, 99, 0.15), 0 1px 0 rgba(0, 0, 0, .02);
             transition: all .2s cubic-bezier(.68, -.55, .265, 1.55);
         }
     </style>
@@ -84,68 +84,71 @@
     <!-- content -->
     <div class="container">
         <div class="tablebox">
-            <div class="mb-6">
-                <h2 style="text-align: center;"><b>Q&A</b></h2>
+            <div class="border">
+
+                <div class="mb-5">
+                    <h2 style="text-align: center;"><b>Q&A</b></h2>
+                </div>
+
+                <form name="qnaview" method="POST">
+                    <table class="table">
+
+                        <thead>
+                            <tr>
+                                <td style="text-align: left; padding-left: 2rem;">
+                                    <h3 style="margin-bottom: 0.5rem;"><b>
+                                            <input id="notice-title" name="notice-title" value="${notice.title}"
+                                                placeholder="title section"></b>
+                                    </h3>
+                                    <h5>
+                                        <input id="notice-writer" name="notice-writer" value="${notice.writer}"
+                                            placeholder="writer section"> |
+                                        <input id="notice-date" name="notice-date" value="${notice.createdDateTime}"
+                                            placeholder="date section">
+                                    </h5>
+                                </td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p class="q-content" style="color: rgb(24, 24, 27); padding: 1.6rem 1.9rem;"
+                                        align="left">
+                                        <input id="content" name="content" value="${notice.content}"
+                                            placeholder="question section">
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2">
+                                    <button class="btn btn-fill mt-3" onclick="javascript:history.back(-1)"
+                                        style="float: left;">목록으로</button>
+                                    <!-- qnadelete page 미완 -->
+                                    <button class="btn btn-fill mt-3"
+                                        style="float: right; margin-right: 0.3rem;">삭제</button>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </form>
             </div>
-
-            <form name="qnaview" method="POST">
-                <table class="table">
-
-                    <thead>
-                        <tr>
-                            <td style="text-align: left;">
-                                <h3 style="margin-bottom: 0.5rem;">
-                                    <input id="notice-title" name="notice-title" value="${notice.title}"
-                                        placeholder="title section">
-                                </h3>
-                                <h5>
-                                    <input id="notice-writer" name="notice-writer" value="${notice.writer}"
-                                        placeholder="writer section"> |
-                                    <input id="notice-date" name="notice-date" value="${notice.createdDateTime}" placeholder="date section">
-                                </h5>
-                            </td>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td>
-                                <p class="q-content" style="color: rgb(24, 24, 27); padding: 1.6rem 1.9rem;"
-                                    align="left">
-                                    <input id="question" name="question" value="${notice.content}" placeholder="question section">
-                                </p>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td colspan="2">
-                                <button class="btn btn-fill mt-6" onclick="javascript:history.back(-1)"
-                                    style="float: left;">목록으로</button>
-                                <!-- qnaedit, qnadelete page 미완 -->
-                                <button class="btn btn-fill mt-6" style="float: right;">수정</button>
-                                <button class="btn btn-fill mt-6" id="btnDelete"
-                                    style="float: right; margin-right: 0.3rem;">삭제</button>
-                            </td>
-                        </tr>
-                    </tbody>
-
-                </table>
-            </form>
-
         </div>
 
     </div>
 
     <!-- delete button -->
     <script>
-    $(document).ready(function() {
-        $("#btnDelete").click(function() {
-            if (confirm("삭제하시겠습니까?")) {
-                document.qnaview.action = "${path}/qnadelete";
-                document.qnaview.submit;
-            }
-        })
-    });
+        $(document).ready(function () {
+            $("#btnDelete").click(function () {
+                if (confirm("삭제하시겠습니까?")) {
+                    document.qnaview.action = "${path}/qnadelete";
+                    document.qnaview.submit;
+                }
+            })
+        });
     </script>
 
 </body>

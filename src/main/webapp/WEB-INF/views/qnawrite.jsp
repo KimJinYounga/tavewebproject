@@ -70,13 +70,15 @@
     <!-- content -->
     <div class="container">
         <div class="tablebox">
-            <div>
-                <h2 style="text-align: center;"><b>글쓰기</b></h2>
-            </div>
+        <div class="border">
 
-            <div class="mt-6">
-                <table class="ml-auto mr-auto" width="90%">
-                    <form role="form" name="formQNA" method="POST" action="/write">
+            <div>
+                    <h2 style="text-align: center; font-weight: 800;">문의하기</h2>
+                </div>
+
+           <div class="mt-6">
+                    <table class="ml-auto mr-auto" width="75%">
+                        <form role="form" name="formQNA" method="POST" action="/write">
 
                         <tr>
                             <td class="firstcol">
@@ -99,8 +101,8 @@
                             <td class="secondcol">
                                 <div class="form-group">
                                     <div class="input-group input-group-alternative">
-                                        <input class="form-control" type="text" placeholder="nickname" name="nick"
-                                            id="nick" required>
+                                        <input class="form-control" type="text" placeholder="writer" name="writer"
+                                            id="writer" required>
                                     </div>
                                 </div>
                             </td>
@@ -114,7 +116,7 @@
                             <td class="secondcol">
                                 <div class="form-group" style="padding-right: 2rem;">
                                     <textarea rows="4" class="form-control form-control-alternative"
-                                        placeholder="A few words about you ..." name="content"></textarea>
+                                        placeholder="A few words about you ..." name="content" id="content"></textarea>
                                 </div>
                             </td>
                         </tr>
@@ -126,8 +128,8 @@
                             <td class="secondcol">
                                 <div class="form-group">
                                     <div class="input-group input-group-alternative">
-                                        <input class="form-control" type="text" placeholder="password" name="questionPW"
-                                            id="questionPW" required>
+                                        <input class="form-control" type="password" placeholder="password" name="password"
+                                            id="password" required>
                                     </div>
                                 </div>
                             </td>
@@ -146,6 +148,7 @@
             </div>
 
             </table>
+        </div>
         </div>
     </div>
     </div>

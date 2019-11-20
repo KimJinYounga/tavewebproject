@@ -50,7 +50,7 @@
                     </a>
                     <a href="http://blog.naver.com/t--ave" class="btn" style="font-size: 20px;">
                         <i class="fa fa-globe"></i>
-                    </a>
+                    </a> class="aa"
                     <a href="http://fb.com/TechnologywaAVE" class="btn" style="font-size: 20px;">
                         <i class="fa fa-comment"></i>
                     </a>
@@ -61,60 +61,61 @@
 
     <!-- content -->
     <div class="container">
-        <div class="tablebox" width="80%">
-            <table class="table">
+        <div class="tablebox">
+            <div class="border">
+                <table class="table">
 
-                <thead>
-                    <tr>
-                        <th>no.</th>
-                        <th>제목</th>
-                        <th>작성자</th>
-                        <th>작성일</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr onclick="location='qnaview'">
-                        <td>1</td>
-                        <td>공지사항!</td>
-                        <td>운영진</td>
-                        <td>2019-11-15</td>
-                    </tr>
-                    <tr onclick="location='qnaview'">
-                        <td>2</td>
-                        <td>자주 묻는 사항</td>
-                        <td>운영진</td>
-                        <td>2019-11-15</td>
-                    </tr>
-                    <c:forEach var="notice" items="${noticeList}">
+                    <thead>
                         <tr>
-                            <a href="${path}/qnaview.jsp?notice_id=${notice_id}">
-                                <td>
-                                    <c:out value="${notice.notice_id}" />
-                                </td>
-                                <td>
-                                    <c:out value="${notice.title}" />
-                                </td>
-                                <td>
-                                    <c:out value="${notice.writer}" />
-                                </td>
-                                <td>
-                                    <c:out value="${notice.createdDateTime}" />  
-                                </td>
-                            </a>
+                            <th>no.</th>
+                            <th>제목</th>
+                            <th>작성자</th>
+                            <th>작성일</th>
                         </tr>
-                    </c:forEach>
-                </tbody>
+                    </thead>
 
-            </table>
+                    <tbody>
+                        <tr onclick="location='qnaview'">
+                            <td>1</td>
+                            <td>공지사항!</td>
+                            <td>운영진</td>
+                            <td>2019-11-15</td>
+                        </tr>
+                        <tr onclick="location='qnaview'">
+                            <td>2</td>
+                            <td>자주 묻는 사항</td>
+                            <td>운영진</td>
+                            <td>2019-11-15</td>
+                        </tr>
+                        <c:forEach var="notice" items="${noticeList}">
+                            <tr>
+                                <a href="${path}/qnaview.jsp?notice_id=${notice_id}">
+                                    <td>
+                                        <c:out value="${notice.notice_id}" />
+                                    </td>
+                                    <td>
+                                        <c:out value="${notice.title}" />
+                                    </td>
+                                    <td>
+                                        <c:out value="${notice.writer}" />
+                                    </td>
+                                    <td>
+                                        <c:out value="${notice.createdDateTime}" />
+                                    </td>
+                                </a>
+                            </tr>
+                        </c:forEach>
+                    </tbody>
+
+                </table>
 
 
-            <div style="text-align: center;">
-                <form method="GET" action="/qna/qnawrite" accept-charset="UTF-8">
-                    <input type="submit" class="btn btn-fill mt-6" value="글쓰기">
-                </form>
+                <div style="text-align: center;">
+                    <form method="GET" action="/qna/qnawrite" accept-charset="UTF-8">
+                        <input type="submit" class="btn btn-fill mt-6" value="글쓰기">
+                    </form>
+                </div>
             </div>
-
         </div>
     </div>
 

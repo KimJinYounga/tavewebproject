@@ -23,11 +23,17 @@
     <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
 
     <style>
+        .aa {
+            background-image: url('${pageContext.request.contextPath}/assets/img/3185087.jpg');
+        }
+
         .tab {
             list-style: none;
             margin: 0 auto 1rem;
             padding: 0;
             overflow: hidden;
+            text-decoration: none;
+            list-style: none;
         }
 
         /* Float the list items side by side */
@@ -35,13 +41,13 @@
             float: left;
             width: 50%;
             text-align: center;
-            color: #a59aaa;
-            text-decoration: none;
+            color: #232e52;
+
         }
 
         .tab li.current {
             font-weight: 1000;
-            color: #294e68;
+            color: #232e52;
         }
 
         /* Style the links inside the list items */
@@ -59,11 +65,11 @@
         .tabcontent {
             display: none;
             padding: 6px 12px;
-            color: #294e68;
+            color: #232e52;
         }
 
         ul.tab li.current {
-            color: rgb(41, 78, 104);
+            color: #232e52;
         }
 
         .tabcontent.current {
@@ -73,10 +79,10 @@
 
 </head>
 
-<body style="overflow: auto;">
+<body class="aa" style="overflow: auto;">
 
     <!-- navbar -->
-    <nav class="navbar_etc">
+    <nav class="navbar">
         <div class="container col-11">
 
             <div style="align-items: center; line-height: 1px;">
@@ -111,85 +117,89 @@
 
     <!-- content -->
     <div class="container">
-        <div class="tablebox" width="80%">
+        <div class="tablebox">
+            <div class="border">
 
-            <ul class="tab">
-                <li class="current" data-tab="tab1"><a href="#">RECRUIT</a></li>
-                <li data-tab="tab2"><a href="#">Q&A</a></li>
-            </ul>
+                <ul class="tab">
+                    <li class="current" data-tab="tab1"><a href="#">RECRUIT</a></li>
+                    <li data-tab="tab2"><a href="#">Q&A</a></li>
+                </ul>
 
-            <div id="tab1" class="tabcontent current">
-                <table id="applyList" class="table">
+                <div id="tab1" class="tabcontent current">
+                    <table id="applyList" class="table">
 
-                    <thead>
-                        <tr>
-                            <th>no.</th>
-                            <th>name</th>
-                            <th>phone number</th>
-                        </tr>
-                    </thead>
+                        <thead>
+                            <tr>
+                                <th>no.</th>
+                                <th>name</th>
+                                <th>phone number</th>
+                            </tr>
+                        </thead>
 
-                    <tbody>
-                        <!-- <c:forEach var="board" items=""> -->
-                        <tr>
-                            <td>1</td>
-                            <td>이지선</td>
-                            <td>01088624693</td>
-                        </tr>
-                        <!-- </c:forEach> -->
-                    </tbody>
+                        <tbody>
+                            <!-- <c:forEach var="board" items=""> -->
+                            <tr>
+                                <td>1</td>
+                                <td>이지선</td>
+                                <td>01088624693</td>
+                            </tr>
+                            <!-- </c:forEach> -->
+                        </tbody>
 
-                </table>
+                    </table>
+                </div>
+
+                <div id="tab2" class="tabcontent">
+                    <table id="noticeList" class="table">
+
+                        <thead>
+                            <tr>
+                                <th>no.</th>
+                                <th>title</th>
+                                <th>name</th>
+                                <th>date</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <c:forEach var="notice" items="${noticeList}">
+                                <tr>
+                                    <a href="${path}/qnaview.jsp?notice_id=${notice_id}">
+                                        <td>
+                                            <c:out value="${notice.notice_id}" />
+                                        </td>
+                                        <td>
+                                            <c:out value="${notice.title}" />
+                                        </td>
+                                        <td>
+                                            <c:out value="${notice.writer}" />
+                                        </td>
+                                        <td>
+                                            <c:out value="${notice.createdDate}" />
+                                        </td>
+                                    </a>
+                                </tr>
+                            </c:forEach>
+                        </tbody>
+
+                    </table>
+                </div>
+
             </div>
-
-            <div id="tab2" class="tabcontent">
-                <table id="questionList" class="table">
-
-                    <thead>
-                        <tr>
-                            <th>no.</th>
-                            <th>title</th>
-                            <th>name</th>
-                            <th>date</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <c:forEach var="notice" items="${noticeList}">
-                        <tr>
-                            <a href="${path}/qnaview.jsp?notice_id=${notice_id}">
-                                <td>
-                                    <c:out value="${notice.notice_id}" />
-                                </td>
-                                <td>
-                                    <c:out value="${notice.title}" />
-                                </td>
-                                <td>
-                                    <c:out value="${notice.writer}" />
-                                </td>
-                            </a>
-                        </tr>
-                    </c:forEach>
-                    </tbody>
-
-                </table>
-            </div>
-
         </div>
-    </div>
- 
-    <!-- tab menu script -->
-    <script>
-        $(function () {
-            $('ul.tab li').click(function () {
-                var activeTab = $(this).attr('data-tab');
-                $('ul.tab li').removeClass('current');
-                $('.tabcontent').removeClass('current');
-                $(this).addClass('current');
-                $('#' + activeTab).addClass('current');
-            })
-        });
-    </script>
+
+        <!-- tab menu script -->
+        <script>
+            $(function () {
+                $('ul.tab li').click(function () {
+                    var activeTab = $(this).attr('data-tab');
+                    $('ul.tab li').removeClass('current');
+                    $('.tabcontent').removeClass('current');
+                    $(this).addClass('current');
+                    $('#' + activeTab).addClass('current');
+                })
+            });
+        </script>
 
 </body>
 

@@ -66,7 +66,6 @@
             <P class="lg-subtitle">TAVE에 대하여.</P>
         </div>
     </div>
-    </div>
 
 </body>
 

@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/base.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/index.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/activity.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/sidebar.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/qna.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/materialize.min.css">
 
     <!-- Icon -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -112,8 +113,6 @@
             <a href="#_5" class="lightbox trans" id="img_5"><img
                     src="${pageContext.request.contextPath}/assets/img/컨퍼런스.jpg"></a>
         </div>
-    </div>
-
     </div>
 
 </body>
