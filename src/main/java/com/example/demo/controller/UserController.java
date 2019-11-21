@@ -8,6 +8,7 @@ import com.example.demo.repository.NoticeRepository;
 import com.example.demo.service.userService;
 import com.sun.org.apache.xpath.internal.operations.Mod;
 import lombok.extern.slf4j.Slf4j;
+import org.aspectj.weaver.ast.Not;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,6 +18,7 @@ import org.springframework.web.servlet.view.RedirectView;
 
 import javax.jws.WebParam;
 import javax.persistence.EntityNotFoundException;
+import javax.persistence.criteria.CriteriaBuilder;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -80,12 +82,28 @@ public class UserController {
         return "qnaview";
     }
 
-    // 특정 글을 삭제한다.
     @PostMapping("/qnadelete/{notice_id}")
-    public RedirectView updateQnaPage(@PathVariable("notice_id") Integer notice_id) {
-        this.noticeRepository.deleteById(notice_id);
-        System.out.println("삭제 완료!");
-        return new RedirectView("/qna");
+    public String getDeletePage(@PathVariable("notice_id") Integer notice_id) {
+        return "qnadelete";
+    }
+
+    @PostMapping("/delete/{notice_id}")
+    public RedirectView updateQnaPage(@PathVariable("notice_id") Integer notice_id,
+                                      @RequestParam("pwCheck") String password) {
+
+        Notice notice = this.noticeRepository.getOne(notice_id);
+        if(notice.getPassword().equals(password)) {
+
+            this.noticeRepository.deleteById(notice_id);
+            System.out.println("삭제 완료!");
+            return new RedirectView("/qna");
+
+        } else {
+
+            System.out.println("틀렸음...");
+            return new RedirectView("/qnadelete/{notice_id}");
+
+        }
     }
 
     @GetMapping("/qna/qnawrite")
