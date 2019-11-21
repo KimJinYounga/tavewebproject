@@ -88,8 +88,8 @@
                             <td>2019-11-15</td>
                         </tr>
                         <c:forEach var="notice" items="${noticeList}">
-                            <tr>
-                                <a href="${path}/qnaview.jsp?notice_id=${notice_id}">
+                            <tr onclick="location='${path}/${notice.notice_id}'">
+                                <a href="${path}/${notice_id}">
                                     <td>
                                         <c:out value="${notice.notice_id}" />
                                     </td>
