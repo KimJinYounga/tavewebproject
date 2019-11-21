@@ -32,5 +32,5 @@ public class Notice implements Serializable {
     private String password;
 
     @Column(name = "createdDate")
-    private LocalDate createdDate;
+    private LocalDate createdDateTime;
 }
