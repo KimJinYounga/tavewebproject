@@ -90,8 +90,7 @@ public class UserController {
     @PostMapping("/delete/{notice_id}")
     public RedirectView updateQnaPage(@PathVariable("notice_id") Integer notice_id,
                                       @RequestParam("pwCheck") String password) {
-        System.out.println("ㄷㄹ어옴");
-        System.out.println(notice_id);
+
         Notice notice = this.noticeRepository.getOne(notice_id);
         if(notice.getPassword().equals(password)) {
 

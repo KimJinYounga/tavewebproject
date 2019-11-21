@@ -79,7 +79,7 @@
 
                 <h4>이 게시물을 삭제하시려면 비밀번호를 입력해주세요.</h4>
 
-                <form role="form" method="POST" name="deleteAccess" action="">
+                <form role="form" method="POST" name="deleteAccess" action="/delete/${notice_id}">
 
                     <div class="form-group">
                         <div class="input-group input-group-alternative">
