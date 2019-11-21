@@ -1193,6 +1193,11 @@ a.btn {
   display: flex;
 }
 
+/* hide scroll bar */
+body::-webkit-scrollbar { 
+  display: none; 
+}
+
 
 /*seil 사용*/
 /*새로운 navbar기능들(btn2)*/

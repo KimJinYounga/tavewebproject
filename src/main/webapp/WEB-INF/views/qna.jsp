@@ -91,16 +91,16 @@
                             <tr onclick="location='${path}/${notice.notice_id}'">
                                 <a href="${path}/${notice_id}">
                                     <td>
-                                        <c:out value="${notice.notice_id}" />
+                                        <c:out value="${notice.notice_id}"/>
                                     </td>
                                     <td>
-                                        <c:out value="${notice.title}" />
+                                        <c:out value="${notice.title}"/>
                                     </td>
                                     <td>
-                                        <c:out value="${notice.writer}" />
+                                        <c:out value="${notice.writer}"/>
                                     </td>
                                     <td>
-                                        <c:out value="${notice.createdDateTime}" />
+                                        <c:out value="${notice.createdDateTime}"/>
                                     </td>
                                 </a>
                             </tr>
