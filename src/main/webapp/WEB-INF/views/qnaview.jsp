@@ -126,8 +126,8 @@
                                     <button class="btn btn-fill mt-3" onclick="javascript:history.back(-1)"
                                         style="float: left;">목록으로</button>
                                     <!-- qnadelete page 미완 -->
-                                    <button class="btn btn-fill mt-3"
-                                        style="float: right; margin-right: 0.3rem;" id="btnDelete">삭제</button>
+                                    <button class="btn btn-fill mt-3" style="float: right; margin-right: 0.3rem;"
+                                        id="btnDelete">삭제</button>
                                 </td>
                             </tr>
                         </tbody>
