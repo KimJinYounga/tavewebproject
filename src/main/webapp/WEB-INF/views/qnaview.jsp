@@ -127,7 +127,7 @@
                                         style="float: left;">목록으로</button>
                                     <!-- qnadelete page 미완 -->
                                     <button class="btn btn-fill mt-3"
-                                        style="float: right; margin-right: 0.3rem;">삭제</button>
+                                        style="float: right; margin-right: 0.3rem;" id="btnDelete">삭제</button>
                                 </td>
                             </tr>
                         </tbody>
@@ -144,7 +144,7 @@
         $(document).ready(function () {
             $("#btnDelete").click(function () {
                 if (confirm("삭제하시겠습니까?")) {
-                    document.qnaview.action = "${path}/qnadelete";
+                    document.qnaview.action = "${path}/qnadelete/${notice_id}";
                     document.qnaview.submit;
                 }
             })
