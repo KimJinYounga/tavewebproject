@@ -55,18 +55,6 @@
             border: 1px solid #cad1d7;
             border-radius: 0.375rem;
         }
-
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0, 0, 0, 0.4);
-        }
     </style>
 
 </head>
@@ -125,7 +113,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fa fa-user"></i></span>
                                 </div>
-                                <input class="form-control" type="text" id="id" name="id" placeholder="ID" required>
+                                <input class="form-control" type="text" id="uid" name="uid" placeholder="ID" required>
                             </div>
                         </div>
 
@@ -134,8 +122,8 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fa fa-lock"></i></span>
                                 </div>
-                                <input class="form-control" type="password" id="pw" name="pw" placeholder="PASSWORD"
-                                    required>
+                                <input class="form-control" type="password" id="password" name="password"
+                                    placeholder="PASSWORD" required>
                             </div>
                         </div>
 
@@ -150,24 +138,8 @@
     <!-- 로그인 정보 확인 -->
     <c:choose>
         <c:when test="${isLogin}">
-            <div class="modal" id="log-modal">
-                <!-- modal content -->
-                <div>
-                    <p>로그인에 실패하였습니다.</p>
-                    <p>아이디와 비밀번호를 확인해주세요 :(</p>
-                    <button onclick="close_modal();">확인</button>
-                </div>
-            </div>
-
             <script type="text/javascript">
-                var isLogin = '${isLogin}';
-                if (isLogin == 'true') {
-                    $('#log-modal').show();
-
-                    function close_modal(flag) {
-                        $('#log-modal').hide();
-                    };
-                }
+                alert("아이디와 비밀번호를 확인해주세요 :P")
             </script>
         </c:when>
         <c:otherwise>
