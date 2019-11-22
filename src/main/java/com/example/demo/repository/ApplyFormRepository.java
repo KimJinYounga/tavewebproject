@@ -10,4 +10,5 @@ import java.util.List;
 public interface ApplyFormRepository extends JpaRepository<ApplyForm, Integer> {
 //    ApplyForm findByPhone(Integer phone);
     List<ApplyForm> findAll();
+    ApplyForm findByPhone(Integer phone);
 }

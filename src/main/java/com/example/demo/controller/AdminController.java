@@ -9,10 +9,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
@@ -76,14 +73,21 @@ public class AdminController {
     @RequestMapping(value="/adminview", method={RequestMethod.GET, RequestMethod.POST})
     public String viewAdminViewPage(Model model) {
         List<ApplyForm> applyFormList=applyFormRepository.findAll();
-
 //        log.info("applyformlist===>"+applyFormList);
         model.addAttribute("AdminviewList", applyFormList);
 
         return "adminview";
     }
 
-
+    @RequestMapping(value="/detailadmin", method={RequestMethod.GET, RequestMethod.POST})
+    public String viewDetailAdminPage(Model model,
+                                    @RequestParam("phone") String phone) {
+        ApplyForm applyForm=applyFormRepository.findByPhone(Integer.parseInt(phone));
+        log.info("phone 호출");
+        log.info("ApplyForm ==> "+applyForm);
+        model.addAttribute("detailAdmin", applyForm);
+        return "adminview";
+    }
 
 
 }
