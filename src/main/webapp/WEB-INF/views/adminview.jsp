@@ -137,11 +137,13 @@
                         </thead>
 
                         <tbody>
-                            <!-- <c:forEach var="board" items=""> -->
-                            <tr>
-                                <td>1</td>
-                                <td>이지선</td>
-                                <td>01088624693</td>
+                            <!-- <c:forEach varStatus="status" var="board" items="${AdminviewList}"> -->
+
+                            <!-- id값줄때 a태그 이렇게 한꺼번에 감싸도 되는건가? -->
+                            <tr><a href="#" id="${board.phone}">
+                                <td><c:out value="${status.count}" /></td>
+                                <td>${board.name}</td>
+                                <td>${board.phone}</td></a>
                             </tr>
                             <!-- </c:forEach> -->
                         </tbody>

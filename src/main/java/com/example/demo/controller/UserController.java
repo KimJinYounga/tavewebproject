@@ -1,24 +1,16 @@
 package com.example.demo.controller;
-
-import com.example.demo.model.ApplyForm;
 import com.example.demo.model.Notice;
 import com.example.demo.model.User;
 import com.example.demo.repository.ApplyFormRepository;
 import com.example.demo.repository.NoticeRepository;
 import com.example.demo.service.userService;
-import com.sun.org.apache.xpath.internal.operations.Mod;
 import lombok.extern.slf4j.Slf4j;
-import org.aspectj.weaver.ast.Not;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.RedirectView;
-
-import javax.jws.WebParam;
-import javax.persistence.EntityNotFoundException;
-import javax.persistence.criteria.CriteriaBuilder;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -125,7 +117,7 @@ public class UserController {
         LocalDate localDate = LocalDate.now();
 
         // 작성한 게시글 DB에 저장
-        noticeRepository.save(new Notice(countNotice + 1, title, content, writer, password, localDate));
+//        noticeRepository.save(new Notice(countNotice + 1, title, content, writer, password, localDate));
 
         return new RedirectView("/qna");
     }
@@ -147,7 +139,7 @@ public class UserController {
         log.info("phone=" + phone);
         log.info("introduceMyself=" + introduceMyself);
         log.info("motive=" + motive);
-        applyFormRepository.save(new ApplyForm(name,phone,introduceMyself, motive));
+//        applyFormRepository.save(new ApplyForm(name,phone,introduceMyself, motive));
 
         return "index";
     }
