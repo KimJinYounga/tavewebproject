@@ -123,7 +123,7 @@
 
                             <tr>
                                 <td colspan="2">
-                                    <button class="btn btn-fill mt-3" onclick="javascript:history.back(-1)"
+                                    <button class="btn btn-fill mt-3" onclick="historyback()"
                                         style="float: left;">목록으로</button>
                                     <!-- qnadelete page 미완 -->
                                     <button class="btn btn-fill mt-3" style="float: right; margin-right: 0.3rem;"
@@ -138,6 +138,13 @@
         </div>
 
     </div>
+
+    <%-- go back page --%>
+    <script type="text/javascript">
+    function historyback() {
+        history.back() 
+    }
+    </script>
 
     <!-- delete button -->
     <script>

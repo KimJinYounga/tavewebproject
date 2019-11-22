@@ -119,11 +119,11 @@
 
   <script type="text/javascript">
   $(document).ready(function() {
-      $('#goDetail').click(function()) {
+      $('#goDetail').click(function() {
           var buno = document.getElementById('buno').value;
-          var url = "${path}/qna/" + encodeURI('buno');
-          window.location.href = url;
-      }
+          var url = "/qna/" + encodeURI('buno');
+          location.href = url;
+      })
   });
   </script>
 
