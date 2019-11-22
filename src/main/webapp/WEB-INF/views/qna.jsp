@@ -88,21 +88,19 @@
                             <td>2019-11-15</td>
                         </tr>
                         <c:forEach var="notice" items="${noticeList}">
-                            <tr onclick="location='${path}/${notice.notice_id}'">
-                                <a href="${path}/${notice_id}">
-                                    <td>
-                                        <c:out value="${notice.notice_id}"/>
-                                    </td>
-                                    <td>
-                                        <c:out value="${notice.title}"/>
-                                    </td>
-                                    <td>
-                                        <c:out value="${notice.writer}"/>
-                                    </td>
-                                    <td>
-                                        <c:out value="${notice.createdDateTime}"/>
-                                    </td>
-                                </a>
+                            <tr id="goDetail">
+                                <td id="buno">
+                                    <c:out value="${notice.notice_id}" />
+                                </td>
+                                <td>
+                                    <c:out value="${notice.title}" />
+                                </td>
+                                <td>
+                                    <c:out value="${notice.writer}" />
+                                </td>
+                                <td>
+                                    <c:out value="${notice.createdDateTime}" />
+                                </td>
                             </tr>
                         </c:forEach>
                     </tbody>
@@ -118,6 +116,16 @@
             </div>
         </div>
     </div>
+
+  <script type="text/javascript">
+  $(document).ready(function() {
+      $('#goDetail').click(function()) {
+          var buno = document.getElementById('buno').value;
+          var url = "${path}/qna/" + encodeURI('buno');
+          window.location.href = url;
+      }
+  });
+  </script>
 
 </body>
 
