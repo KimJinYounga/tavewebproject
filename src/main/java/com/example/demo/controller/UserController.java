@@ -117,7 +117,7 @@ public class UserController {
         LocalDate localDate = LocalDate.now();
 
         // 작성한 게시글 DB에 저장
-//        noticeRepository.save(new Notice(countNotice + 1, title, content, writer, password, localDate));
+        noticeRepository.save(new Notice(countNotice + 1, title, content, writer, password, localDate));
 
         return new RedirectView("/qna");
     }
