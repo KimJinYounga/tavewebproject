@@ -135,17 +135,52 @@
         </div>
     </div>
 
-    <!-- 로그인 정보 확인 -->
+    <!-- 로그인 실패 -->
     <c:choose>
         <c:when test="${isLogin}">
+            <div id="loginError" class="modal">
+                <div class="modal-box">
+                    <div class="close">
+                        &times;
+                    </div>
+                    <div class="modal-content">
+                        <i class="fa fa-exclamation-triangle" style="font-size: 4.2rem;"></i>
+                        <p class="modal-title">로그인에 실패했습니다</p>
+                        <p class="modal-explain">아이디와 비밀번호를 확인해주세요 :(
+                        </p>
+                    </div>
+                </div>
+            </div>
+
             <script type="text/javascript">
-                alert("아이디와 비밀번호를 확인해주세요 :P")
+                var isLogin = '${isLogin}';
+
+                var modal = document.getElementById('loginError');
+
+                var span = document.getElementsByClassName("close")[0];
+
+                var btn = document.getElementById("log_submit");
+
+                if (isLogin == 'true') {
+
+                    btn.onclick = function () {
+                        modal.style.display = "block";
+                    }
+
+                    span.onclick = function () {
+                        modal.style.display = "none";
+                        location.href = "./adminlogin"
+                    }
+
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                            location.href = "./adminlogin"
+                        }
+                    }
+                }
             </script>
         </c:when>
-        <c:otherwise>
-            <!-- loader -->
-            <!-- 로딩중인 화면 -->
-        </c:otherwise>
     </c:choose>
 
 </body>

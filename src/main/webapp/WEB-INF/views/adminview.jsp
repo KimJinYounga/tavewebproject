@@ -137,13 +137,19 @@
                         </thead>
 
                         <tbody>
-                            <!-- <c:forEach var="board" items=""> -->
-                            <tr>
-                                <td>1</td>
-                                <td>이지선</td>
-                                <td>01088624693</td>
-                            </tr>
-                            <!-- </c:forEach> -->
+                            <c:forEach var="" items="${}">
+                                <tr id="detailApply">
+                                    <td>
+                                        <c:out value="${}" />
+                                    </td>
+                                    <td>
+                                        <c:out value="${}" />
+                                    </td>
+                                    <td>
+                                        <c:out value="${}" />
+                                    </td>
+                                </tr>
+                            </c:forEach>
                         </tbody>
 
                     </table>
@@ -163,21 +169,19 @@
 
                         <tbody>
                             <c:forEach var="notice" items="${noticeList}">
-                                <tr>
-                                    <a href="${path}/qnaview.jsp?notice_id=${notice_id}">
-                                        <td>
-                                            <c:out value="${notice.notice_id}" />
-                                        </td>
-                                        <td>
-                                            <c:out value="${notice.title}" />
-                                        </td>
-                                        <td>
-                                            <c:out value="${notice.writer}" />
-                                        </td>
-                                        <td>
-                                            <c:out value="${notice.createdDate}" />
-                                        </td>
-                                    </a>
+                                <tr id="detailNotice">
+                                    <td>
+                                        <c:out value="${notice.notice_id}" />
+                                    </td>
+                                    <td>
+                                        <c:out value="${notice.title}" />
+                                    </td>
+                                    <td>
+                                        <c:out value="${notice.writer}" />
+                                    </td>
+                                    <td>
+                                        <c:out value="${notice.createdDate}" />
+                                    </td>
                                 </tr>
                             </c:forEach>
                         </tbody>
@@ -200,6 +204,18 @@
                 })
             });
         </script>
+
+        <%-- detail apply --%>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#detailApply').click(function () {
+                    var number = document.getElementById('number').value;
+                    var url = "/detailadmin?phone=" + encodeURI('number');
+                    location.href = url;
+                })
+            });
+        </script>
+
 
 </body>
 
