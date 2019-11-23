@@ -37,4 +37,52 @@ public class User implements Serializable {
         this.phone_number = phone_number;
         this.user_id = user_id;
     }
+
+    public Integer getUser_id() {
+        return user_id;
+    }
+
+    public void setUser_id(Integer user_id) {
+        this.user_id = user_id;
+    }
+
+    public Integer getPhone_number() {
+        return phone_number;
+    }
+
+    public void setPhone_number(Integer phone_number) {
+        this.phone_number = phone_number;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public Integer getIsauth() {
+        return isauth;
+    }
+
+    public void setIsauth(Integer isauth) {
+        this.isauth = isauth;
+    }
 }

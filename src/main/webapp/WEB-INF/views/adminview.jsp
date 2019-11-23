@@ -137,16 +137,16 @@
                         </thead>
 
                         <tbody>
-                            <c:forEach var="" items="${}">
-                                <tr id="detailApply">
+                            <c:forEach var="board" varStatus="status" items="${AdminviewList}">
+                                <tr id="${board.phone}">
                                     <td>
-                                        <c:out value="${}" />
+                                        <c:out value="${status.count}" />
                                     </td>
                                     <td>
-                                        <c:out value="${}" />
+                                        <c:out value="${board.name}" />
                                     </td>
                                     <td>
-                                        <c:out value="${}" />
+                                        <c:out value="${board.phone}" />
                                     </td>
                                 </tr>
                             </c:forEach>
@@ -169,7 +169,7 @@
 
                         <tbody>
                             <c:forEach var="notice" items="${noticeList}">
-                                <tr id="detailNotice">
+                                <tr id="${notice.notice_id}">
                                     <td>
                                         <c:out value="${notice.notice_id}" />
                                     </td>
@@ -208,9 +208,9 @@
         <%-- detail apply --%>
         <script type="text/javascript">
             $(document).ready(function () {
-                $('#detailApply').click(function () {
-                    var number = document.getElementById('number').value;
-                    var url = "/detailadmin?phone=" + encodeURI('number');
+                $('${status.count}').click(function () {
+                    var phone = document.getElementById('${board.phone}').value;
+                    var url = "/detailadmin?phone=" + encodeURI('phone');
                     location.href = url;
                 })
             });
