@@ -26,9 +26,6 @@
     <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="${pageContext.request.contextPath}/assets/js/motion.js"></script>
 
-    <style>
-        
-    </style>
 </head>
 
 <body style="overflow: auto;">
