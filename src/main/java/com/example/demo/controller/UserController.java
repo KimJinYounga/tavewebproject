@@ -1,9 +1,7 @@
 package com.example.demo.controller;
 import com.example.demo.model.Notice;
-import com.example.demo.model.User;
 import com.example.demo.repository.ApplyFormRepository;
 import com.example.demo.repository.NoticeRepository;
-import com.example.demo.service.userService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -17,8 +15,6 @@ import java.util.List;
 @Controller
 @Slf4j
 public class UserController {
-    @Autowired
-    userService userService;
 
     @Autowired
     ApplyFormRepository applyFormRepository;
@@ -28,9 +24,6 @@ public class UserController {
 
     @GetMapping("/index")
     public String viewIndexPage() {
-        List<User> li= userService.findAll();
-        log.info("===========");
-        log.info(li.toString());
         return "index";
     }
 
@@ -42,6 +35,11 @@ public class UserController {
     @GetMapping("/activity")
     public String viewActivityPage() {
         return "activity";
+    }
+
+    @GetMapping("/recruit")
+    public String getRecruitPage() {
+        return "recruit";
     }
 
     @GetMapping("/qna")
@@ -120,11 +118,6 @@ public class UserController {
         noticeRepository.save(new Notice(countNotice + 1, title, content, writer, password, localDate));
 
         return new RedirectView("/qna");
-    }
-
-    @GetMapping("/recruit")
-    public String getRecruitPage() {
-        return "recruit";
     }
 
     @PostMapping("/apply")
