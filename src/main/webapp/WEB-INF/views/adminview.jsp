@@ -137,15 +137,19 @@
                         </thead>
 
                         <tbody>
-                            <!-- <c:forEach varStatus="status" var="board" items="${AdminviewList}"> -->
-
-                            <!-- id값줄때 a태그 이렇게 한꺼번에 감싸도 되는건가? -->
-                            <tr><a href="#" id="${board.phone}">
-                                <td><c:out value="${status.count}" /></td>
-                                <td>${board.name}</td>
-                                <td>${board.phone}</td></a>
-                            </tr>
-                            <!-- </c:forEach> -->
+                            <c:forEach var="board" varStatus="status" items="${AdminviewList}">
+                                <tr id="${board.phone}">
+                                    <td>
+                                        <c:out value="${status.count}" />
+                                    </td>
+                                    <td>
+                                        <c:out value="${board.name}" />
+                                    </td>
+                                    <td>
+                                        <c:out value="${board.phone}" />
+                                    </td>
+                                </tr>
+                            </c:forEach>
                         </tbody>
 
                     </table>
@@ -165,21 +169,19 @@
 
                         <tbody>
                             <c:forEach var="notice" items="${noticeList}">
-                                <tr>
-                                    <a href="${path}/qnaview.jsp?notice_id=${notice_id}">
-                                        <td>
-                                            <c:out value="${notice.notice_id}" />
-                                        </td>
-                                        <td>
-                                            <c:out value="${notice.title}" />
-                                        </td>
-                                        <td>
-                                            <c:out value="${notice.writer}" />
-                                        </td>
-                                        <td>
-                                            <c:out value="${notice.createdDate}" />
-                                        </td>
-                                    </a>
+                                <tr id="${notice.notice_id}">
+                                    <td>
+                                        <c:out value="${notice.notice_id}" />
+                                    </td>
+                                    <td>
+                                        <c:out value="${notice.title}" />
+                                    </td>
+                                    <td>
+                                        <c:out value="${notice.writer}" />
+                                    </td>
+                                    <td>
+                                        <c:out value="${notice.createdDate}" />
+                                    </td>
                                 </tr>
                             </c:forEach>
                         </tbody>
@@ -202,6 +204,18 @@
                 })
             });
         </script>
+
+        <%-- detail apply --%>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('${status.count}').click(function () {
+                    var phone = document.getElementById('${board.phone}').value;
+                    var url = "/detailadmin?phone=" + encodeURI('phone');
+                    location.href = url;
+                })
+            });
+        </script>
+
 
 </body>
 

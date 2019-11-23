@@ -141,9 +141,9 @@
 
     <%-- go back page --%>
     <script type="text/javascript">
-    function historyback() {
-        history.back() 
-    }
+        function historyback() {
+            history.back()
+        }
     </script>
 
     <!-- delete button -->
@@ -157,6 +157,70 @@
             })
         });
     </script>
+
+
+    <!-- 비밀번호 확인 -->
+    <c:choose>
+        <c:when test="${pw_error}">
+            <div id="pwError" class="modal">
+                <div class="modal-box">
+                    <div class="close">
+                        &times;
+                    </div>
+                    <div class="modal-content">
+                        <i class="fa fa-exclamation-triangle" style="font-size: 4.2rem;"></i>
+                        <p class="modal-title">글을 삭제하시려면 비밀번호를 입력해주세요</p>
+                        <hr width="50%">
+                        <p class="modal-sm-text">삭제 후 복원은 불가합니다</p>
+
+                        <form role="form" method="POST" name="deleteAccess" action="/delete/${notice_id}">
+
+                            <div class="form-group">
+                                <div class="input-group input-group-alternative">
+                                    <input class="form-control secondcol" type="password" placeholder="password"
+                                        name="pwCheck" id="pwCheck" required>
+                                </div>
+                            </div>
+
+                            <input type="hidden" value="${notice.password}" name="notice_id">
+
+                            <button class="btn btn-fill mt-5" type="submit" value="confirm">확인</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                var pw_error = '${pw_error}';
+
+                var modal = document.getElementById('pwError');
+
+                var span = document.getElementsByClassName("close")[0];
+
+                var btn = document.getElementById("go_Delete");
+
+                if (pw_error == '1') {
+                    btn.onclick = function () {
+                        modal.style.display = "block";
+                    }
+
+                    span.onclick = function () {
+                        modal.style.display = "none";
+                        location.href = "./adminlogin"
+                    }
+
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                            location.href = "./adminlogin"
+                        }
+                    }
+                }
+            </script>
+        </c:when>
+    </c:choose>
+
 
 </body>
 

@@ -88,7 +88,7 @@
                             <td>2019-11-15</td>
                         </tr>
                         <c:forEach var="notice" items="${noticeList}">
-                            <tr id="goDetail">
+                            <tr id="goQnaDetail">
                                 <td id="buno">
                                     <c:out value="${notice.notice_id}" />
                                 </td>
@@ -119,7 +119,7 @@
 
   <script type="text/javascript">
   $(document).ready(function() {
-      $('#goDetail').click(function() {
+      $('#goQnaDetail').click(function() {
           var buno = document.getElementById('buno').value;
           var url = "/qna/" + encodeURI('buno');
           location.href = url;

@@ -106,15 +106,6 @@
 
     </div>
 
-    <!-- 비밀번호 확인 -->
-    <c:if test="${pw_error}">
-        <script>
-            var get_pw = document.getElementById(pwCheck);
-            get_pw.value = "";
-            alert("비밀번호가 일치하지 않습니다.")
-        </script>
-    </c:if>
-
 </body>
 
 </html>
