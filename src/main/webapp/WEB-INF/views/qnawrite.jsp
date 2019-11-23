@@ -45,10 +45,10 @@
 
             <div class="nav-menu col-9" style="text-align:right; align-items: center;">
 
-                <a href="about" class="btn ml-8">ABOUT</a>
-                <a href="recruit" class="btn ml-6">RECRUIT</a>
-                <a href="activity" class="btn ml-6">ACTIVITY</a>
-                <a href="qna" class="btn ml-6">Q&A</a>
+                <a href="../about" class="btn ml-8">ABOUT</a>
+                <a href="../recruit" class="btn ml-6">RECRUIT</a>
+                <a href="../activity" class="btn ml-6">ACTIVITY</a>
+                <a href="../qna" class="btn ml-6">Q&A</a>
 
                 <div class="container" style="align-items: center; line-height: 15px;">
                     <a href=" http://fb.com/TechnologywaAVE" class="btn" style="font-size: 20px;">

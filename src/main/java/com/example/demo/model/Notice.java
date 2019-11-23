@@ -29,57 +29,10 @@ public class Notice implements Serializable {
     @Column(name="writer")
     private String writer;
 
-    public Integer getNotice_id() {
-        return notice_id;
-    }
-
-    public void setNotice_id(Integer notice_id) {
-        this.notice_id = notice_id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
-    }
-
-    public String getWriter() {
-        return writer;
-    }
-
-    public void setWriter(String writer) {
-        this.writer = writer;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public LocalDate getCreatedDateTime() {
-        return createdDateTime;
-    }
-
-    public void setCreatedDateTime(LocalDate createdDateTime) {
-        this.createdDateTime = createdDateTime;
-    }
-
     @Column(name="password")
     private String password;
 
-    @Column(name = "createdDate")
+    @Column(name = "createdDateTime")
     private LocalDate createdDateTime;
+
 }
