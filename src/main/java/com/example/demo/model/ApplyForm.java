@@ -18,7 +18,7 @@ public class ApplyForm implements Serializable {
 
     @Id
     @Column
-    private Integer phone;
+    private String phone;
 
     @Column
     private String introduceMyself;

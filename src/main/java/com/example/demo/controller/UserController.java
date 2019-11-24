@@ -1,4 +1,5 @@
 package com.example.demo.controller;
+import com.example.demo.model.ApplyForm;
 import com.example.demo.model.Notice;
 import com.example.demo.repository.ApplyFormRepository;
 import com.example.demo.repository.NoticeRepository;
@@ -123,7 +124,7 @@ public class UserController {
     @PostMapping("/apply")
     public String applyNewMember(Model model,
                                  @RequestParam(value="name", required=false)String name,
-                                 @RequestParam(value="phone", required=false)Integer phone,
+                                 @RequestParam(value="phone", required=false)String phone,
                                  @RequestParam(value="introduceMyself", required=false)String introduceMyself,
                                  @RequestParam(value="motive", required=false)String motive
                                  ){
@@ -132,7 +133,7 @@ public class UserController {
         log.info("phone=" + phone);
         log.info("introduceMyself=" + introduceMyself);
         log.info("motive=" + motive);
-//        applyFormRepository.save(new ApplyForm(name,phone,introduceMyself, motive));
+        applyFormRepository.save(new ApplyForm(name,phone,introduceMyself, motive));
 
         return "index";
     }

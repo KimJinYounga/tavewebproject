@@ -19,7 +19,7 @@ public class User implements Serializable {
     private Integer user_id;
 
     @Column(name="phone_number")
-    private Integer phone_number;
+    private String phone_number;
 
     @Column(name="name")
     private String name;
@@ -33,7 +33,7 @@ public class User implements Serializable {
     @Column(name="isauth")
     private Integer isauth;
 
-    public User(int phone_number, int user_id) {
+    public User(String phone_number, int user_id) {
         this.phone_number = phone_number;
         this.user_id = user_id;
     }
@@ -46,11 +46,11 @@ public class User implements Serializable {
         this.user_id = user_id;
     }
 
-    public Integer getPhone_number() {
+    public String getPhone_number() {
         return phone_number;
     }
 
-    public void setPhone_number(Integer phone_number) {
+    public void setPhone_number(String phone_number) {
         this.phone_number = phone_number;
     }
 
