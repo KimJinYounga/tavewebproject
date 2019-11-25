@@ -112,11 +112,10 @@ public class UserController {
         ModelAndView modelAndView = new ModelAndView("/qna");
 
         // 총 게시글의 수 변수에 저장
-        int countNotice = (int) this.noticeRepository.count();
         LocalDate localDate = LocalDate.now();
 
         // 작성한 게시글 DB에 저장
-        noticeRepository.save(new Notice(countNotice + 1, title, content, writer, password, localDate));
+        noticeRepository.save(new Notice(title, content, writer, password, localDate));
 
         return new RedirectView("/qna");
     }

@@ -5,7 +5,6 @@ import lombok.*;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 @Entity
 @Table(name="\"notice\"")
@@ -16,7 +15,7 @@ import java.time.LocalDateTime;
 @Data
 public class Notice implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name="notice_id")
     private Integer notice_id;
 
@@ -35,4 +34,11 @@ public class Notice implements Serializable {
     @Column(name = "createdDateTime")
     private LocalDate createdDateTime;
 
+    public Notice(String title, String content, String writer, String password, LocalDate createdDateTime) {
+        this.title = title;
+        this.content = content;
+        this.writer = writer;
+        this.password = password;
+        this.createdDateTime = createdDateTime;
+    }
 }
