@@ -1,10 +1,10 @@
 .contentbox {
     width: 69%;
     background-color: #ffffff;
-    box-shadow: 0 0 2rem 0 rgba(31, 91, 160, 0.164);
-    margin: 4.3rem auto 4rem;
+    box-shadow: 0 0 2rem 0 rgba(175, 117, 29, 0.164);
+    margin: 2.5rem auto 4rem;
     border-radius: 1.7rem;
-    color: #232e52;
+    color: #220b04;
 }
 
 .contentbox .border {
@@ -12,13 +12,13 @@
 }
 
 .contentbox p, h2, h3, td{
-    color: #232e52;
+    color: #220b04;
 }
   
 .rec-sub {
     margin-top: 3%;
     margin-bottom: 1%;
-    color: #232e52;
+    color: #220b04;
 }
 
 .form-group {

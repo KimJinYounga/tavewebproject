@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/base.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/index.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/qna.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/recruit.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/materialize.min.css">
 
     <!-- ICON -->
@@ -32,33 +33,33 @@
 
 </head>
 
-<body style="overflow: auto;">
+<body style="overflow: auto; background-color: #fffbf8;">
 
     <!-- navbar -->
     <nav class="navbar_etc">
         <div class="container col-11">
 
-            <div style="align-items: center; padding: 0 0 0 2.3rem; line-height: 30px;">
+            <div style="align-items: center; line-height: 1px;">
                 <a href="index" class="logobtn ml-5"
                     style="align-content: left; font-size:40px; text-decoration: none; vertical-align: middle;">
-                    <img class="navbar-brand-img" src="${pageContext.request.contextPath}/assets/img/bigwave.png"></a>
+                    <img class="navbar-brand-img" src="${pageContext.request.contextPath}/assets/img/Libre_3.png"></a>
             </div>
 
-            <div class="nav-menu col-9" style="text-align:right; align-items:center; padding-top: 1.6em;">
+            <div class="nav-menu col-9" style="text-align:right; align-items: center;">
 
-                <a href="about" class="btn ml-8">ABOUT</a>
-                <a href="recruit" class="btn ml-6">RECRUIT</a>
-                <a href="activity" class="btn ml-6">ACTIVITY</a>
-                <a href="qna" class="btn ml-6">Q&A</a>
+                <a href="about" class="btn2 ml-8">ABOUT</a>
+                <a href="recruit" class="btn2 ml-6">RECRUIT</a>
+                <a href="activity" class="btn2 ml-6">ACTIVITY</a>
+                <a href="qna" class="btn2 ml-6">Q&A</a>
 
                 <div class="container" style="align-items: center; line-height: 15px;">
-                    <a href=" http://fb.com/TechnologywaAVE" class="btn" style="font-size: 20px;">
+                    <a href=" http://fb.com/TechnologywaAVE" class="btn2" style="font-size: 20px;">
                         <i class="fa fa-facebook-square"></i>
                     </a>
-                    <a href="http://blog.naver.com/t--ave" class="btn" style="font-size: 20px;">
+                    <a href="http://blog.naver.com/t--ave" class="btn2" style="font-size: 20px;">
                         <i class="fa fa-globe"></i>
                     </a>
-                    <a href="http://fb.com/TechnologywaAVE" class="btn" style="font-size: 20px;">
+                    <a href="http://fb.com/TechnologywaAVE" class="btn2" style="font-size: 20px;">
                         <i class="fa fa-comment"></i>
                     </a>
                 </div>
@@ -77,33 +78,31 @@
                     <h2 style="text-align: center;"><b>Q&A</b></h2>
                 </div>
 
-                <h4>이 게시물을 삭제하시려면 비밀번호를 입력해주세요.</h4>
+                <div style="text-align: center; padding: 0 160px;">
+                    <h4>비밀번호를 입력해주세요.</h4>
 
-                <form role="form" method="POST" name="deleteAccess" action="/delete/${notice_id}">
+                    <form role="form" method="POST" name="deleteAccess" action="/delete/${notice_id}">
 
-                    <div class="form-group">
-                        <div class="input-group input-group-alternative">
-                            <input class="form-control secondcol" type="password" placeholder="password" name="pwCheck"
-                                id="pwCheck" required>
+                        <div class="form-group">
+                            <div class="input-group input-group-alternative" style="margin: 0 auto;">
+                                <input class="form-control" type="password" placeholder="password" name="pwCheck"
+                                    id="pwCheck" required>
+                            </div>
                         </div>
-                    </div>
 
-                    <input type="hidden" value="${notice.password}" name="notice_id">
+                        <span>
+                            <button class="btn btn-fill mt-6" type="submit" value="confirm">확인</button>
 
-                    <span>
-                        <button class="btn btn-fill mt-6" type="submit" value="confirm">확인</button>
+                    </form>
 
-                </form>
+                    <form role="form" method="GET" action="/qna" style="display: inline;">
+                        <button class="btn btn-fill mt-6" type="submit" value="cancle">취소</button>
+                    </form>
+                    </span>
 
-                <!-- cancle을 그냥 javascript:history.back(-1)할 지 고민즁! -->
-                <form role="form" method="GET" action="/qna" style="display: inline;">
-                    <button class="btn btn-fill mt-6" type="submit" value="cancle">취소</button>
-                </form>
-                </span>
-
+                </div>
             </div>
         </div>
-
     </div>
 
 </body>

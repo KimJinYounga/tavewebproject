@@ -79,33 +79,33 @@
 
 </head>
 
-<body class="aa" style="overflow: auto;">
+<body style="overflow: auto; background-color: #fffbf8;">
 
     <!-- navbar -->
-    <nav class="navbar">
+    <nav class="navbar_etc">
         <div class="container col-11">
 
             <div style="align-items: center; line-height: 1px;">
                 <a href="index" class="logobtn ml-5"
                     style="align-content: left; font-size:40px; text-decoration: none; vertical-align: middle;">
-                    <img class="navbar-brand-img" src="${pageContext.request.contextPath}/assets/img/Libre.png"></a>
+                    <img class="navbar-brand-img" src="${pageContext.request.contextPath}/assets/img/Libre_3.png"></a>
             </div>
 
             <div class="nav-menu col-9" style="text-align:right; align-items: center;">
 
-                <a href="about" class="btn ml-8">ABOUT</a>
-                <a href="recruit" class="btn ml-6">RECRUIT</a>
-                <a href="activity" class="btn ml-6">ACTIVITY</a>
-                <a href="qna" class="btn ml-6">Q&A</a>
+                <a href="about" class="btn2 ml-8">ABOUT</a>
+                <a href="recruit" class="btn2 ml-6">RECRUIT</a>
+                <a href="activity" class="btn2 ml-6">ACTIVITY</a>
+                <a href="qna" class="btn2 ml-6">Q&A</a>
 
                 <div class="container" style="align-items: center; line-height: 15px;">
-                    <a href=" http://fb.com/TechnologywaAVE" class="btn" style="font-size: 20px;">
+                    <a href=" http://fb.com/TechnologywaAVE" class="btn2" style="font-size: 20px;">
                         <i class="fa fa-facebook-square"></i>
                     </a>
-                    <a href="http://blog.naver.com/t--ave" class="btn" style="font-size: 20px;">
+                    <a href="http://blog.naver.com/t--ave" class="btn2" style="font-size: 20px;">
                         <i class="fa fa-globe"></i>
                     </a>
-                    <a href="http://fb.com/TechnologywaAVE" class="btn" style="font-size: 20px;">
+                    <a href="http://fb.com/TechnologywaAVE" class="btn2" style="font-size: 20px;">
                         <i class="fa fa-comment"></i>
                     </a>
                 </div>
@@ -138,15 +138,15 @@
 
                         <tbody>
                             <c:forEach var="board" varStatus="status" items="${AdminviewList}">
-                                <tr id="${board.phone}">
+                                <tr onclick="location.href='${path}/detailadmin?phone=${board.phone}'" style="cursor:pointer;">
                                     <td>
-                                        <c:out value="${status.count}" />
+                                        <c:out value="${status.count}"/>
                                     </td>
                                     <td>
-                                        <c:out value="${board.name}" />
+                                        <c:out value="${board.name}"/>
                                     </td>
                                     <td>
-                                        <c:out value="${board.phone}" />
+                                        <c:out value="${board.phone}"/>
                                     </td>
                                 </tr>
                             </c:forEach>
@@ -169,7 +169,7 @@
 
                         <tbody>
                             <c:forEach var="notice" items="${noticeList}">
-                                <tr id="${notice.notice_id}">
+                                <tr onclick="location.href='${path}/detailadmin?notice_id=${notice.notice_id}'" style="cursor:pointer;">
                                     <td>
                                         <c:out value="${notice.notice_id}" />
                                     </td>
@@ -204,18 +204,6 @@
                 })
             });
         </script>
-
-        <%-- detail apply --%>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $('${status.count}').click(function () {
-                    var phone = document.getElementById('${board.phone}').value;
-                    var url = "/detailadmin?phone=" + encodeURI('phone');
-                    location.href = url;
-                })
-            });
-        </script>
-
 
 </body>
 

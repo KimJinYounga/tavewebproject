@@ -1088,10 +1088,11 @@
 .btn:hover,
 .btn:focus,
 .btn.focus {
-  color: rgb(42, 195, 203); /*버튼 바뀌는 색상*/
+  color: rgb(219, 131, 119); /*버튼 바뀌는 색상*/
   text-decoration: none;
   box-shadow: 0 7px 14px rgba(43, 43, 83, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
   transform: translateY(-0.78px);
+  font-weight: bold;
 }
 
 .btn:active,
@@ -1109,16 +1110,69 @@
 
 .btn-fill {
   color: #FFFFFF;
-  background-color: #000326;
+  background-color: #2b1604;
   opacity: 1;
   filter: alpha(opacity=100);
+}
+
+.btn-modal {
+  color: rgb(243, 122, 42);
+  background-color: #FFFFFF ;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.btn-modal:hover {
+  color: rgb(243, 122, 42);
 }
 
 a.btn {
   color: rgb(255, 255, 255);  /*기존 btn 색깔*/
   text-decoration: none;
   transition-duration: 0.3s;  /*색상 천천히 바뀌는 이유 */
+  font-weight: bold;
+
 }
+
+/*btn3 : for index*/
+a.btn3 {
+  color: rgb(255, 249, 242); /*기존 btn 색깔*/
+  /*color: rgb(0, 0, 0);*/
+  text-decoration: none;
+  transition-duration: 0.3s;  /*색상 천천히 바뀌는 이유 */
+  font-weight: 900;
+
+}
+
+.btn3:hover {
+  color: rgb(255, 94, 0); /*버튼 바뀌는 색상*/
+  text-decoration: none;
+  box-shadow: 0 0 0 0;
+  font-weight: 900;
+  
+}
+.btn3 {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
 
 /* icon */
 .fa {
@@ -1175,72 +1229,9 @@ a.btn {
   vertical-align: middle;
 }
 
-.navbar_etc .btn {
-  color: #232e52;
-  font-weight: 600;
-}
-
-.nav-menu .btn:hover {
-  color: rgb(42, 152, 203);
-  text-decoration: none;
-  box-shadow: 0 0 0 0;
-  font-weight: 800;
-  transform: translateY(-0.2px);
-}
-
 .nav-text {
   list-style: none;
   display: flex;
-}
-
-/* hide scroll bar */
-body::-webkit-scrollbar { 
-  display: none; 
-}
-
-
-/*seil 사용*/
-/*새로운 navbar기능들(btn2)*/
-.nav-menu .btn2:hover {
-  color: rgb(0, 0, 0); /*버튼 바뀌는 색상*/
-  text-decoration: none;
-  box-shadow: 0 0 0 0;
-  font-weight: bold;
-}
-
-
-a.btn2 {
-  color: rgb(128, 128, 128);  /*기존 btn 색깔*/
-  text-decoration: none;
-  transition-duration: 0.5s;  /*색상 천천히 바뀌는 이유 */
-}
-
-.btn2 {
-  display: inline-block;
-  padding: 6px 12px;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.42857143;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
-}
-
-a.logobtn:visited
-{
- text-decoration: none; color: white;
-  
 }
 
 /* modal */
@@ -1287,11 +1278,6 @@ a.logobtn:visited
   font-weight: normal;
 }
 
-.modal-sm-text {
-  font-size: 11px;
-  font-weight: 300;
-}
-
 .close {
   color: #fefefe;
   float: right;
@@ -1307,6 +1293,52 @@ a.logobtn:visited
   cursor: pointer;
 }
 
+
+/*seil 사용*/
+/*새로운 navbar기능들(btn2)*/
+.btn2:hover {
+  color: rgb(253, 132, 11);  /*버튼 바뀌는 색상*/
+  text-decoration: none;
+  box-shadow: 0 0 0 0;
+  font-weight: 900;
+}
+
+
+a.btn2 {
+  color: rgb(248, 178, 108);  /*기존 btn 색깔*/
+  text-decoration: none;
+  transition-duration: 0.5s;  /*색상 천천히 바뀌는 이유 */
+  font-weight: 900;
+}
+
+.btn2 {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+a.logobtn:visited
+{
+ text-decoration: none; color: white;
+  
+}
+
 @font-face {
   font-family: 'NanumSquareRound';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
@@ -1316,4 +1348,9 @@ a.logobtn:visited
 
 * {
   font-family: NanumSquareRound;
+}
+
+/* hide scroll bar */
+body::-webkit-scrollbar { 
+  display: none; 
 }

@@ -26,7 +26,7 @@
     <script src="${pageContext.request.contextPath}/assets/js/motion.js"></script>
 </head>
 
-<body style="overflow: auto;">
+<body style="overflow: auto; background-color: #fffbf8;">
 
     <!-- navbar -->
     <nav class="navbar_etc">
@@ -35,24 +35,24 @@
             <div style="align-items: center; line-height: 1px;">
                 <a href="index" class="logobtn ml-5"
                     style="align-content: left; font-size:40px; text-decoration: none; vertical-align: middle;">
-                    <img class="navbar-brand-img" src="${pageContext.request.contextPath}/assets/img/Libre.png"></a>
+                    <img class="navbar-brand-img" src="${pageContext.request.contextPath}/assets/img/Libre_3.png"></a>
             </div>
 
             <div class="nav-menu col-9" style="text-align:right; align-items: center;">
 
-                <a href="about" class="btn ml-8">ABOUT</a>
-                <a href="recruit" class="btn ml-6">RECRUIT</a>
-                <a href="activity" class="btn ml-6">ACTIVITY</a>
-                <a href="qna" class="btn ml-6">Q&A</a>
+                <a href="about" class="btn2 ml-8">ABOUT</a>
+                <a href="recruit" class="btn2 ml-6">RECRUIT</a>
+                <a href="activity" class="btn2 ml-6">ACTIVITY</a>
+                <a href="qna" class="btn2 ml-6">Q&A</a>
 
                 <div class="container" style="align-items: center; line-height: 15px;">
-                    <a href=" http://fb.com/TechnologywaAVE" class="btn" style="font-size: 20px;">
+                    <a href=" http://fb.com/TechnologywaAVE" class="btn2" style="font-size: 20px;">
                         <i class="fa fa-facebook-square"></i>
                     </a>
-                    <a href="http://blog.naver.com/t--ave" class="btn" style="font-size: 20px;">
+                    <a href="http://blog.naver.com/t--ave" class="btn2" style="font-size: 20px;">
                         <i class="fa fa-globe"></i>
                     </a>
-                    <a href="http://fb.com/TechnologywaAVE" class="btn" style="font-size: 20px;">
+                    <a href="http://fb.com/TechnologywaAVE" class="btn2" style="font-size: 20px;">
                         <i class="fa fa-comment"></i>
                     </a>
                 </div>
