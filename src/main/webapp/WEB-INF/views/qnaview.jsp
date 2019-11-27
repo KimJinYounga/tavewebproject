@@ -176,8 +176,7 @@
 
         // qnadelete.jsp로 이동
         godelete.onclick = function () {
-            document.qnaview.action = "${path}/qnadelete/${notice_id}";
-            document.qnaview.submit;
+            location.href "${path}/qnadelete/${notice_id}"
         }
     </script>
 

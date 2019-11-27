@@ -96,7 +96,7 @@
                             <td>2019-11-15</td>
                         </tr>
                         <c:forEach var="notice" items="${noticeList}">
-                            <tr onclick="location.href='${path}/${notice.notice_id}'" style="cursor:pointer;">
+                            <tr onclick="location.href='qna/${notice.notice_id}'" style="cursor:pointer;">
                                 <td>
                                     <c:out value="${notice.notice_id}" />
                                 </td>
