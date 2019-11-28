@@ -74,11 +74,6 @@ public class UserController {
     }
 
     @PostMapping("/qnadelete/{notice_id}")
-    public String getDeletePage(@PathVariable("notice_id") Integer notice_id) {
-        return "qnadelete";
-    }
-
-    @PostMapping("/delete/{notice_id}")
     public RedirectView updateQnaPage(@PathVariable("notice_id") Integer notice_id,
                                       @RequestParam("pwCheck") String password) {
 
