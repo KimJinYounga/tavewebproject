@@ -23,10 +23,6 @@
     <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
 
     <style>
-        .aa {
-            background-image: url('${pageContext.request.contextPath}/assets/img/3185087.jpg');
-        }
-
         .tab {
             list-style: none;
             margin: 0 auto 1rem;

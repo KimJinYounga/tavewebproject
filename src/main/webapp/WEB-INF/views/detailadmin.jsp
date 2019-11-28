@@ -1,4 +1,3 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <!DOCTYPE html>
@@ -12,22 +11,19 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/base.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/index.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/qna.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/recruit.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/materialize.min.css">
 
-    <!-- ICON -->
+    <!-- Icon -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- JS -->
     <script src="${pageContext.request.contextPath}/assets/js/dropdown.js"></script>
     <script src="${pageContext.request.contextPath}/assets/js/pageScroll.js"></script>
     <script src="${pageContext.request.contextPath}/assets/js/materialize.min.js"></script>
-    <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
 
-    <style>
-        .re {
-            background-color: rgba(218, 212, 205, 0.123);
-        }
-    </style>
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/js/motion.js"></script>
 
 </head>
 
@@ -69,62 +65,57 @@
 
     <!-- content -->
     <div class="container">
-        <div class="tablebox">
+        <div class="contentbox">
             <div class="border">
-                <table class="table">
 
-                    <thead>
-                        <tr>
-                            <th>no.</th>
-                            <th>제목</th>
-                            <th>작성자</th>
-                            <th>작성일</th>
-                        </tr>
-                    </thead>
+                <p style="font-size: 21px; font-weight: bold; margin: 0 0.7rem 1rem;">#<input type="text" value="${status.count}"></p>
+                <img src="${pageContext.request.contextPath}/assets/img/line2.jpg" width="100%">
 
-                    <tbody>
-                        <tr onclick="location.href='qnaview'" style="cursor:pointer;">
-                            <td>/</td>
-                            <td>공지사항!</td>
-                            <td>운영진</td>
-                            <td>2019-11-15</td>
-                        </tr>
-                        <tr onclick="location.href='qnaview'" style="cursor:pointer;">
-                            <td>/</td>
-                            <td>자주 묻는 사항</td>
-                            <td>운영진</td>
-                            <td>2019-11-15</td>
-                        </tr>
-                        <c:forEach var="notice" items="${noticeList}">
-                            <tr onclick="location.href='qna/${notice.notice_id}'" style="cursor:pointer;">
-                                <td>
-                                    <c:out value="${notice.notice_id}" />
-                                </td>
-                                <td>
-                                    <c:out value="${notice.title}" />
-                                </td>
-                                <td>
-                                    <c:out value="${notice.writer}" />
-                                </td>
-                                <td>
-                                    <c:out value="${notice.createdDateTime}" />
-                                </td>
-                            </tr>
-                        </c:forEach>
-                    </tbody>
+                <div>
+                    <form name="detail-ybform" method="POST">
 
-                </table>
+                        <h4 class="ml-2 rec-sub">이름</h4>
+                        <div class="form-group">
+                            <div class="input-group input-group-alternative">
+                                <input class="form-control" type="text" placeholder="name" name="board-name"
+                                    id="board-name" value="${board.name}">
+                            </div>
+                        </div>
 
+                        <h4 class="ml-2 rec-sub">전화번호</h4>
+                        <div class="form-group">
 
-                <div style="text-align: center;">
-                    <form method="GET" action="/qna/qnawrite" accept-charset="UTF-8">
-                        <input type="submit" class="btn btn-fill mt-6" value="글쓰기">
+                            <div class="input-group input-group-alternative">
+                                <input class="form-control" type="text" placeholder="phone number" name="board-phone"
+                                    id="board-phone" value="${board.phone}">
+                            </div>
+                        </div>
+
+                        <h4 class="ml-2 rec-sub">자기소개</h4>
+                        <div class="form-group">
+                            <textarea rows="4" class="form-control form-control-alternative"
+                                placeholder="A few words about you ..." name="board-introduceMyself"
+                                id="board-introduceMyself" value="${board.introduceMyself}"></textarea>
+                        </div>
+
+                        <h4 class="ml-2 rec-sub">지원동기</h4>
+                        <div class="form-group">
+                            <textarea rows="4" class="form-control form-control-alternative"
+                                placeholder="A few words about you ..." name="board-motive" id="board-motive"
+                                value="${board.motive}"></textarea>
+                        </div>
+
                     </form>
+
+                    <div style="text-align: center;">
+                        <button class="btn btn-fill mt-5" onclick="location.href='adminview.html'">목록으로</button>
+                    </div>
+
                 </div>
+                
             </div>
         </div>
-    </div>
-
+        
 </body>
 
 </html>

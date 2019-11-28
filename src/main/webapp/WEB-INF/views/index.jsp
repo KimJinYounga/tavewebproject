@@ -15,6 +15,9 @@
     <!-- ICON -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- font-->
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
     <!-- JS -->
     <script src="${pageContext.request.contextPath}/assets/js/dropdown.js"></script>
     <script src="${pageContext.request.contextPath}/assets/js/pageScroll.js"></script>
@@ -30,7 +33,7 @@
             <div style="align-items: center; line-height: 1px;">
                 <a href="index" class="logobtn ml-5"
                     style="align-content: left; font-size:40px; text-decoration: none; vertical-align: middle;">
-                    <img class="navbar-brand-img" src="${pageContext.request.contextPath}/assets/img/Libre_4.png"></a>
+                    <img class="navbar-brand-img" src="${pageContext.request.contextPath}/assets/img/Libre.png"></a>
             </div>
 
             <div class="nav-menu col-9" style="text-align:right; align-items: center;">
@@ -74,13 +77,13 @@
                     <div class="container"
                         style="font-size: 70px; font-weight: 900; top : 40%; text-align:center; color: rgb(255, 248, 240); ">
                         <hr style="width: 45%; border: solid 3px rgb(253, 236, 216);">
-                        Technology wAVE
+                        <mmain style="font-family: 'Libre Baskerville', serif;">Technology wAVE</mmain>
                         <hr style="width: 45%; border: solid 3px rgb(253, 236, 216);">
                     </div>
 
                     <div class="container"
                         style="font-size: 40px; font-weight: 500; top : 30%; text-align:center; color: rgb(255, 248, 240);">
-                        4th Industrial Revolution Club
+                        <mmain style="font-family: 'Libre Baskerville', serif;">4th Industrial Revolution Club</mmain>
                     </div>
 
                 </div>

@@ -42,6 +42,20 @@
             box-shadow: 0 1px 3px rgba(48, 57, 99, 0.15), 0 1px 0 rgba(0, 0, 0, .02);
             transition: all .2s cubic-bezier(.68, -.55, .265, 1.55);
         }
+
+        .comment-writer {
+            font-size: 15px;
+            text-align: left;
+            padding: 0.5rem 1rem 0.1rem;
+            font-weight: 600;
+        }
+
+        .comment {
+            font-size: 14px;
+            text-align: left;
+            padding: 0 1rem 0.5rem;
+            margin: 0;
+        }
     </style>
 
 </head>
@@ -122,9 +136,17 @@
                                 </td>
                             </tr>
 
+                            <%--  QNA 댓글 --%>
+                            <tr>
+                                <td>
+                                    <p class="comment-writer">운영진 | 2019-11-17 17:30</p>
+                                    <p class="comment">구글폼 꼭 작성해주세요 ㅎㅅㅎ</p>
+                                </td>
+                            </tr>
+
                             <tr>
                                 <td colspan="2">
-                                    <button class="btn btn-fill mt-3" onclick="historyback()"
+                                    <button class="btn btn-fill mt-3" onclick="location.href='${path}/qna'"
                                         style="float: left;">목록으로</button>
                                     <button class="btn btn-fill mt-3" style="float: right; margin-right: 0.3rem;"
                                         id="btnDelete">삭제</button>
@@ -156,8 +178,11 @@
 
     <script type="text/javascript">
         var modal = document.getElementById('reconfirm');
+
         var btn = document.getElementById("btnDelete");
+
         var span = document.getElementsByClassName("close")[0];
+
         var godelete = document.getElementById("realDelete");
 
         btn.onclick = function () {
@@ -174,12 +199,6 @@
         }
     </script>
 
-    <%-- go back page --%>
-    <script type="text/javascript">
-        function historyback() {
-            history.back()
-        }
-    </script>
 </body>
 
 </html>

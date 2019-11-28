@@ -117,15 +117,18 @@
                         <i class="fa fa-exclamation-triangle" style="font-size: 4.2rem;"></i>
                         <p class="modal-title">비밀번호가 틀렸습니다</p>
                         <p class="modal-explain">다시 한번 확인해주세요 :(</p>
-                        <button id="ok" class="btn btn-modal" style="margin: 3rem auto 0;">ok!</button>
+                        <button id="ok" class="btn btn-modal" style="margin: 3rem auto 0;">확인</button>
                     </div>
                 </div>
             </div>
 
             <script type="text/javascript">
                 var isPW = '${isPW}';
+
                 var modal = document.getElementById('pwError');
+
                 var span = document.getElementsByClassName("close")[0];
+                
                 var ok = document.getElementById("ok");
 
                 if (isPW == 'true') {

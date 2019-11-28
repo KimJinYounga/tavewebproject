@@ -132,54 +132,7 @@
                 </div>
             </div>
         </div>
-
-        <!-- apply complete modal -->
-        <div id="applyComplete" class="modal fade">
-            <div class="modal-box">
-                <div class="close">
-                    &times;
-                </div>
-                <div class="modal-content">
-                    <i class="fa fa-check-circle" style="font-size: 4.2rem;"></i>
-                    <p class="modal-title">제출완료!</p>
-                    <p class="modal-explain">TAVE 5기에 지원해주셔서 감사합니다 <br>
-                        곧 다시 만나요 :D
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- modal script -->
-        <script type="text/javascript">
-            // Get the modal
-            var modal = document.getElementById('applyComplete');
-
-            // Get the button that opens the modal
-            var btn = document.getElementById("reg_submit");
-
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-
-            // When the user clicks on the button, open the modal 
-            btn.onclick = function () {
-                modal.style.display = "block";
-            }
-
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function () {
-                modal.style.display = "none";
-                location.href = "./recruit"
-            }
-
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function (event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                    location.href = "./recruit"
-                }
-            }
-        </script>
-
+        
 </body>
 
 </html>
