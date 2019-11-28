@@ -158,7 +158,7 @@
         var modal = document.getElementById('reconfirm');
         var btn = document.getElementById("btnDelete");
         var span = document.getElementsByClassName("close")[0];
-        var godelete = document.getElementById("realdelete");
+        var godelete = document.getElementById("realDelete");
 
         btn.onclick = function () {
             modal.style.display = "block";
@@ -166,12 +166,6 @@
 
         span.onclick = function () {
             modal.style.display = "none";
-        }
-
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
         }
 
         // qnadelete.jsp로 이동
