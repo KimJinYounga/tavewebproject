@@ -228,13 +228,13 @@
 
                     span.onclick = function () {
                         modal.style.display = "none";
-                        location.href = "./adminlogin"
+                        location.href = "./adminlogin";
                     }
 
                     window.onclick = function (event) {
                         if (event.target == modal) {
                             modal.style.display = "none";
-                            location.href = "./adminlogin"
+                            location.href = "./adminlogin";
                         }
                     }
 

@@ -170,7 +170,7 @@
 
         // qnadelete.jsp로 이동
         godelete.onclick = function () {
-            location.href = "${path}/qnadelete/${notice_id}"
+            location.href = "${path}/qnadelete/${notice_id}";
         }
     </script>
 
