@@ -146,8 +146,20 @@ body, html {
    background-size: 100%;
 }
 
+.section6 {
+   
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+
+.section7 {
+   
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+
 .section1 .section2 .section3
-.section4 .section5 
+.section4 .section5 .section6 .section7
 {
    background-color: rgba(184, 86, 6, 0.15);
 }
