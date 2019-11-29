@@ -93,16 +93,16 @@
 
                         <h4 class="ml-2 rec-sub">자기소개</h4>
                         <div class="form-group">
-                            <textarea rows="4" class="form-control form-control-alternative"
+                            <input rows="4" class="form-control form-control-alternative"
                                 placeholder="A few words about you ..." name="board-introduceMyself"
-                                id="board-introduceMyself" value="${board.introduceMyself}"></textarea>
+                                id="board-introduceMyself" value="${board.introduceMyself}">
                         </div>
 
                         <h4 class="ml-2 rec-sub">지원동기</h4>
                         <div class="form-group">
-                            <textarea rows="4" class="form-control form-control-alternative"
+                            <input rows="4" class="form-control form-control-alternative"
                                 placeholder="A few words about you ..." name="board-motive" id="board-motive"
-                                value="${board.motive}"></textarea>
+                                value="${board.motive}">
                         </div>
 
                     </form>
