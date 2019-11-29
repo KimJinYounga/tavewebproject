@@ -39,7 +39,6 @@
             padding: 5rem 4rem 2.5rem;
         }
     </style>
-    </style>
 
 </head>
 

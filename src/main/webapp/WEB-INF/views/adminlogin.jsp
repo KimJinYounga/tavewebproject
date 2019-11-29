@@ -25,7 +25,6 @@
     <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
 
     <style>
-        <style>
         .loginbox {
             width: 31%;
             margin: 3rem auto 3rem;
@@ -52,63 +51,10 @@
             border: 1px solid #cad1d7;
             border-radius: 0.375rem;
         }
-
-        .modal {
-            display: none;
-            z-index: 50;
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            /* Enable scroll if needed */
-            background-color: rgb(0, 0, 0);
-            /* Fallback color */
-            background-color: rgba(0, 0, 0, 0.4);
-            /* Black w/ opacity */
-        }
-
-        .modal-box {
-            background-color: #fefefe;
-            margin: 14% auto;
-            padding: 1.3rem;
-            border: 1px solid #888;
-            width: 32%;
-            border-radius: 0.9rem;
-            background: linear-gradient(87deg, #fb6340 0, #fbb140 100%) !important;
-            box-shadow: 0 0 2rem 0 rgba(31, 91, 160, 0.164);
-        }
-
         .modal-content {
             text-align: center;
             padding: 4rem 1rem 1rem;
             color: #fefefe;
-        }
-
-        .modal-title {
-            font-size: 17px;
-            font-weight: bolder;
-        }
-
-        .modal-explain {
-            font-size: 14px;
-            font-weight: normal;
-        }
-
-        .close {
-            color: #fefefe;
-            float: right;
-            vertical-align: top;
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
         }
     </style>
 
@@ -223,23 +169,17 @@
                 if (isLogin == 'true') {
 
                     btn.onclick = function () {
-                        modal.style.display = "block";
+                        $("#loginError").show();
                     }
 
                     span.onclick = function () {
-                        modal.style.display = "none";
+                        $("#loginError").hide();
                         location.href = "${path}/adminlogin";
                     }
 
-                    window.onclick = function (event) {
-                        if (event.target == modal) {
-                            modal.style.display = "none";
-                            location.href = "${path}/adminlogin";
-                        }
-                    }
-
                     ok.onclick = function () {
-                        modal.style.display = "none";
+                        $("#loginError").hide();
+                        location.href = "${path}/adminlogin";
                     }
                 }
             </script>

@@ -165,7 +165,7 @@
 
                         <tbody>
                             <c:forEach var="notice" items="${noticeList}">
-                                <tr onclick="location.href='${path}/detailadmin?notice_id=${notice.notice_id}'" style="cursor:pointer;">
+                                <tr onclick="location.href='${path}/detailadmin2?notice_id=${notice.notice_id}'" style="cursor:pointer;">
                                     <td>
                                         <c:out value="${notice.notice_id}" />
                                     </td>
