@@ -23,7 +23,6 @@
     <script src="${pageContext.request.contextPath}/assets/js/materialize.min.js"></script>
     <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
 
-
 </head>
 
 <body style="overflow: auto; background-color: #fffbf8;">

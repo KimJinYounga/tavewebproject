@@ -23,7 +23,6 @@
     <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
 
     <style>
-        <style>
         .alert-box {
             width: 32%;
             border-radius: 0.9rem;
