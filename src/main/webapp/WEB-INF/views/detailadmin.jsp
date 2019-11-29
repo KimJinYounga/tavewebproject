@@ -78,7 +78,7 @@
                         <div class="form-group">
                             <div class="input-group input-group-alternative">
                                 <input class="form-control" type="text" placeholder="name" name="board-name"
-                                    id="board-name" value="${board.name}">
+                                    id="board-name" value="${detailAdmin.name}">
                             </div>
                         </div>
 
@@ -87,22 +87,22 @@
 
                             <div class="input-group input-group-alternative">
                                 <input class="form-control" type="text" placeholder="phone number" name="board-phone"
-                                    id="board-phone" value="${board.phone}">
+                                    id="board-phone" value="${detailAdmin.phone}">
                             </div>
                         </div>
 
                         <h4 class="ml-2 rec-sub">자기소개</h4>
                         <div class="form-group">
-                            <textarea rows="4" class="form-control form-control-alternative"
+                            <input rows="4" class="form-control form-control-alternative"
                                 placeholder="A few words about you ..." name="board-introduceMyself"
-                                id="board-introduceMyself" value="${board.introduceMyself}"></textarea>
+                                id="board-introduceMyself" value="${detailAdmin.introduceMyself}">
                         </div>
 
                         <h4 class="ml-2 rec-sub">지원동기</h4>
                         <div class="form-group">
-                            <textarea rows="4" class="form-control form-control-alternative"
+                            <input rows="4" class="form-control form-control-alternative"
                                 placeholder="A few words about you ..." name="board-motive" id="board-motive"
-                                value="${board.motive}"></textarea>
+                                value="${detailAdmin.motive}">
                         </div>
 
                     </form>

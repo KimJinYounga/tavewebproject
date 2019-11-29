@@ -79,14 +79,14 @@ public class AdminController {
         return "adminview";
     }
 
-    @RequestMapping(value="/detailadmin", method={RequestMethod.GET, RequestMethod.POST})
+    @RequestMapping(value="/detailadmin/{phone}", method={RequestMethod.GET, RequestMethod.POST})
     public String viewDetailAdminPage(Model model,
-                                    @RequestParam("phone") String phone) {
-        ApplyForm applyForm=applyFormRepository.findByPhone(Integer.parseInt(phone));
+                                    @PathVariable("phone") Integer phone) {
+        ApplyForm applyForm=applyFormRepository.findByPhone(phone);
         log.info("phone 호출");
         log.info("ApplyForm ==> "+applyForm);
         model.addAttribute("detailAdmin", applyForm);
-        return "adminview";
+        return "detailadmin";
     }
 
 

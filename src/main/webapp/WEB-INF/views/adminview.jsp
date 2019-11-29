@@ -134,7 +134,7 @@
 
                         <tbody>
                             <c:forEach var="board" varStatus="status" items="${AdminviewList}">
-                                <tr onclick="location.href='${path}/detailadmin?phone=${board.phone}'" style="cursor:pointer;">
+                                <tr onclick="location.href='${path}/detailadmin/${board.phone}'" style="cursor:pointer;">
                                     <td>
                                         <c:out value="${status.count}"/>
                                     </td>

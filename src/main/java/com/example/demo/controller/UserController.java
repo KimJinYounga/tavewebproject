@@ -118,7 +118,7 @@ public class UserController {
     @PostMapping("/apply")
     public String applyNewMember(Model model,
                                  @RequestParam(value="name", required=false)String name,
-                                 @RequestParam(value="phone", required=false)String phone,
+                                 @RequestParam(value="phone", required=false)Integer phone,
                                  @RequestParam(value="introduceMyself", required=false)String introduceMyself,
                                  @RequestParam(value="motive", required=false)String motive
                                  ){
