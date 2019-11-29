@@ -133,10 +133,6 @@
 
                 if (isPW == 'true') {
 
-                    btn.onclick = function () {
-                        modal.style.display = "block";
-                    }
-
                     span.onclick = function () {
                         modal.style.display = "none";
                     }

@@ -169,10 +169,6 @@
                 if (isLogin == 'true') {
                     $("#loginError").show();
 
-                    // btn.onclick = function () {
-                    //
-                    // }
-
                     span.onclick = function () {
                         $("#loginError").hide();
                     }

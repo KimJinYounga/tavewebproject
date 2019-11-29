@@ -95,14 +95,22 @@
                         <div class="form-group">
                             <input rows="4" class="form-control form-control-alternative"
                                 placeholder="A few words about you ..." name="board-introduceMyself"
+<<<<<<< HEAD
                                 id="board-introduceMyself" value="${detailAdmin.introduceMyself}">
+=======
+                                id="board-introduceMyself" value="${board.introduceMyself}">
+>>>>>>> f2ad8f5774e196f4974cac5382a2b2feccbde478
                         </div>
 
                         <h4 class="ml-2 rec-sub">지원동기</h4>
                         <div class="form-group">
                             <input rows="4" class="form-control form-control-alternative"
                                 placeholder="A few words about you ..." name="board-motive" id="board-motive"
+<<<<<<< HEAD
                                 value="${detailAdmin.motive}">
+=======
+                                value="${board.motive}">
+>>>>>>> f2ad8f5774e196f4974cac5382a2b2feccbde478
                         </div>
 
                     </form>
