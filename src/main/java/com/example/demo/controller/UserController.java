@@ -129,6 +129,6 @@ public class UserController {
         log.info("motive=" + motive);
         applyFormRepository.save(new ApplyForm(name,phone,introduceMyself, motive));
 
-        return "index";
+        return "applycomplete";
     }
 }

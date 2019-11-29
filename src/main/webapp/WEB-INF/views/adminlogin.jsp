@@ -167,19 +167,18 @@
                 var ok = document.getElementById("ok");
 
                 if (isLogin == 'true') {
+                    $("#loginError").show();
 
-                    btn.onclick = function () {
-                        $("#loginError").show();
-                    }
+                    // btn.onclick = function () {
+                    //
+                    // }
 
                     span.onclick = function () {
                         $("#loginError").hide();
-                        location.href = "${path}/adminlogin";
                     }
 
                     ok.onclick = function () {
                         $("#loginError").hide();
-                        location.href = "${path}/adminlogin";
                     }
                 }
             </script>
