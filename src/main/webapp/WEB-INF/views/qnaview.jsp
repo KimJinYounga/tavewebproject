@@ -127,6 +127,8 @@
                                 </td>
                             </tr>
 
+                            <input type="hidden" id="buno" value="${notice.notice_id}">
+
                             <%--  QNA 댓글 --%>
                             <tr>
                                 <td>
@@ -139,8 +141,8 @@
                                 <td colspan="2">
                                     <button class="btn btn-fill mt-3" onclick="location.href='qna'"
                                         style="float: left;">목록으로</button>
-                                    <button class="btn btn-fill mt-3" style="float: right; margin-right: 0.3rem;"
-                                        id="btnDelete" onclick="location.href='${path}/qnadelete'">삭제</button>
+                                    <button type="submit" class="btn btn-fill mt-3" style="float: right; margin-right: 0.3rem;"
+                                        id="btnDelete" onclick="location.href='${path}/qnadelete/${notice.notice_id}'">삭제</button>
                                 </td>
                             </tr>
                         </tbody>
