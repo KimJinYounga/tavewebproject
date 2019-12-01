@@ -25,6 +25,21 @@
     <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="${pageContext.request.contextPath}/assets/js/motion.js"></script>
 
+    <style>
+        .aa {
+            margin-top: 0;
+        }
+
+        .multi-line {
+            height: auto;
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+
+        .pale-text p {
+            color: #967b70;
+        }
+    </style>
 </head>
 
 <body style="overflow: auto; background-color: #fffbf8;">
@@ -68,54 +83,49 @@
         <div class="contentbox">
             <div class="border">
 
-                <p style="font-size: 21px; font-weight: bold; margin: 0 0.7rem 1rem;">#<input type="text" value="${status.count}"></p>
-                <img src="${pageContext.request.contextPath}/assets/img/line2.jpg" width="100%">
+                <p style="font-size: 21px; font-weight: bold; margin: 0 0.7rem 1rem;"># ${status.count}</p>
+                <img src="${pageContext.request.contextPath}/assets/img/line2.jpg" width="100%" style="margin-bottom: -2rem;">
 
-                <div>
-                    <form name="detail-ybform" method="POST">
+                <div class="pale-text">
 
-                        <h4 class="ml-2 rec-sub">이름</h4>
-                        <div class="form-group">
-                            <div class="input-group input-group-alternative">
-                                <input class="form-control" type="text" placeholder="name" name="board-name"
-                                    id="board-name" value="${detailAdmin.name}">
-                            </div>
+                    <h4 class="ml-2 rec-sub">이름</h4>
+                    <div class="form-group">
+                        <div class="input-group input-group-alternative">
+                            <p class="form-control aa" type="text" placeholder="name" name="board-name" id="board-name">
+                                ${board.name}</p>
                         </div>
+                    </div>
 
-                        <h4 class="ml-2 rec-sub">전화번호</h4>
-                        <div class="form-group">
+                    <h4 class="ml-2 rec-sub">전화번호</h4>
+                    <div class="form-group">
 
-                            <div class="input-group input-group-alternative">
-                                <input class="form-control" type="text" placeholder="phone number" name="board-phone"
-                                    id="board-phone" value="${detailAdmin.phone}">
-                            </div>
+                        <div class="input-group input-group-alternative">
+                            <p class="form-control aa" type="text" placeholder="phone number" name="board-phone"
+                                id="board-phone">${board.phone}</p>
                         </div>
+                    </div>
 
-                        <h4 class="ml-2 rec-sub">자기소개</h4>
-                        <div class="form-group">
-                            <input rows="4" class="form-control form-control-alternative"
-                                placeholder="A few words about you ..." name="board-introduceMyself"
-                                id="board-introduceMyself" value="${detailAdmin.introduceMyself}">
-                        </div>
+                    <h4 class="ml-2 rec-sub">자기소개</h4>
+                    <div class="form-group">
+                        <p class="form-control form-control-alternative multi-line" name="board-introduceMyself"
+                            id="board-introduceMyself">${board.introduceMyself}</p>
+                    </div>
 
-                        <h4 class="ml-2 rec-sub">지원동기</h4>
-                        <div class="form-group">
-                            <input rows="4" class="form-control form-control-alternative"
-                                placeholder="A few words about you ..." name="board-motive" id="board-motive"
-                                value="${detailAdmin.motive}">
-                        </div>
-
-                    </form>
+                    <h4 class="ml-2 rec-sub">지원동기</h4>
+                    <div class="form-group">
+                        <p class="form-control form-control-alternative multi-line" name="board-motive"
+                            id="board-motive">${board.motive}</p>
+                    </div>
 
                     <div style="text-align: center;">
                         <button class="btn btn-fill mt-5" onclick="location.href='adminview.html'">목록으로</button>
                     </div>
 
                 </div>
-                
+
             </div>
         </div>
-        
+
 </body>
 
 </html>
