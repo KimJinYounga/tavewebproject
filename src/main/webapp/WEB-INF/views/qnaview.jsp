@@ -111,16 +111,8 @@
                         <thead>
                             <tr>
                                 <td style="text-align: left; padding-left: 2rem;">
-                                    <h3 style="margin-bottom: 0.5rem;"><b>
-                                            <input id="notice-title" name="notice-title" value="${notice.title}"
-                                                placeholder="title section"></b>
-                                    </h3>
-                                    <h5>
-                                        <input id="notice-writer" name="notice-writer" value="${notice.writer}"
-                                            placeholder="writer section"> |
-                                        <input id="notice-date" name="notice-date" value="${notice.createdDateTime}"
-                                            placeholder="date section">
-                                    </h5>
+                                    <h3 style="margin-bottom: 0.5rem;"><b>${notice.title}</b></h3>
+                                    <h5> ${notice.writer} | ${notice.createdDateTime} </h5>
                                 </td>
                             </tr>
                         </thead>
@@ -130,8 +122,7 @@
                                 <td>
                                     <p class="q-content" style="color: rgb(24, 24, 27); padding: 1.6rem 1.9rem;"
                                         align="left">
-                                        <input id="content" name="content" value="${notice.content}"
-                                            placeholder="question section">
+                                        ${notice.content}
                                     </p>
                                 </td>
                             </tr>
