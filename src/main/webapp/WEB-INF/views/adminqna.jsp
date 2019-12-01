@@ -107,6 +107,8 @@
                                 </td>
                             </tr>
 
+                            <%-- 해당 게시물 글번호 --%>
+                            <input type="hidden" id="buno" value="${notice.notice_id}">
 
                             <tr>
                                 <td>

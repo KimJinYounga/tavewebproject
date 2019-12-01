@@ -118,7 +118,7 @@
                     </div>
 
                     <div style="text-align: center;">
-                        <button class="btn btn-fill mt-5" onclick="location.href='adminview.html'">목록으로</button>
+                        <button class="btn btn-fill mt-5" onclick="location.href='adminview'">목록으로</button>
                     </div>
 
                 </div>
