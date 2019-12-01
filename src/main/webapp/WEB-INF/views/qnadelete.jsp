@@ -120,24 +120,25 @@
                     </div>
                 </div>
             </div>
-
+  
             <script type="text/javascript">
                 var isPW = '${isPW}';
 
                 var modal = document.getElementById('pwError');
 
                 var span = document.getElementsByClassName("close")[0];
-                
+
                 var ok = document.getElementById("ok");
 
                 if (isPW == 'true') {
+                    $("#pwError").show();
 
                     span.onclick = function () {
-                        modal.style.display = "none";
+                        $("#pwError").hide();
                     }
 
                     ok.onclick = function () {
-                        modal.style.display = "none";
+                        $("#pwError").hide();
                     }
                 }
             </script>
