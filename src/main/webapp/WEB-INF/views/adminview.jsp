@@ -134,7 +134,7 @@
 
                         <tbody>
                             <c:forEach var="board" varStatus="status" items="${AdminviewList}">
-                                <tr onclick="location.href='${path}/detailadmin/${board.phone}'" style="cursor:pointer;">
+                                <tr onclick="location.href='${path}/adminrecruit/${board.phone}'" style="cursor:pointer;">
                                     <td>
                                         <c:out value="${status.count}"/>
                                     </td>
@@ -165,7 +165,7 @@
 
                         <tbody>
                             <c:forEach var="notice" items="${noticeList}">
-                                <tr onclick="location.href='${path}/detailadmin2?notice_id=${notice.notice_id}'" style="cursor:pointer;">
+                                <tr onclick="location.href='${path}/adminqna/${notice.notice_id}'" style="cursor:pointer;">
                                     <td>
                                         <c:out value="${notice.notice_id}" />
                                     </td>

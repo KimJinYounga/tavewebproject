@@ -75,12 +75,8 @@
                     <thead>
                         <tr>
                             <td style="text-align: left; padding-left: 2rem;">
-                                <h3><b><input id="notice-title" name="notice-title" value="${notice.title}"
-                                            placeholder="title section"></b></h3>
-                                <h5><input id="notice-writer" name="notice-writer" value="${notice.writer}"
-                                        placeholder="writer section"> |
-                                    <input id="notice-date" name="notice-date" value="${notice.createdDateTime}"
-                                        placeholder="date section"></h5>
+                                <h3><b>${notice.title}</b></h3>
+                                <h5>${notice.writer} | ${notice.createdDateTime}</h5>
                             </td>
                         </tr>
                     </thead>
@@ -90,8 +86,7 @@
                             <td>
                                 <p class="q-content" style="color: rgb(27, 25, 24); padding: 1.6rem 1.9rem;"
                                     align="left">
-                                    <input id="content" name="content" value="${notice.content}"
-                                            placeholder="question section">
+                                    ${notice.content}
                                 </p>
                             </td>
                         </tr>
@@ -117,9 +112,6 @@
                                     <!-- 문의 사항에 답변 추가 -->
                                     <button id="btnEdit" class="btn btn-fill mt-3" type="submit"
                                         style="float: right; margin-right: 0.3rem;">수정</button>
-                                    <!-- 글 강제 삭제 권한? -->
-                                    <button id="btnDelete" type="button" class="btn btn-fill mt-3"
-                                        style="float: right; margin-right: 0.3rem;">삭제</button>
                                 </td>
                             </tr>
 
