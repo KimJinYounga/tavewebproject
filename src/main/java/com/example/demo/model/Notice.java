@@ -5,6 +5,8 @@ import lombok.*;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name="\"notice\"")
@@ -34,6 +36,9 @@ public class Notice implements Serializable {
     @Column(name = "createdDateTime")
     private LocalDate createdDateTime;
 
+//    @OneToMany(mappedBy="notice")
+//    private List<Comment> comments = new ArrayList<Comment>();
+
     public Notice(String title, String content, String writer, String password, LocalDate createdDateTime) {
         this.title = title;
         this.content = content;
@@ -41,4 +46,13 @@ public class Notice implements Serializable {
         this.password = password;
         this.createdDateTime = createdDateTime;
     }
+
+//    public Notice(String title, String content, String writer, String password, LocalDate createdDateTime, List<Comment> comments) {
+//        this.title = title;
+//        this.content = content;
+//        this.writer = writer;
+//        this.password = password;
+//        this.createdDateTime = createdDateTime;
+//        this.comments = comments;
+//    }
 }
