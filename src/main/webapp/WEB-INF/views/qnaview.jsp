@@ -105,7 +105,7 @@
                     <h2 style="text-align: center;"><b>Q&A</b></h2>
                 </div>
 
-                <form name="qnaview" method="POST">
+                <form name="qnaview" method="POST" action="/qnadelete/${notice.notice_id}">
                     <table class="table">
 
                         <thead>
@@ -142,7 +142,7 @@
                                     <button class="btn btn-fill mt-3" onclick="location.href='qna'"
                                         style="float: left;">목록으로</button>
                                     <button type="submit" class="btn btn-fill mt-3" style="float: right; margin-right: 0.3rem;"
-                                        id="btnDelete" onclick="location.href='${path}/qnadelete/${notice.notice_id}'">삭제</button>
+                                        id="btnDelete">삭제</button>
                                 </td>
                             </tr>
                         </tbody>
