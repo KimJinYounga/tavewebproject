@@ -3,13 +3,17 @@ import com.example.demo.model.ApplyForm;
 import com.example.demo.model.Notice;
 import com.example.demo.repository.ApplyFormRepository;
 import com.example.demo.repository.NoticeRepository;
+import com.sun.org.apache.bcel.internal.generic.ARETURN;
 import lombok.extern.slf4j.Slf4j;
+import org.omg.PortableServer.ForwardRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.RedirectView;
+
+import javax.persistence.criteria.CriteriaBuilder;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -74,10 +78,16 @@ public class UserController {
     }
 
     @PostMapping("/qnadelete/{notice_id}")
+    public String getQnaDelete(@PathVariable("notice_id") Integer notice_id) {
+        return "qnadelete";
+    }
+
+    @PostMapping("/delete/{notice_id}")
     public RedirectView updateQnaPage(@PathVariable("notice_id") Integer notice_id,
                                       @RequestParam("pwCheck") String password) {
 
         Notice notice = this.noticeRepository.getOne(notice_id);
+
         if(notice.getPassword().equals(password)) {
 
             this.noticeRepository.deleteById(notice_id);
@@ -87,7 +97,7 @@ public class UserController {
         } else {
 
             System.out.println("틀렸음...");
-            return new RedirectView("/qnadelete/{notice_id}");
+            return new RedirectView("/");
 
         }
     }

@@ -92,7 +92,6 @@
 
                         <span>
                             <button class="btn btn-fill mt-6" type="submit" value="confirm">확인</button>
-
                     </form>
 
                     <form role="form" method="GET" action="/qna" style="display: inline;">
