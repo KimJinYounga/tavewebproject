@@ -137,10 +137,10 @@
 
                             <tr>
                                 <td colspan="2">
-                                    <button class="btn btn-fill mt-3" onclick="location.href='../qna'"
+                                    <button class="btn btn-fill mt-3" onclick="location.href='qna'"
                                         style="float: left;">목록으로</button>
                                     <button class="btn btn-fill mt-3" style="float: right; margin-right: 0.3rem;"
-                                        id="btnDelete">삭제</button>
+                                        id="btnDelete" onclick="location.href='${path}/qnadelete'">삭제</button>
                                 </td>
                             </tr>
                         </tbody>
@@ -153,7 +153,7 @@
     </div>
 
     <%-- reconfirm for delete --%>
-    <div id="reconfirm" class="modal">
+    <%-- <div id="reconfirm" class="modal">
         <div class="modal-box">
             <div class="close">
                 &times;
@@ -180,7 +180,6 @@
             modal.show();
         }
 
-        $("#loginError").show();
 
         span.onclick = function () {
             modal.hide();
@@ -190,7 +189,7 @@
         godelete.onclick = function () {
             location.href = "${path}/qnadelete/${notice_id}";
         }
-    </script>
+    </script> --%>
 
 </body>
 
