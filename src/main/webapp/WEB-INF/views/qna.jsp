@@ -83,18 +83,6 @@
                     </thead>
 
                     <tbody>
-                        <tr onclick="location.href='qnaview'" style="cursor:pointer;">
-                            <td>/</td>
-                            <td>공지사항!</td>
-                            <td>운영진</td>
-                            <td>2019-11-15</td>
-                        </tr>
-                        <tr onclick="location.href='qnaview'" style="cursor:pointer;">
-                            <td>/</td>
-                            <td>자주 묻는 사항</td>
-                            <td>운영진</td>
-                            <td>2019-11-15</td>
-                        </tr>
                         <c:forEach var="notice" items="${noticeList}">
                             <tr onclick="location.href='qna/${notice.notice_id}'" style="cursor:pointer;">
                                 <td>
