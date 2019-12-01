@@ -67,17 +67,17 @@
         <div class="container col-11">
 
             <div style="align-items: center; line-height: 1px;">
-                <a href="index" class="logobtn ml-5"
+                <a href="../index" class="logobtn ml-5"
                     style="align-content: left; font-size:40px; text-decoration: none; vertical-align: middle;">
                     <img class="navbar-brand-img" src="${pageContext.request.contextPath}/assets/img/Libre_3.png"></a>
             </div>
 
             <div class="nav-menu col-9" style="text-align:right; align-items: center;">
 
-                <a href="about" class="btn2 ml-8">ABOUT</a>
-                <a href="recruit" class="btn2 ml-6">RECRUIT</a>
-                <a href="activity" class="btn2 ml-6">ACTIVITY</a>
-                <a href="qna" class="btn2 ml-6">Q&A</a>
+                <a href="../about" class="btn2 ml-8">ABOUT</a>
+                <a href="../recruit" class="btn2 ml-6">RECRUIT</a>
+                <a href="../activity" class="btn2 ml-6">ACTIVITY</a>
+                <a href="../qna" class="btn2 ml-6">Q&A</a>
 
                 <div class="container" style="align-items: center; line-height: 15px;">
                     <a href=" http://fb.com/TechnologywaAVE" class="btn2" style="font-size: 20px;">
@@ -137,7 +137,7 @@
 
                             <tr>
                                 <td colspan="2">
-                                    <button class="btn btn-fill mt-3" onclick="location.href='${path}/qna'"
+                                    <button class="btn btn-fill mt-3" onclick="location.href='../qna'"
                                         style="float: left;">목록으로</button>
                                     <button class="btn btn-fill mt-3" style="float: right; margin-right: 0.3rem;"
                                         id="btnDelete">삭제</button>
@@ -177,11 +177,13 @@
         var godelete = document.getElementById("realDelete");
 
         btn.onclick = function () {
-            modal.style.display = "block";
+            modal.show();
         }
 
+        $("#loginError").show();
+
         span.onclick = function () {
-            modal.style.display = "none";
+            modal.hide();
         }
 
         // qnadelete.jsp로 이동
