@@ -4,6 +4,7 @@ import com.example.demo.model.Notice;
 import com.example.demo.repository.ApplyFormRepository;
 import com.example.demo.repository.NoticeRepository;
 import com.sun.org.apache.bcel.internal.generic.ARETURN;
+import lombok.extern.java.Log;
 import lombok.extern.slf4j.Slf4j;
 import org.omg.PortableServer.ForwardRequest;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,8 +15,11 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.RedirectView;
 
 import javax.persistence.criteria.CriteriaBuilder;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 @Slf4j
@@ -77,28 +81,30 @@ public class UserController {
         return "qnaview";
     }
 
-    @PostMapping("/qnadelete/{notice_id}")
+    @GetMapping("/qnadelete/{notice_id}")
     public String getQnaDelete(@PathVariable("notice_id") Integer notice_id) {
         return "qnadelete";
     }
 
     @PostMapping("/delete/{notice_id}")
     public RedirectView updateQnaPage(@PathVariable("notice_id") Integer notice_id,
-                                      @RequestParam("pwCheck") String password) {
+                                      @RequestParam("pwCheck") String password,
+                                      HttpServletRequest request
+                                      ) {
 
+        HttpSession session =  request.getSession();
         Notice notice = this.noticeRepository.getOne(notice_id);
 
         if(notice.getPassword().equals(password)) {
 
             this.noticeRepository.deleteById(notice_id);
-            System.out.println("삭제 완료!");
+            log.info(notice.getNotice_id() + "번 째 게시글인 " + notice.getTitle() + "제목의 게시글 삭제됨!");
             return new RedirectView("/qna");
 
         } else {
+            session.setAttribute("isPW", "true");
 
-            System.out.println("틀렸음...");
-            return new RedirectView("/");
-
+            return new RedirectView("/qnadelete/{notice_id}");
         }
     }
 
