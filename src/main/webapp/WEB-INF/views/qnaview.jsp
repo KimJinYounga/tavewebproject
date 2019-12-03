@@ -132,8 +132,8 @@
                             <%--  QNA 댓글 --%>
                             <tr>
                                 <td>
-                                    <p class="comment-writer">운영진 | 2019-11-17 17:30</p>
-                                    <p class="comment">구글폼 꼭 작성해주세요 ㅎㅅㅎ</p>
+                                    <p class="comment-writer"></p>
+                                    <p class="comment"></p>
                                 </td>
                             </tr>
 

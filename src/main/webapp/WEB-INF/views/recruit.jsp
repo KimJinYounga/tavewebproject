@@ -18,9 +18,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- JS -->
-    <script src="../../resources/assets/js/dropdown.js"></script>
-    <script src="../../resources/assets/js/pageScroll.js"></script>
-    <script src="../../resources/assets/js/materialize.min.js"></script>
+     <script src="${pageContext.request.contextPath}/assets/js/dropdown.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/js/pageScroll.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/js/materialize.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
 </head>
 
 <body style="overflow: auto; background-color: #fffbf8;">
@@ -37,10 +38,10 @@
 
             <div class="nav-menu col-9" style="text-align:right; align-items: center;">
 
-                <a href="about" class="btn2 ml-8">ABOUT</a>
-                <a href="recruit" class="btn2 ml-6">RECRUIT</a>
-                <a href="activity" class="btn2 ml-6">ACTIVITY</a>
-                <a href="qna" class="btn2 ml-6">Q&A</a>
+                <a href="../about" class="btn2 ml-8">ABOUT</a>
+                <a href="../recruit" class="btn2 ml-6">RECRUIT</a>
+                <a href="../activity" class="btn2 ml-6">ACTIVITY</a>
+                <a href="../qna" class="btn2 ml-6">Q&A</a>
 
                 <div class="container" style="align-items: center; line-height: 15px;">
                     <a href=" http://fb.com/TechnologywaAVE" class="btn2" style="font-size: 20px;">

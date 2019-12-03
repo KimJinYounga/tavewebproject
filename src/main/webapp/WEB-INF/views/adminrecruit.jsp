@@ -56,10 +56,10 @@
 
             <div class="nav-menu col-9" style="text-align:right; align-items: center;">
 
-                <a href="about" class="btn2 ml-8">ABOUT</a>
-                <a href="recruit" class="btn2 ml-6">RECRUIT</a>
-                <a href="activity" class="btn2 ml-6">ACTIVITY</a>
-                <a href="qna" class="btn2 ml-6">Q&A</a>
+                <a href="../about" class="btn2 ml-8">ABOUT</a>
+                <a href="../recruit" class="btn2 ml-6">RECRUIT</a>
+                <a href="../activity" class="btn2 ml-6">ACTIVITY</a>
+                <a href="../qna" class="btn2 ml-6">Q&A</a>
 
                 <div class="container" style="align-items: center; line-height: 15px;">
                     <a href=" http://fb.com/TechnologywaAVE" class="btn2" style="font-size: 20px;">
@@ -84,7 +84,8 @@
             <div class="border">
 
                 <p style="font-size: 21px; font-weight: bold; margin: 0 0.7rem 1rem;"># ${status.count}</p>
-                <img src="${pageContext.request.contextPath}/assets/img/line2.jpg" width="100%" style="margin-bottom: -2rem;">
+                <img src="${pageContext.request.contextPath}/assets/img/line2.jpg" width="100%"
+                    style="margin-bottom: -2rem;">
 
                 <div class="pale-text">
 
@@ -98,7 +99,6 @@
 
                     <h4 class="ml-2 rec-sub">전화번호</h4>
                     <div class="form-group">
-
                         <div class="input-group input-group-alternative">
                             <p class="form-control aa" type="text" placeholder="phone number" name="board-phone"
                                 id="board-phone">${board.phone}</p>
@@ -118,7 +118,7 @@
                     </div>
 
                     <div style="text-align: center;">
-                        <button class="btn btn-fill mt-5" onclick="location.href='adminview'">목록으로</button>
+                        <button class="btn btn-fill mt-5" onclick="location.href='../adminview'">목록으로</button>
                     </div>
 
                 </div>

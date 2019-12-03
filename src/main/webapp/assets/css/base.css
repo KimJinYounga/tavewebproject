@@ -1090,8 +1090,8 @@
 .btn.focus {
   color: rgb(219, 131, 119); /*버튼 바뀌는 색상*/
   text-decoration: none;
-  box-shadow: 0 7px 14px rgba(43, 43, 83, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
-  transform: translateY(-0.78px);
+  box-shadow: 1px 7px 14px rgba(83, 67, 43, 0.192), 2px 3px 6px rgba(0, 0, 0, 0.267);
+  transform: translateY(-0.95px);
   font-weight: bold;
 }
 
@@ -1111,6 +1111,13 @@
 .btn-fill {
   color: #FFFFFF;
   background-color: #2b1604;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.btn-w-fill {
+  color: rgb(240, 146, 47);
+  background-color: rgb(255, 245, 234);
   opacity: 1;
   filter: alpha(opacity=100);
 }
