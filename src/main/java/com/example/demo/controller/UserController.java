@@ -31,26 +31,6 @@ public class UserController {
     @Autowired
     NoticeRepository noticeRepository;
 
-    @GetMapping("/index")
-    public String viewIndexPage() {
-        return "index";
-    }
-
-    @GetMapping("/about")
-    public String viewAboutPage() {
-        return "about";
-    }
-
-    @GetMapping("/activity")
-    public String viewActivityPage() {
-        return "activity";
-    }
-
-    @GetMapping("/recruit")
-    public String getRecruitPage() {
-        return "recruit";
-    }
-
     @GetMapping("/qna")
     public ModelAndView viewQnaPage() {
         // ModelAndView에 /views에 생성된 qna.jsp 파일 path를 저장
@@ -75,17 +55,6 @@ public class UserController {
             return modelAndView;
     }
 
-    // 특정 글을 수정한다.
-    @GetMapping("/qna/qnaview")
-    public String getQnaViewPage() {
-        return "qnaview";
-    }
-
-    @GetMapping("/qnadelete/{notice_id}")
-    public String getQnaDelete(@PathVariable("notice_id") Integer notice_id) {
-        return "qnadelete";
-    }
-
     @PostMapping("/delete/{notice_id}")
     public RedirectView updateQnaPage(@PathVariable("notice_id") Integer notice_id,
                                       @RequestParam("pwCheck") String password,
@@ -106,11 +75,6 @@ public class UserController {
 
             return new RedirectView("/qnadelete/{notice_id}");
         }
-    }
-
-    @GetMapping("/qna/qnawrite")
-    public String viewQnaWritePage() {
-        return "qnawrite";
     }
 
     @PostMapping("/write")
