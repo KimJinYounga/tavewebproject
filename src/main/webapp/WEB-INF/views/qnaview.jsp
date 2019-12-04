@@ -105,7 +105,7 @@
                     <h2 style="text-align: center;"><b>Q&A</b></h2>
                 </div>
 
-                <form name="qnaview" method="GET" action="/qnadelete/${notice.notice_id}">
+                <form name="qnaview" method="POST" action="/checkpw/${notice.notice_id}">
                     <table class="table">
 
                         <thead>

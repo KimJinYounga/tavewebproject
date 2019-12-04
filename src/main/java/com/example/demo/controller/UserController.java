@@ -3,23 +3,17 @@ import com.example.demo.model.ApplyForm;
 import com.example.demo.model.Notice;
 import com.example.demo.repository.ApplyFormRepository;
 import com.example.demo.repository.NoticeRepository;
-import com.sun.org.apache.bcel.internal.generic.ARETURN;
-import lombok.extern.java.Log;
 import lombok.extern.slf4j.Slf4j;
-import org.omg.PortableServer.ForwardRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.RedirectView;
-
-import javax.persistence.criteria.CriteriaBuilder;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.time.LocalDate;
 import java.util.List;
-import java.util.Map;
 
 @Controller
 @Slf4j
@@ -73,7 +67,7 @@ public class UserController {
         } else {
             session.setAttribute("isPW", "true");
 
-            return new RedirectView("/qnadelete/{notice_id}");
+            return new RedirectView("/checkpw/{notice_id}");
         }
     }
 
