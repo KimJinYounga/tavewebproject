@@ -1,8 +1,11 @@
 package com.example.demo.controller;
 import com.example.demo.model.ApplyForm;
 import com.example.demo.model.Notice;
+import com.example.demo.model.Post;
 import com.example.demo.repository.ApplyFormRepository;
 import com.example.demo.repository.NoticeRepository;
+import com.example.demo.repository.PostRepository;
+import javafx.geometry.Pos;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -13,6 +16,7 @@ import org.springframework.web.servlet.view.RedirectView;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -24,6 +28,9 @@ public class UserController {
 
     @Autowired
     NoticeRepository noticeRepository;
+
+    @Autowired
+    PostRepository postRepository;
 
     @GetMapping("/qna")
     public ModelAndView viewQnaPage() {
@@ -41,11 +48,25 @@ public class UserController {
 
     // 특정 글을 본다.
     @RequestMapping("/qna/{notice_id}")
-    public ModelAndView getQnaViewPage(@PathVariable("notice_id") Integer notice_id, ModelAndView modelAndView) {
+    public ModelAndView getQnaViewPage(@PathVariable("notice_id") Integer notice_id,
+                                       ModelAndView modelAndView) {
 
             modelAndView.setViewName("/qnaview");
             Notice notice = this.noticeRepository.getOne(notice_id);
+            Post post = new Post("Kimdoyoung", "dd");
+            Post post1 = new Post("kim", "isOK");
+
+            postRepository.save(post);
+            postRepository.save(post1);
+
+            List<Post> list = new ArrayList<Post>();
+//            list.add(postRepository.getOne());
+//            list.add(postRepository.getOne());
+
+            notice.setPost(list);
+
             modelAndView.addObject(notice);
+
             return modelAndView;
     }
 
