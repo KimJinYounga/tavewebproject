@@ -119,7 +119,8 @@
                     <tbody>
                         <tr>
                             <td>
-                                <p class="q-content" style="color: rgb(24, 24, 27); padding: 1.6rem 1.9rem; white-space:pre;"
+                                <p class="q-content"
+                                    style="color: rgb(24, 24, 27); padding: 1.6rem 1.9rem; white-space:pre;"
                                     align="left">
                                     ${notice.content}
                                 </p>
@@ -143,13 +144,21 @@
                                     <!-- 글번호랑 작성자 정보 hidden으로 같이 전송 -->
                                     <input type="hidden" name="notice_id" value="${notice.notice_id}">
                                     <input type="text" name="writer">
+                                    <!-- 작성자 -->
+                                    <div class="form-group" style="float: left; margin: 0.9% 0;">
+                                        <div class="input-group input-group-alternative">
+                                            <input class="form-control" type="text" placeholder="작성자" name="writer"
+                                                id="writer">
+                                        </div>
+                                    </div>
                                     <!-- 댓글 입력 -->
                                     <div class="form-group" style="padding-right: 2rem;">
                                         <textarea rows="2" class="form-control form-control-alternative"
                                             placeholder="댓글을 남겨주세요 :D" name="comment" id="comment"
                                             maxlength="300"></textarea>
                                     </div>
-                                    <span style="color:#aaa; float: left; padding-left: 1rem;" id="counter">(0 / 최대
+                                    <span style="color:#aaa; float: left; padding-left: 1rem;" id="counter">(0 /
+                                        최대
                                         300자)</span>
                                     <button type="submit" class="btn btn-fill"
                                         style="float: right; vertical-align: middle; margin-right: 0.3rem;">등록</button>
