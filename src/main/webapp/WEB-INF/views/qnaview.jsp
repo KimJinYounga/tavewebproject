@@ -105,50 +105,72 @@
                     <h2 style="text-align: center;"><b>Q&A</b></h2>
                 </div>
 
-                <form name="qnaview" method="POST" action="/checkpw/${notice.notice_id}">
-                    <table class="table">
+                <table class="table">
 
-                        <thead>
+                    <thead>
+                        <tr>
+                            <td style="text-align: left; padding-left: 2rem;">
+                                <h3 style="margin-bottom: 0.5rem;"><b>${notice.title}</b></h3>
+                                <h5> ${notice.writer} | ${notice.createdDateTime} </h5>
+                            </td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p class="q-content" style="color: rgb(24, 24, 27); padding: 1.6rem 1.9rem; white-space:pre;"
+                                    align="left">
+                                    ${notice.content}
+                                </p>
+                            </td>
+                        </tr>
+
+                        <%--  댓글 출력 --%>
+                        <tr>
+                            <td>
+                                <p class="comment-writer"></p>
+                                <p class="comment" style="white-space:pre;"></p>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <form name="qnacomment" id="qnacomment">
                             <tr>
-                                <td style="text-align: left; padding-left: 2rem;">
-                                    <h3 style="margin-bottom: 0.5rem;"><b>${notice.title}</b></h3>
-                                    <h5> ${notice.writer} | ${notice.createdDateTime} </h5>
+                                <td style=" vertical-align: middle;">
+                                    <!-- 글번호랑 작성자 정보 hidden으로 같이 전송 -->
+                                    <!-- default를 작성자로 해놓고 관리자ID 세션일 경우 if문? -->
+                                    <input type="hidden" name="notice_id" value="${notice.notice_id}">
+                                    <input type="hidden" name="" value="">
+                                    <!-- 댓글 입력 -->
+                                    <div class="form-group" style="padding-right: 2rem;">
+                                        <textarea rows="2" class="form-control form-control-alternative"
+                                            placeholder="댓글을 남겨주세요 :D" name="comment" id="comment"
+                                            maxlength="300"></textarea>
+                                    </div>
+                                    <span style="color:#aaa; float: left; padding-left: 1rem;" id="counter">(0 / 최대
+                                        300자)</span>
+                                    <button type="submit" class="btn btn-fill"
+                                        style="float: right; vertical-align: middle; margin-right: 0.3rem;">등록</button>
                                 </td>
                             </tr>
-                        </thead>
+                        </form>
 
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <p class="q-content" style="color: rgb(24, 24, 27); padding: 1.6rem 1.9rem;"
-                                        align="left">
-                                        ${notice.content}
-                                    </p>
-                                </td>
-                            </tr>
-
-                            <input type="hidden" id="buno" name="notice_id" value="${notice.notice_id}">
-
-                            <%--  QNA 댓글 --%>
-                            <tr>
-                                <td>
-                                    <p class="comment-writer"></p>
-                                    <p class="comment"></p>
-                                </td>
-                            </tr>
-
+                        <form name="qnaview" method="POST" action="/checkpw/${notice.notice_id}">
                             <tr>
                                 <td colspan="2">
-                                    <button type="button" class="btn btn-fill mt-3" onclick="location.href='../qna'" 
-                                        style="float: left;">목록으로</button>
-                                    <button type="submit" class="btn btn-fill mt-3" style="float: right; margin-right: 0.3rem;"
-                                        id="btnDelete" >삭제</button>
+                                    <input type="hidden" id="buno" name="notice_id" value="${notice.notice_id}">
+                                    <button type="button" class="btn btn-fill mt-3"
+                                        onclick="location.href='../qna'">목록으로</button>
+                                    <button type="submit" class="btn btn-fill mt-3" id="btnDelete">삭제</button>
                                 </td>
                             </tr>
-                        </tbody>
+                        </form>
+                    </tfoot>
 
-                    </table>
-                </form>
+                </table>
+
             </div>
         </div>
 
@@ -192,6 +214,18 @@
             location.href = "${path}/qnadelete/${notice_id}";
         }
     </script> --%>
+
+    <!-- text counting -->
+    <script>
+        $(function () {
+            $('#comment').keyup(function (e) {
+                var content = $(this).val();
+                $(this).height(((content.split('\n').length + 1) * 1.5) + 'em');
+                $('#counter').html(content.length + ' ' + '/ 최대 300자');
+            });
+            $('#comment').keyup();
+        });
+    </script>
 
 </body>
 

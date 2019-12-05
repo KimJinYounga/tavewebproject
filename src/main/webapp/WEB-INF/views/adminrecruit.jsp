@@ -108,13 +108,13 @@
                     <h4 class="ml-2 rec-sub">자기소개</h4>
                     <div class="form-group">
                         <p class="form-control form-control-alternative multi-line" name="board-introduceMyself"
-                            id="board-introduceMyself">${board.introduceMyself}</p>
+                            id="board-introduceMyself" style="white-space:pre;">${board.introduceMyself}</p>
                     </div>
 
                     <h4 class="ml-2 rec-sub">지원동기</h4>
                     <div class="form-group">
                         <p class="form-control form-control-alternative multi-line" name="board-motive"
-                            id="board-motive">${board.motive}</p>
+                            id="board-motive" style="white-space:pre;">${board.motive}</p>
                     </div>
 
                     <div style="text-align: center;">

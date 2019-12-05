@@ -84,7 +84,7 @@
                     <tbody>
                         <tr>
                             <td>
-                                <p class="q-content" style="color: rgb(27, 25, 24); padding: 1.6rem 1.9rem;"
+                                <p class="q-content" style="color: rgb(27, 25, 24); padding: 1.6rem 1.9rem; white-space:pre;"
                                     align="left">
                                     ${notice.content}
                                 </p>
