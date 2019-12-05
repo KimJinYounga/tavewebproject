@@ -137,12 +137,12 @@
 
                     <tfoot>
                         <%-- 댓글 입력 --%>
-                        <form name="qnacomment" id="qnacomment">
+                        <form name="qnacomment" id="qnacomment" action="/comment/${notice_id}" method="POST">
                             <tr>
                                 <td style=" vertical-align: middle;">
                                     <!-- 글번호랑 작성자 정보 hidden으로 같이 전송 -->
                                     <input type="hidden" name="notice_id" value="${notice.notice_id}">
-                                    <input type="hidden" name="" value="">
+                                    <input type="text" name="writer">
                                     <!-- 댓글 입력 -->
                                     <div class="form-group" style="padding-right: 2rem;">
                                         <textarea rows="2" class="form-control form-control-alternative"
