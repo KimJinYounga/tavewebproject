@@ -17,7 +17,7 @@ import java.util.List;
 @Data
 public class Notice implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="notice_id")
     private Integer notice_id;
 
@@ -36,8 +36,9 @@ public class Notice implements Serializable {
     @Column(name = "createdDateTime")
     private LocalDate createdDateTime;
 
-//    @OneToMany(mappedBy="notice")
-//    private List<Comment> comments = new ArrayList<Comment>();
+    @OneToMany(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "Post_post_id", nullable = true)
+    private List<Post> post = new ArrayList<Post>();
 
     public Notice(String title, String content, String writer, String password, LocalDate createdDateTime) {
         this.title = title;
@@ -46,13 +47,4 @@ public class Notice implements Serializable {
         this.password = password;
         this.createdDateTime = createdDateTime;
     }
-
-//    public Notice(String title, String content, String writer, String password, LocalDate createdDateTime, List<Comment> comments) {
-//        this.title = title;
-//        this.content = content;
-//        this.writer = writer;
-//        this.password = password;
-//        this.createdDateTime = createdDateTime;
-//        this.comments = comments;
-//    }
 }
