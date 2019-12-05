@@ -1,12 +1,17 @@
 package com.example.demo.model;
 
+import javafx.geometry.Pos;
 import lombok.*;
+import org.springframework.beans.support.MutableSortDefinition;
+import org.springframework.beans.support.PropertyComparator;
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name="\"notice\"")
@@ -38,7 +43,7 @@ public class Notice implements Serializable {
 
     @OneToMany(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "Post_post_id", nullable = true)
-    private List<Post> post = new ArrayList<Post>();
+    private List<Post> posts = new ArrayList<>();
 
     public Notice(String title, String content, String writer, String password, LocalDate createdDateTime) {
         this.title = title;
@@ -47,4 +52,18 @@ public class Notice implements Serializable {
         this.password = password;
         this.createdDateTime = createdDateTime;
     }
+
+    public List<Post> getPosts() {
+        List<Post> sortedPosts = new ArrayList<>(getPetsInternal());
+        return sortedPosts;
+    }
+
+    // notice_id에 해당하는 Posts를 모두 리스트에 담아서 리턴
+    protected List<Post> getPetsInternal() {
+        if (this.posts == null) {
+            this.posts = new ArrayList<>();
+        }
+        return this.posts;
+    }
+
 }

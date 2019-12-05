@@ -53,17 +53,9 @@ public class UserController {
 
             modelAndView.setViewName("/qnaview");
             Notice notice = this.noticeRepository.getOne(notice_id);
-            Post post = new Post("Kimdoyoung", "dd");
-            Post post1 = new Post("kim", "isOK");
 
-            postRepository.save(post);
-            postRepository.save(post1);
-
-            List<Post> list = new ArrayList<Post>();
-//            list.add(postRepository.getOne());
-//            list.add(postRepository.getOne());
-
-            notice.setPost(list);
+            List<Post> posts = notice.getPosts();
+            notice.setPosts(posts);
 
             modelAndView.addObject(notice);
 

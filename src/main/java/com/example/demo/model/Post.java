@@ -2,6 +2,7 @@ package com.example.demo.model;
 
 import javafx.geometry.Pos;
 import lombok.*;
+import org.aspectj.weaver.ast.Not;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -29,9 +30,22 @@ public class Post implements Serializable {
     @Column(name = "comment")
     private String comment;
 
-    public Post(String writer, String comment) {
+    @ManyToOne
+    @JoinColumn(name = "notice_id")
+    private Notice notice;
+
+    public Notice getNotice() {
+        return notice;
+    }
+
+    public void setNotice(Notice notice) {
+        this.notice = notice;
+    }
+
+    public Post(String writer, String comment, Notice notice) {
         this.writer = writer;
         this.comment = comment;
+        this.notice = notice;
     }
 
     @Override
