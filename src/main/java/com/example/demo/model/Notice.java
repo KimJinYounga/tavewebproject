@@ -42,7 +42,7 @@ public class Notice implements Serializable {
     private LocalDate createdDateTime;
 
     @OneToMany(cascade = CascadeType.PERSIST)
-    @JoinColumn(name = "Post_post_id", nullable = true)
+    @JoinColumn(name = "post_id", nullable = true)
     private List<Post> posts = new ArrayList<>();
 
     public Notice(String title, String content, String writer, String password, LocalDate createdDateTime) {

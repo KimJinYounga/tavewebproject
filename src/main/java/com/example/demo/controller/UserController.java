@@ -17,6 +17,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 @Controller
@@ -54,8 +55,14 @@ public class UserController {
             modelAndView.setViewName("/qnaview");
             Notice notice = this.noticeRepository.getOne(notice_id);
 
-            List<Post> posts = notice.getPosts();
+            List<Post> posts = postRepository.findAll();
             notice.setPosts(posts);
+
+            Iterator it = notice.getPosts().iterator();
+
+            while(it.hasNext()) {
+                System.out.println(it.next());
+            }
 
             modelAndView.addObject(notice);
 
