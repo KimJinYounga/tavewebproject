@@ -136,11 +136,11 @@
                     </tbody>
 
                     <tfoot>
+                        <%-- 댓글 입력 --%>
                         <form name="qnacomment" id="qnacomment">
                             <tr>
                                 <td style=" vertical-align: middle;">
                                     <!-- 글번호랑 작성자 정보 hidden으로 같이 전송 -->
-                                    <!-- default를 작성자로 해놓고 관리자ID 세션일 경우 if문? -->
                                     <input type="hidden" name="notice_id" value="${notice.notice_id}">
                                     <input type="hidden" name="" value="">
                                     <!-- 댓글 입력 -->
