@@ -1,14 +1,9 @@
 package com.example.demo.model;
 
-import javafx.geometry.Pos;
 import lombok.*;
-import org.aspectj.weaver.ast.Not;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
 
 @Entity
 @NoArgsConstructor
