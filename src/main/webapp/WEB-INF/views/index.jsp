@@ -124,7 +124,7 @@
 	</style>
 </head>
 
-<body style="background: rgba(185, 96, 12, 0.23);">
+<body style="background: rgba(185, 96, 12, 0.23);"> 
 
 	<!-- navbar -->
 	<nav class="navbar">
