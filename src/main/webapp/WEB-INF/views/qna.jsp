@@ -27,6 +27,86 @@
         .re {
             background-color: rgba(218, 212, 205, 0.123);
         }
+
+        .input-group {
+            transition: all 0.15s ease;
+            box-shadow: none;
+        }
+
+        .pagination {
+            display: flex;
+            float: left;
+            padding-left: 0;
+            list-style: none;
+            border-radius: 0.375rem;
+        }
+        .page-item:first-child .page-link {
+            margin-left: 0;
+            border-top-left-radius: 0.375rem;
+            border-bottom-left-radius: 0.375rem;
+        }
+
+        .page-item:last-child .page-link {
+            border-top-right-radius: 0.375rem;
+            border-bottom-right-radius: 0.375rem;
+        }
+
+        .page-item.active .page-link {
+            z-index: 1;
+            color: #fff;
+            background-color: #aa9088;
+            border-color: #aa9088;
+        }
+
+        .page-link {
+            position: relative;
+            display: block;
+            padding: 0.5rem 0.75rem;
+            margin-left: -1px;
+            line-height: 1.25;
+            color: #aa9088;
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            text-decoration: none;
+        }
+
+        .page-link:hover {
+            z-index: 2;
+            color: #aa9088;
+            text-decoration: none;
+            background-color: #d8d5cc;
+            border-color: #dee2e6;
+        }
+
+        .page-link:focus {
+            z-index: 2;
+            outline: 0;
+            box-shadow: none;
+        }
+
+        .page-item .page-link,
+        .page-item span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            margin: 0 3px;
+            border-radius: 50% !important;
+            width: 36px;
+            height: 36px;
+            font-size: 0.875rem;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
     </style>
 
 </head>
@@ -70,7 +150,7 @@
     <!-- content -->
     <div class="container">
         <div class="tablebox">
-            <div class="border">
+            <div class="border" style="text-align: center;">
                 <table class="table">
 
                     <thead>
