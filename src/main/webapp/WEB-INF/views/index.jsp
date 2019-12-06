@@ -210,6 +210,7 @@
 										TAVE
 									</p>
 								</td>
+
 								<td class="sec2-2">
 									<p>Technology
 										wAVE의 약자로, 4차 산업 혁명 기술의 물결을 선도할 대학생들의 동아리입니다.</p>
@@ -255,6 +256,7 @@
 											&raquo; 기획안 보러가기</a>
 									</div>
 								</td>
+
 								<td style="width: 30%;">
 									<span
 										style="box-shadow: 0 0 2rem 0 rgba(122, 59, 0, 0.863); display: inline-block; border-radius: 30px; padding: 0.3rem; border-color: rgb(255, 115, 0); margin: 3.5%;">
@@ -290,6 +292,7 @@
 											src="${pageContext.request.contextPath}/assets/img/i-4.jpg">
 									</span>
 								</td>
+
 								<td style="width: 32%; padding: 2%;">
 									<p class="sec3-1">PROJECT</p>
 
@@ -321,7 +324,9 @@
 
 				<div class="content" style="height: 100%; top: 50%; text-align: center; vertical-align: middle;">
 
-					<div style="top:50%; text-align: center;">
+					<div class="container"
+						style="top: 50%; display: inline-block; margin: 0 auto; text-align: center; vertical-align: middle;">
+
 						<p class="sec5-1">CONFERENCE</p>
 
 						<img src="${pageContext.request.contextPath}/assets/img/i-5.jpg"
@@ -330,8 +335,10 @@
 							style="border-radius: 50%; width: 11%; margin: 2%; box-shadow: 0 0 1.8rem 0 rgba(161, 116, 77, 0.692);">
 						<img src="${pageContext.request.contextPath}/assets/img/i-7.jpg"
 							style="border-radius: 50%; width: 11%; margin: 2%; box-shadow: 0 0 1.8rem 0 rgba(161, 116, 77, 0.692);">
+
 						<p class="sec5-2">진행한 프로젝트를 바탕으로, 매 기수 마지막날 컨퍼런스를 진행합니다. <br>
 							본인이 진행했던 프로젝트의 과정과 성과를 발표하며 TAVE에서만 가능한 성장을 경험할 수 있습니다.</p>
+
 					</div>
 
 				</div>
@@ -357,6 +364,7 @@
 										<p class="sec6-3">서로 기술을 공유하고, 같이 배우고, 함께 실력을 키웁니다</p>
 									</span>
 								</td>
+
 								<td width="50%">
 									<p class="sec6-1" style="float: left; margin: 0 10%;">A</p>
 									<span style="vertical-align: middle;">
@@ -365,6 +373,7 @@
 									</span>
 								</td>
 							</tr>
+
 							<tr>
 								<td width="50%">
 									<p class="sec6-1" style="float: left; margin: 0 10%;">V</p>
@@ -373,6 +382,7 @@
 										<p class="sec6-3">의미있는 활동을 통해 소중하고 가치있는 20대 시절로 채워나갑니다</p>
 									</span>
 								</td>
+
 								<td width="50%">
 									<p class="sec6-1" style="float: left; margin: 0 10%;">E</p>
 									<span style="vertical-align: middle;">
