@@ -32,7 +32,7 @@
 
 		.sec2-1 {
 			color: white;
-			font-size: 57px;
+			font-size: 50px;
 			text-align: center;
 			vertical-align: middle;
 			font-weight: normal;
@@ -64,14 +64,16 @@
 			font-family: 'Archivo Black', sans-serif;
 			text-align: center;
 			text-shadow: 2px 2px 2px rgb(223, 132, 35);
+			margin: 1.5rem;
 		}
 
 		.sec3-2 {
 			color: rgb(255, 245, 234);
-			font-size: 16px;
+			font-size: 15px;
 			text-align: left;
 			line-height: 165%;
 			font-weight: 500;
+			margin: 0.5rem;
 		}
 
 		.sec5-1 {
@@ -203,7 +205,7 @@
 							<tr>
 								<td class="sec2-1">
 									<p
-										style="font-family: 'Archivo Black', sans-serif; margin: 0.5rem 0; vertical-align: middle;">
+										style="font-family: 'Archivo Black', sans-serif; margin: 0.5rem 3rem 0.5rem 0; vertical-align: middle;">
 										HELLO <br>
 										WE <br>
 										ARE <br>
@@ -263,10 +265,10 @@
 										<img style="height: 100%; width: 100%; border-radius: 30px;"
 											src="${pageContext.request.contextPath}/assets/img/about2.jpg">
 									</span>
-
 								</td>
 							</tr>
 						</table>
+
 					</div>
 
 				</div>

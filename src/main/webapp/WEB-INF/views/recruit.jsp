@@ -67,7 +67,7 @@
 
                 <div>
                     <h2 style="text-align: center; font-weight: 800;">5기 회원 모집</h2>
-                    <img src="${pageContext.request.contextPath}/assets/img/line.jpg"
+                    <img src="${pageContext.request.contextPath}/assets/img/line.jpg" width="100%"
                         style="margin: -1.2rem auto -4rem;">
                 </div>
 
