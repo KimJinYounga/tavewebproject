@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
 
     <!-- CSS FILE -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/base.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/index.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/newactivity.css">
@@ -31,7 +32,7 @@
     </style>
 </head>
 
-<body style="background-color: #fffbf8;">
+<body style="overflow:auto; background-color: #fffbf8;">
 
     <!-- navbar -->
     <nav class="navbar_etc">
@@ -105,8 +106,8 @@
         </div>
     </div>
 
-    <div class="container" style="margin-left: 27%; margin-top: 18%;">
-        <video src="../../assets/img/tave_video.mp4" autoplay controls></video>
+    <div class="container" style="margin-left: 27%; margin-top: 18%; width:600px; height:400px">
+        <video style="width:600px; height:400px" src="../../assets/img/tave_video.mp4" autoplay controls></video>
     </div>
 
     <!---------------------------------------------------------------------------------------------------------->
@@ -118,7 +119,7 @@
         <div class="modal-content" style="margin-top:5%">
             <span class="close_act" style="margin-right: 23%;">&times;</span>
             <div>
-                <div class="w3-content w3-display-container" style="width: 800px; height: 500px; border-color: black;">
+                <div class="w3-content w3-display-container" style="width: 500px; height: 300px; border-color: black;">
                     <img class="mySlides" src="../../assets/img/OT.jpg" style="width:100%; height:100%">
                     <img class="mySlides" src="../../assets/img/mtot1.jpg" style="width:100%; height:100%">
                     <img class="mySlides" src="../../assets/img/mtot2.jpg" style="width:100%; height:100%">
