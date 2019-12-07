@@ -126,7 +126,7 @@
 	</style>
 </head>
 
-<body style="background: rgba(185, 96, 12, 0.23);"> 
+<body style="background: rgba(185, 96, 12, 0.23);">
 
 	<!-- navbar -->
 	<nav class="navbar">
@@ -359,17 +359,17 @@
 
 						<table width="58%" style="vertical-align: middle; margin: auto;">
 							<tr>
-								<td width="50%">
-									<p class="sec6-1" style="float: left; margin: 0 10%;">T</p>
-									<span style="vertical-align: middle;">
+								<td width="50%" style="padding: 1% 4%;">
+									<p class="sec6-1" style="float: left; margin: 10%;">T</p>
+									<span style="padding: 5%; margin-left: 2%;">
 										<p class="sec6-2">ECHNOLOGICAL</p>
 										<p class="sec6-3">서로 기술을 공유하고, 같이 배우고, 함께 실력을 키웁니다</p>
 									</span>
 								</td>
-
-								<td width="50%">
-									<p class="sec6-1" style="float: left; margin: 0 10%;">A</p>
-									<span style="vertical-align: middle;">
+								
+								<td width="50%" style="padding: 1% 4%;">
+									<p class="sec6-1" style="float: left; margin: 10%;">A</p>
+									<span style="padding: 5%; margin-left: 2%;">
 										<p class="sec6-2">CHIEVEMENT</p>
 										<p class="sec6-3">유사한 전공, 관심사를 가진 사람들과 같이 목표한 바를 성취해나갑니다</p>
 									</span>
@@ -377,17 +377,17 @@
 							</tr>
 
 							<tr>
-								<td width="50%">
-									<p class="sec6-1" style="float: left; margin: 0 10%;">V</p>
-									<span style="vertical-align: middle;">
+								<td width="50%" style="padding: 1% 4%;">
+									<p class="sec6-1" style="float: left; margin: 10%;">V</p>
+									<span style="padding: 5%; margin-left: 2%;">
 										<p class="sec6-2">ALUABLE</p>
 										<p class="sec6-3">의미있는 활동을 통해 소중하고 가치있는 20대 시절로 채워나갑니다</p>
 									</span>
 								</td>
 
-								<td width="50%">
-									<p class="sec6-1" style="float: left; margin: 0 10%;">E</p>
-									<span style="vertical-align: middle;">
+								<td width="50%" style="padding: 1% 4%;">
+									<p class="sec6-1" style="float: left; margin: 10%;">E</p>
+									<span style="padding: 5%; margin-left: 2%;">
 										<p class="sec6-2">XPERIENCE</p>
 										<p class="sec6-3">다양한 경험들을 통해 함께 성장합니다</p>
 									</span>

@@ -46,7 +46,7 @@
         .comment-writer {
             font-size: 15px;
             text-align: left;
-            padding: 0.5rem 1rem 0.1rem;
+            padding: 0.5rem 0.2rem 0.1rem;
             font-weight: 600;
         }
 
@@ -130,11 +130,11 @@
                         <c:forEach var="post" items="${notice.posts}">
                             <tr>
                                 <td>
-<%--                                    <p class="comment-writer">--%>
-<%--                                        <c:out value="${post.writer}" />--%>
-<%--                                    </p>--%>
+                                    <p class="comment-writer">
+                                        <c:out value="${post.writer}" />
+                                    </p>
                                     <p class="comment" style="white-space:pre;">
-                                        <c:out value="${post.comment}" />
+                                        작성자
                                     </p>
                                 </td>
                             </tr>

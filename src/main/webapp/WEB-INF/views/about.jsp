@@ -62,97 +62,11 @@
 	<!-- content -->
 	<div id="main" class="scroll-container">
 
-		<!--section 1-->
-		<section class="section1" style="background: #fffbf8">
-
-			<div
-				style="box-shadow: 0 0 2rem 0 rgba(175, 117, 29, 0.164); background-color: white;
-				top: 50% ;height: 70%; width: 70%; float: right; margin-top: 5%; margin-right: 15%; border-radius: 30px; padding: 5px; border-color: rgb(255, 115, 0); ">
-				<div style="width:100%; text-align: center; font-size: 45px; margin-top: 5%;">
-					<a>We are TAVE! </a>
-				</div>
-
-				<div style="font-size: 17px; margin-top: 15%; width:50%; margin-left:3%; float:left;">
-					<a>Technology wAVE의 약자로,<br>
-						4차 산업 혁명 기술들의 물결을 선도할 수 있는 대학생 동아리입니다.<br><br>
-						빅데이터, 인공지능, IoT 등 4차 산업 혁명과 관련된 기술로<br>
-						스터디 / 프로젝트, 그리고 컨퍼런스를 진행합니다.<br><br>
-						뿐만 아니라 세미나, MT, 번개 등 친목활동도 도모합니다.<br>
-						현재 4기 진행중이며, 매월 1월 / 7월 신입회원을 모집합니다.<br><br>
-						<a style="font-size:20px;">IT & 4차 산업에 관심과 열정이 있다면, TAVE입니다!</a>
-					</a>
-				</div>
-				<div style="float: right; margin-right:3%; margin-top: 15%;">
-					<img src="../../assets/img/about1.jpg" style="border-radius: 30px; width: 350px; height: 250px">
-				</div>
-
-			</div>
-
-		</section>
-		<!--section 2-->
-		<section class="section2" style="background: #fffbf8">
-			<div
-				style="box-shadow: 0 0 2rem 0 rgba(175, 117, 29, 0.164); background-color: white;
-				top: 50% ;height: 70%; width: 70%; float: right; margin-top: 5%; margin-right: 15%; border-radius: 30px; padding: 5px; border-color: rgb(255, 115, 0); ">
-				<div style="width:45%; float:left; margin-left: 3%; margin-top:25%; text-align:center;">
-					<a style="font-size: 40px">TAVE - 스터디</a><br><br><br>
-					<a style="font-size: 15px;">프로그래밍 언어(Python / C++ / JAVA / R) 를 비롯해<br>
-						웹 / 앱 / 데이터 분석 / 딥러닝 / 아두이노 / 라즈베리파이 등<br>
-						IT와 관련된 모든 분야에서 자유 주제로 스터디를 진행합니다.<br><br>
-						이미 짜여진 커리큘럼을 따라가도 되고<br>
-						개인이 기획안을 작성하여 스터디를 진행할 수 있습니다.<br><br>
-					</a>
-					<img src="../../assets/img/about2.jpg" style="border-radius: 30px; width:300px; height:150px;">
-
-
-				</div>
-				<div style="width:45%; float:right; margin-right: 3%; margin-top:19.5%;  text-align:center;">
-					<a style="font-size: 40px">TAVE - 프로젝트</a><br><br><br>
-					<a style="font-size: 15px;">IT와 관련된 자유 주제로 프로젝트를 진행합니다.<br><br>
-						웹 / 앱 / 인공지능 / 빅데이터 / IoT / 데이터 처리 / 시각화 등<br>
-						자유 주제 프로젝트 뿐만 아니라<br><br>
-						빅데이터 공모전 / 서울시 앱 공모전 / Kaggle / 알고리즘 등<br>
-						공모전이나 대회에도 참가할 수 있습니다.<br><br>
-						또한, 개인이 기획안을 작성하여 프로젝트를 진행할 수 있습니다.<br><br>
-					</a>
-				</div>
-
-			</div>
-		</section>
-		<!--section 3-->
-		<section class="section3" style="background: #fffbf8">
-			<div
-				style="box-shadow: 0 0 2rem 0 rgba(175, 117, 29, 0.164); background-color: white;
-				top: 50% ;height: 70%; width: 70%; float: right; margin-top: 5%; margin-right: 15%; border-radius: 30px; padding: 5px; border-color: rgb(255, 115, 0); ">
-				<div style="width:100%; text-align: center; font-size: 45px; margin-top: 5%;">
-					<a>TAVE - Conference</a>
-				</div>
-				<div style="width:100%;">
-					<img src="../../assets/img/about3.jpg"
-						style="float: left; border-radius: 30px; margin-left: 8%; height: 180px; width: 350px;">
-					<img src="../../assets/img/about3_2.jpg"
-						style="float: right; border-radius: 30px; margin-right: 8%; height: 180px; width: 350px;">
-				</div>
-				<div style="width:45%; float:left; margin-left: 5%; margin-top:8%; text-align:center;">
-					<a style="font-size: 17px">
-						매 기수 후반에 진행한 프로젝트를 바탕으로,<br>
-						동아리 마지막날 컨퍼런스를 진행합니다.
-					</a>
-				</div>
-				<div style="width:45%; float:right; margin-right: 5%; margin-top:8%; text-align:center;">
-					<a style="font-size: 17px">
-						본인이 진행한 프로젝트의 과정과 성과를 발표하며<br>
-						TAVE에서만 가능한 성장을 경험할 수 있습니다.
-					</a>
-				</div>
-
-			</div>
-		</section>
 		<!--section 4-->
 		<section class="section4" style="background: #fffbf8">
 			<div
 					style="box-shadow: 0 0 2rem 0 rgba(175, 117, 29, 0.164); background-color: white;
-            top: 50% ;height: 70%; width: 70%; float: right; margin-top: 5%; margin-right: 15%; border-radius: 30px; padding: 5px; border-color: rgb(255, 115, 0); ">
+            top: 50% ;height: 75%; width: 70%; float: right; margin-top: 5%; margin-right: 15%; border-radius: 30px; padding: 5px; border-color: rgb(255, 115, 0); ">
 				<div style="width:100%; text-align: center; font-size: 40px; margin-top: 5%;">
 					<a>TAVE를 대표하는</a>
 				</div>
@@ -195,7 +109,7 @@
 		<section class="section5" style="background: #fffbf8">
 			<div
 				style="box-shadow: 0 0 2rem 0 rgba(175, 117, 29, 0.164); background-color: white;
-				top: 50% ;height: 70%; width: 70%; float: right; margin-top: 5%; margin-right: 15%; border-radius: 30px; padding: 5px; border-color: rgb(255, 115, 0); ">
+				top: 50% ;height: 75%; width: 70%; float: right; margin-top: 5%; margin-right: 15%; border-radius: 30px; padding: 5px; border-color: rgb(255, 115, 0); ">
 				<div style="width:100%; text-align: center; font-size: 40px; margin-top: 5%;">
 					<a>TAVE를 이끄는</a>
 				</div>
@@ -214,7 +128,7 @@
 		<section class="section6" style="background: #fffbf8">
 			<div
 					style="box-shadow: 0 0 2rem 0 rgba(175, 117, 29, 0.164); background-color: white;
-            top: 50% ;height: 70%; width: 70%; float: right; margin-top: 5%; margin-right: 15%; border-radius: 30px; padding: 5px; border-color: rgb(255, 115, 0); ">
+            top: 50% ;height: 75%; width: 70%; float: right; margin-top: 5%; margin-right: 15%; border-radius: 30px; padding: 5px; border-color: rgb(255, 115, 0); ">
 				<div style="width:100%; text-align: center; font-size: 40px; margin-top: 5%;">
 					<a>TAVE를 창립한</a>
 				</div>
@@ -257,7 +171,7 @@
 		<section class="section7" style="background: #fffbf8">
 			<div
 					style="box-shadow: 0 0 2rem 0 rgba(175, 117, 29, 0.164); background-color: white;
-            top: 50% ;height: 70%; width: 70%; float: right; margin-top: 5%; margin-right: 15%; border-radius: 30px; padding: 5px; border-color: rgb(255, 115, 0); ">
+            top: 50% ;height: 75%; width: 70%; float: right; margin-top: 5%; margin-right: 15%; border-radius: 30px; padding: 5px; border-color: rgb(255, 115, 0); ">
 				<div style="width:100%; text-align: center; font-size: 40px; margin-top: 5%;">
 					<a>TAVE를 후원하는</a>
 				</div>
