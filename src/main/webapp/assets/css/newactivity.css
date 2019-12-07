@@ -4,6 +4,12 @@
     height: 250px;
 }
 
+.container_act_third {
+    position: relative;
+    width: 250px;
+    height: 18%;
+}
+
 .image {
     display: block;
     width: 100%;

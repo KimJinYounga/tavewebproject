@@ -127,12 +127,12 @@
                         </tr>
 
                         <%--  댓글 출력 --%>
-                        <c:forEach var="post" items="${postList}">
+                        <c:forEach var="post" items="${notice.posts}">
                             <tr>
                                 <td>
-                                    <p class="comment-writer">
-                                        <c:out value="${post.writer}" />
-                                    </p>
+<%--                                    <p class="comment-writer">--%>
+<%--                                        <c:out value="${post.writer}" />--%>
+<%--                                    </p>--%>
                                     <p class="comment" style="white-space:pre;">
                                         <c:out value="${post.comment}" />
                                     </p>

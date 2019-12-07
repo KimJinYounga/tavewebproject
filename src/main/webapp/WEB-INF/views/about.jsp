@@ -68,7 +68,7 @@
 			<div
 				style="box-shadow: 0 0 2rem 0 rgba(175, 117, 29, 0.164); background-color: white;
 				top: 50% ;height: 70%; width: 70%; float: right; margin-top: 5%; margin-right: 15%; border-radius: 30px; padding: 5px; border-color: rgb(255, 115, 0); ">
-				<div style="width:100%; text-align: center; font-size: 65px; margin-top: 5%;">
+				<div style="width:100%; text-align: center; font-size: 45px; margin-top: 5%;">
 					<a>We are TAVE! </a>
 				</div>
 
@@ -124,7 +124,7 @@
 			<div
 				style="box-shadow: 0 0 2rem 0 rgba(175, 117, 29, 0.164); background-color: white;
 				top: 50% ;height: 70%; width: 70%; float: right; margin-top: 5%; margin-right: 15%; border-radius: 30px; padding: 5px; border-color: rgb(255, 115, 0); ">
-				<div style="width:100%; text-align: center; font-size: 65px; margin-top: 5%;">
+				<div style="width:100%; text-align: center; font-size: 45px; margin-top: 5%;">
 					<a>TAVE - Conference</a>
 				</div>
 				<div style="width:100%;">
@@ -209,26 +209,27 @@
 
 			</div>
 		</section>
+
 		<!--section 6-->
 		<section class="section6" style="background: #fffbf8">
 			<div
-				style="box-shadow: 0 0 2rem 0 rgba(175, 117, 29, 0.164); background-color: white;
-				top: 50% ;height: 75%; width: 70%; float: right; margin-top: 2.5%; margin-right: 15%; border-radius: 30px; padding: 5px; border-color: rgb(255, 115, 0); ">
-				<div style="width:100%; text-align: center; font-size: 65px; margin-top: 5%;">
+					style="box-shadow: 0 0 2rem 0 rgba(175, 117, 29, 0.164); background-color: white;
+            top: 50% ;height: 70%; width: 70%; float: right; margin-top: 5%; margin-right: 15%; border-radius: 30px; padding: 5px; border-color: rgb(255, 115, 0); ">
+				<div style="width:100%; text-align: center; font-size: 40px; margin-top: 5%;">
 					<a>TAVE를 창립한</a>
 				</div>
 
 
 				<div style="width:45%; float: left; margin-left: 5%; margin-top:13%;">
 					<img src="../../assets/img/changlip.png"
-						style="float:left; height:35%; width: 35%"><br><br><br>
-					<a style="font-size: 30px; margin-left:4%">
+						 style="float:left; height:33%; width: 33%"><br><br><br>
+					<a style="font-size: 20px; margin-left:4%;">
 						최우영(1기 / 2기 및 OB회장)<br>
-						<a style="font-size: 20px; margin-left:4%">
+						<a style="font-size: 15px; margin-left:4%">
 							Soongsil University,<br></a>
-						<a style="font-size: 20px; margin-left:4%">
+						<a style="font-size: 15px; margin-left:4%">
 							College of Engineering,<br></a>
-						<a style="font-size: 20px; margin-left:4%">
+						<a style="font-size: 15px; margin-left:4%">
 							School of Electrical Engineering
 						</a>
 					</a>
@@ -236,9 +237,9 @@
 				</div>
 
 				<div style="width:45%; float:right; margin-right: 3%; margin-top:16%; text-align:center;">
-					<a style="font-size: 30px">
+					<a style="font-size: 20px">
 						TAVE를 창립한, 최우영입니다.<br><br></a>
-					<a style="font-size: 22px;">
+					<a style="font-size: 15px;">
 						앞으로 크게 밀려올 4차산업혁명이라는 큰 파도와<br>
 						이미 얕게 밀려온 물결들은 우리 삶을 변화시켰고,<br>
 						그것을 송두리째 바꿀 것입니다.<br><br>
@@ -251,26 +252,27 @@
 
 			</div>
 		</section>
+
 		<!--section 7-->
 		<section class="section7" style="background: #fffbf8">
 			<div
-				style="box-shadow: 0 0 2rem 0 rgba(175, 117, 29, 0.164); background-color: white;
-				top: 50% ;height: 75%; width: 70%; float: right; margin-top: 2.5%; margin-right: 15%; border-radius: 30px; padding: 5px; border-color: rgb(255, 115, 0); ">
-				<div style="width:100%; text-align: center; font-size: 65px; margin-top: 5%;">
+					style="box-shadow: 0 0 2rem 0 rgba(175, 117, 29, 0.164); background-color: white;
+            top: 50% ;height: 70%; width: 70%; float: right; margin-top: 5%; margin-right: 15%; border-radius: 30px; padding: 5px; border-color: rgb(255, 115, 0); ">
+				<div style="width:100%; text-align: center; font-size: 40px; margin-top: 5%;">
 					<a>TAVE를 후원하는</a>
 				</div>
 
 				<div style="width:45%;  float: left; margin-left: 5%; margin-top:15%;">
-					<img src="../../assets/img/ubicom.png" style="float:left; width: 230px;"><br><br><br>
-					<a style="font-size: 30px; margin-left:4%">(주)유비콤테크놀로지<br></a>
-					<a style="font-size: 25px; margin-left:4%">김병규 대표님</a>
+					<img src="../../assets/img/ubicom.png" style="float:left; width: 200px;"><br><br><br>
+					<a style="font-size: 20px; margin-left:4%">(주)유비콤테크놀로지<br></a>
+					<a style="font-size: 15px; margin-left:4%">김병규 대표님</a>
 					<a href="https://www.ubicomtech.com/"><img src="../../assets/img/link.png" style="height:15px; width: 15px;"></a>
 				</div>
 
-				<div style="width:45%; height: 200px; float: right; margin-right: 3%; margin-top:18%;">
-					<img src="../../assets/img/nomad.png" style="float: left; width: 330px;"><br>
-					<a style="font-size: 30px; margin-left:4%">(주)노매드커넥션<br></a>
-					<a style="font-size: 25px; margin-left:4%">전종환 대표님</a>
+				<div style="width:45%; height: 200px; float: right; margin-right: 3%; margin-top:20%;">
+					<img src="../../assets/img/nomad.png" style="float: left; width: 230px;"><br>
+					<a style="font-size: 20px; margin-left:4%">(주)노매드커넥션<br></a>
+					<a style="font-size: 15px; margin-left:4%">전종환 대표님</a>
 					<a href="http://www.nomadconnection.com/"><img src="../../assets/img/link.png" style="height:15px; width: 15px;"></a>
 				</div>
 
