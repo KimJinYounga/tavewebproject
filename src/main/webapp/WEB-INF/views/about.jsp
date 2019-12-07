@@ -30,17 +30,17 @@
 		<div class="container col-11">
 
 			<div style="align-items: center; line-height: 1px;">
-				<a href="index.html" class="logobtn ml-5"
+				<a href="../index" class="logobtn ml-5"
 					style="align-content: left; font-size:40px; text-decoration: none; vertical-align: middle;">
-					<img class="navbar-brand-img" src="../../resources/assets/img/Libre_3.png"></a>
+					<img class="navbar-brand-img" src="../../assets/img/Libre_3.png"></a>
 			</div>
 
 			<div class="nav-menu col-9" style="text-align:right; align-items: center;">
 
-				<a href="about.html" class="btn2 ml-8">ABOUT</a>
-				<a href="recruit.html" class="btn2 ml-6">RECRUIT</a>
-				<a href="activity.html" class="btn2 ml-6">ACTIVITY</a>
-				<a href="qna.html" class="btn2 ml-6">Q&A</a>
+				<a href="../about" class="btn2 ml-8">ABOUT</a>
+				<a href="../recruit" class="btn2 ml-6">RECRUIT</a>
+				<a href="../activity" class="btn2 ml-6">ACTIVITY</a>
+				<a href="../qna" class="btn2 ml-6">Q&A</a>
 
 				<div class="container" style="align-items: center; line-height: 15px;">
 					<a href=" http://fb.com/TechnologywaAVE" class="btn2" style="font-size: 20px;">
@@ -83,7 +83,7 @@
 					</a>
 				</div>
 				<div style="float: right; margin-right:3%; margin-top: 18%;">
-					<img src="../../resources/assets/img/about1.jpg" style="border-radius: 30px">
+					<img src="../../assets/img/about1.jpg" style="border-radius: 30px">
 				</div>
 
 			</div>
@@ -102,7 +102,7 @@
 						이미 짜여진 커리큘럼을 따라가도 되고<br>
 						개인이 기획안을 작성하여 스터디를 진행할 수 있습니다.<br><br>
 					</a>
-					<img src="../../resources/assets/img/about2.jpg" style="border-radius: 30px; width:80%; height:75%">
+					<img src="../../assets/img/about2.jpg" style="border-radius: 30px; width:80%; height:75%">
 
 
 				</div>
@@ -128,9 +128,9 @@
 					<a>TAVE - Conference</a>
 				</div>
 				<div style="width:100%;">
-					<img src="../../resources/assets/img/about3.jpg"
+					<img src="../../assets/img/about3.jpg"
 						style="float: left; border-radius: 30px; margin-left: 8%; height: 278px; width: 520px">
-					<img src="../../resources/assets/img/about3_2.jpg"
+					<img src="../../assets/img/about3_2.jpg"
 						style="float: right; border-radius: 30px; margin-right: 8%">
 				</div>
 				<div style="width:45%; float:left; margin-left: 5%; margin-top:8%; text-align:center;">
@@ -157,7 +157,7 @@
 					<a>TAVE를 대표하는</a>
 				</div>
 				<div style="width:45%; float:left; margin-left: 5%; margin-top:15%;">
-					<img src="../../resources/assets/img/hyelim.jpg"
+					<img src="../../assets/img/hyelim.jpg"
 						style="float:left; height:35%; width: 35%"><br><br><br>
 					<a style="font-size: 30px; margin-left:4%">
 						김혜림(3기 / 4기 회장)<br>
@@ -202,10 +202,10 @@
 					<a>TAVE를 이끄는</a>
 				</div>
 				<div style="width:45%; float:left; margin-left: 5%; margin-top:18%;">
-					<img src="../../resources/assets/img/woonyoung1.png" style="width:100%; height: 100%">
+					<img src="../../assets/img/woonyoung1.png" style="width:100%; height: 100%">
 				</div>
 				<div style="width:45%; float:right; margin-right: 5%; margin-top:18%;">
-					<img src="../../resources/assets/img/woonyoung2.jpg" style="width:100%; height: 100%">
+					<img src="../../assets/img/woonyoung2.jpg" style="width:100%; height: 100%">
 				</div>
 
 
@@ -222,7 +222,7 @@
 
 
 				<div style="width:45%; float: left; margin-left: 5%; margin-top:13%;">
-					<img src="../../resources/assets/img/changlip.png"
+					<img src="../../assets/img/changlip.png"
 						style="float:left; height:35%; width: 35%"><br><br><br>
 					<a style="font-size: 30px; margin-left:4%">
 						최우영(1기 / 2기 및 OB회장)<br>
@@ -263,17 +263,17 @@
 				</div>
 
 				<div style="width:45%;  float: left; margin-left: 5%; margin-top:15%;">
-					<img src="../../resources/assets/img/ubicom.png" style="float:left; width: 230px;"><br><br><br>
+					<img src="../../assets/img/ubicom.png" style="float:left; width: 230px;"><br><br><br>
 					<a style="font-size: 30px; margin-left:4%">(주)유비콤테크놀로지<br></a>
 					<a style="font-size: 25px; margin-left:4%">김병규 대표님</a>
-					<a href="https://www.ubicomtech.com/"><img src="../../resources/assets/img/link.png" style="height:15px; width: 15px;"></a>
+					<a href="https://www.ubicomtech.com/"><img src="../../assets/img/link.png" style="height:15px; width: 15px;"></a>
 				</div>
 
 				<div style="width:45%; height: 200px; float: right; margin-right: 3%; margin-top:18%;">
-					<img src="../../resources/assets/img/nomad.png" style="float: left; width: 330px;"><br>
+					<img src="../../assets/img/nomad.png" style="float: left; width: 330px;"><br>
 					<a style="font-size: 30px; margin-left:4%">(주)노매드커넥션<br></a>
 					<a style="font-size: 25px; margin-left:4%">전종환 대표님</a>
-					<a href="http://www.nomadconnection.com/"><img src="../../resources/assets/img/link.png" style="height:15px; width: 15px;"></a>
+					<a href="http://www.nomadconnection.com/"><img src="../../assets/img/link.png" style="height:15px; width: 15px;"></a>
 				</div>
 
 			</div>

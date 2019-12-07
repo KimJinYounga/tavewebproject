@@ -25,7 +25,7 @@ public class Post implements Serializable {
     @Column(name = "comment")
     private String comment;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "notice_id")
     private Notice notice;
 

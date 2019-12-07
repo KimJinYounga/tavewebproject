@@ -38,17 +38,17 @@
         <div class="container col-11">
 
             <div style="align-items: center; line-height: 1px;">
-                <a href="index.html" class="logobtn ml-5"
+                <a href="../index" class="logobtn ml-5"
                     style="align-content: left; font-size:40px; text-decoration: none; vertical-align: middle;">
-                    <img class="navbar-brand-img" src="../../resources/assets/img/Libre_3.png"></a>
+                    <img class="navbar-brand-img" src="../../assets/img/Libre_3.png"></a>
             </div>
 
             <div class="nav-menu col-9" style="text-align:right; align-items: center;">
 
-                <a href="about.html" class="btn2 ml-8">ABOUT</a>
-                <a href="recruit.html" class="btn2 ml-6">RECRUIT</a>
-                <a href="activity.html" class="btn2 ml-6">ACTIVITY</a>
-                <a href="qna.html" class="btn2 ml-6">Q&A</a>
+                <a href="../about" class="btn2 ml-8">ABOUT</a>
+                <a href="../recruit" class="btn2 ml-6">RECRUIT</a>
+                <a href="../activity" class="btn2 ml-6">ACTIVITY</a>
+                <a href="../qna" class="btn2 ml-6">Q&A</a>
 
                 <div class="container" style="align-items: center; line-height: 15px;">
                     <a href=" http://fb.com/TechnologywaAVE" class="btn2" style="font-size: 20px;">
@@ -70,35 +70,35 @@
     <!-- content -->
     <div class="container" style="width: 100%; margin-top: 3%">
         <div class="container_act" style="float:left; margin-left: 4%; margin-right:3px">
-            <img src="../../resources/assets/img/OT.jpg" alt="Avatar" class="image">
+            <img src="../../assets/img/OT.jpg" alt="Avatar" class="image">
             <div class="overlay" id="overlay_mtot" style="cursor:pointer">
                 <div class="text">MT / OT</div>
             </div>
         </div>
 
         <div class="container_act" style="float:left; margin-left: 3px; margin-right:3px">
-            <img src="../../resources/assets/img/정기세션.jpg" alt="Avatar" class="image">
+            <img src="../../assets/img/정기세션.jpg" alt="Avatar" class="image">
             <div class="overlay" id="overlay_session" style="cursor:pointer">
                 <div class="text">정기세션</div>
             </div>
         </div>
 
         <div class="container_act" style="float:left; margin-left: 3px; margin-right:3px">
-            <img src="../../resources/assets/img/테마피크닉.jpg" alt="Avatar" class="image">
+            <img src="../../assets/img/테마피크닉.jpg" alt="Avatar" class="image">
             <div class="overlay" id="overlay_picnic" style="cursor:pointer">
                 <div class="text">테마피크닉</div>
             </div>
         </div>
 
         <div class="container_act" style="float:left; margin-left: 3px; margin-right:3px">
-            <img src="../../resources/assets/img/뒤풀이.jpg" alt="Avatar" class="image">
+            <img src="../../assets/img/뒤풀이.jpg" alt="Avatar" class="image">
             <div class="overlay" id="overlay_afterparty" style="cursor:pointer">
                 <div class="text">뒤풀이</div>
             </div>
         </div>
 
         <div class="container_act" style="float:left; margin-left: 3px; margin-right:3px">
-            <img src="../../resources/assets/img/about3.jpg" style="height: 100%;" alt="Avatar" class="image">
+            <img src="../../assets/img/about3.jpg" style="height: 100%;" alt="Avatar" class="image">
             <div class="overlay" id="overlay_conference" style="cursor:pointer">
                 <div class="text">컨퍼런스</div>
             </div>
@@ -106,7 +106,7 @@
     </div>
 
     <div class="container" style="margin-left: 27%; margin-top: 18%;">
-        <video src="../../resources/assets/img/tave_video.mp4" autoplay controls></video>
+        <video src="../../assets/img/tave_video.mp4" autoplay controls></video>
     </div>
 
     <!---------------------------------------------------------------------------------------------------------->
@@ -119,20 +119,20 @@
             <span class="close_act" style="margin-right: 23%;">&times;</span>
             <div>
                 <div class="w3-content w3-display-container" style="width: 800px; height: 500px; border-color: black;">
-                    <img class="mySlides" src="../../resources/assets/img/OT.jpg" style="width:100%; height:100%">
-                    <img class="mySlides" src="../../resources/assets/img/mtot1.jpg" style="width:100%; height:100%">
-                    <img class="mySlides" src="../../resources/assets/img/mtot2.jpg" style="width:100%; height:100%">
-                    <img class="mySlides" src="../../resources/assets/img/뒤풀이.jpg" style="width:100%; height:100%">
-                    <img class="mySlides" src="../../resources/assets/img/뒤풀이1.jpg" style="width:100%; height:100%">
-                    <img class="mySlides" src="../../resources/assets/img/뒤풀이2.jpg" style="width:100%; height:100%">
-                    <img class="mySlides" src="../../resources/assets/img/정기세션.jpg" style="width:100%; height:100%">
-                    <img class="mySlides" src="../../resources/assets/img/컨퍼런스.jpg" style="width:100%; height:100%">
-                    <img class="mySlides" src="../../resources/assets/img/컨퍼런스1.jpg" style="width:100%; height:100%">
-                    <img class="mySlides" src="../../resources/assets/img/컨퍼런스2.jpg" style="width:100%; height:100%">
-                    <img class="mySlides" src="../../resources/assets/img/컨퍼런스3.jpg" style="width:100%; height:100%">
-                    <img class="mySlides" src="../../resources/assets/img/컨퍼런스4.jpg" style="width:100%; height:100%">
-                    <img class="mySlides" src="../../resources/assets/img/테마피크닉.jpg" style="width:100%; height:100%">
-                    <img class="mySlides" src="../../resources/assets/img/피크닉1.jpg" style="width:100%; height:100%">
+                    <img class="mySlides" src="../../assets/img/OT.jpg" style="width:100%; height:100%">
+                    <img class="mySlides" src="../../assets/img/mtot1.jpg" style="width:100%; height:100%">
+                    <img class="mySlides" src="../../assets/img/mtot2.jpg" style="width:100%; height:100%">
+                    <img class="mySlides" src="../../assets/img/뒤풀이.jpg" style="width:100%; height:100%">
+                    <img class="mySlides" src="../../assets/img/뒤풀이1.jpg" style="width:100%; height:100%">
+                    <img class="mySlides" src="../../assets/img/뒤풀이2.jpg" style="width:100%; height:100%">
+                    <img class="mySlides" src="../../assets/img/정기세션.jpg" style="width:100%; height:100%">
+                    <img class="mySlides" src="../../assets/img/컨퍼런스.jpg" style="width:100%; height:100%">
+                    <img class="mySlides" src="../../assets/img/컨퍼런스1.jpg" style="width:100%; height:100%">
+                    <img class="mySlides" src="../../assets/img/컨퍼런스2.jpg" style="width:100%; height:100%">
+                    <img class="mySlides" src="../../assets/img/컨퍼런스3.jpg" style="width:100%; height:100%">
+                    <img class="mySlides" src="../../assets/img/컨퍼런스4.jpg" style="width:100%; height:100%">
+                    <img class="mySlides" src="../../assets/img/테마피크닉.jpg" style="width:100%; height:100%">
+                    <img class="mySlides" src="../../assets/img/피크닉1.jpg" style="width:100%; height:100%">
 
                     <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
                     <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>

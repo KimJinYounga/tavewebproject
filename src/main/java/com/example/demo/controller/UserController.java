@@ -79,6 +79,7 @@ public class UserController {
         if(notice.getPassword().equals(password)) {
 
             this.noticeRepository.deleteById(notice_id);
+
             log.info(notice.getNotice_id() + "번 째 게시글인 " + notice.getTitle() + "제목의 게시글 삭제됨!");
             return new RedirectView("/qna");
 

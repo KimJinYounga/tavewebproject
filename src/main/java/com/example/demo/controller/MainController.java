@@ -35,7 +35,7 @@ public class MainController {
         return "qnaview";
     }
 
-    @PostMapping("/checkpw/{notice_id}")
+    @RequestMapping("/checkpw/{notice_id}")
     public String getQnaDelete(@PathVariable("notice_id") Integer notice_id) {
         return "checkpw";
     }

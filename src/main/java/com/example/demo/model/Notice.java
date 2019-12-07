@@ -37,7 +37,7 @@ public class Notice implements Serializable {
     private LocalDate createdDateTime;
 
     @OneToMany(cascade = CascadeType.PERSIST)
-    @JoinColumn(name = "post_id", nullable = true)
+    @JoinColumn(name = "post_id")
     private List<Post> posts = new ArrayList<>();
 
     public Notice(String title, String content, String writer, String password, LocalDate createdDateTime) {
@@ -49,12 +49,12 @@ public class Notice implements Serializable {
     }
 
     public List<Post> getPosts() {
-        List<Post> sortedPosts = new ArrayList<>(getPetsInternal());
+        List<Post> sortedPosts = new ArrayList<>(getPostsInternal());
         return sortedPosts;
     }
 
     // notice_id에 해당하는 Posts를 모두 리스트에 담아서 리턴
-    protected List<Post> getPetsInternal() {
+    protected List<Post> getPostsInternal() {
         if (this.posts == null) {
             this.posts = new ArrayList<>();
         }
